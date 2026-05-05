@@ -1,0 +1,26 @@
+The tasks you create must use the following symbolic subtasks:
+"""
+- Move_to("object_region id"): Move to an object within a region. The "object_region id" MUST contain the object name and the corresponding region ID from the input scene.
+- Grab("object"): Pick up an object after moving to it. The object MUST be present in the input scene and should be portable.
+- Release("object"): Place the currently held object after moving to a valid destination. The object MUST match the object previously picked up.
+"""
+
+Follow these constraints strictly:
+"""
+- The task instruction must mix Indonesian and English, targeting 60-80% Indonesian and 20-40% English.
+- Do not use the literal words "grab" or "release" in the natural-language instruction.
+- Use objects from only 1 to 2 regions.
+- Mention only regions and objects that exist in the input scene.
+- The task should resemble a practical household instruction, for example: "Ambil object di region tertentu, then move ke tempat lain, lalu letakkan di sana."
+- The picked object must be portable.
+- Create a task with 2 to 6 symbolic subtasks.
+- Every region ID in a Move_to subtask MUST match the region implied by the natural-language instruction.
+"""
+
+Your output must be a Python dictionary with exactly two keys:
+"""
+- dictionary["Task instruction"]: A conversational task instruction.
+- dictionary["Subtask list"]: A list of symbolic subtasks that make up the task.
+"""
+
+Make the task practical, grounded in the scene, and conversational.

@@ -1,0 +1,32 @@
+Here is an example of the INPUT and OUTPUT:
+
+INPUT:
+scene: {
+  "Region 1: Bedroom": ["picture", "bed", "lamp"],
+  "Region 2: Bathroom": ["toilet paper dispenser", "sink", "towel"],
+  "Region 3: Kitchen": ["pan", "cup", "plate"],
+  "Region 4: Office": ["board", "chair", "desk"]
+}
+
+Robot: The Fetch robot in simulator is a versatile mobile robot designed for logistics, material handling.
+Action: Fetch support three kinds of action: move_forward, turn_left and turn_right.
+Sensors: Fetch is equipped with three RGB cameras at a height of 1 meter in front, left and right to obtain embodied images in these three directions.
+Mobility: Fetch movement is realized by a wheeled chassis, which can only move on flat ground and cannot pass through rugged areas.
+Use: Fetch has a flexible robotic arm with a high position (1 meter) that can perform complex operations such as grabbing.
+
+OUTPUT:
+{
+  "Task instruction": "Ambil picture dari bedroom, kemudian move ke office dan set it on the board; selanjutnya, go to bathroom and retrieve the toilet paper dispenser.",
+  "Subtask list": [
+    "Move_to('picture_1')",
+    "Grab('picture')",
+
+    "Move_to('board_4')",
+    "Release('picture')",
+
+    "Move_to('toilet paper dispenser_2')",
+    "Grab('toilet paper dispenser')"
+  ]
+}
+
+

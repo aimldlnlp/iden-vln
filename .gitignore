@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and local secrets
+.env
+.venv/
+venv/
+env/
+*.env
+
+# Generated IDEN-VLN artifacts
+task/
+step_task/
+logs/
+temp/
+trail_list.txt
+*_result.json
+
+# Datasets, model weights, and large local assets
+/data/
+/hm3d/
+/checkpoints/
+/models/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+
+# Notebooks and build artifacts
+.ipynb_checkpoints/
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
