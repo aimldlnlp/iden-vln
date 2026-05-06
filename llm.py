@@ -36,7 +36,7 @@ def llm(args, prompt_path, ex_prompt):
         "Authorization": f"Bearer {api_key}"
     }
     payload = {
-        "model": getattr(args, "MODEL_MAIN", "gpt-4o"),
+        "model": getattr(args, "MODEL_MAIN", "Qwen2.5-7B-Instruct"),
         "messages": [
             {"role": "system", "content": prompt_system},
             {"role": "user",   "content": prompt}
@@ -53,7 +53,7 @@ def llm(args, prompt_path, ex_prompt):
     return output["choices"][0]['message']["content"]
 
 
-def llm_mini(args, prompt_path, ex_prompt):  # It is -o-mini
+def llm_step(args, prompt_path, ex_prompt):
     """Call the step-level OpenAI-compatible chat model."""
     api_key = args.API_KEY
 
@@ -64,7 +64,7 @@ def llm_mini(args, prompt_path, ex_prompt):  # It is -o-mini
         "Authorization": f"Bearer {api_key}"
     }
     payload = {
-        "model": getattr(args, "MODEL_MINI", "gpt-4o-mini"),
+        "model": getattr(args, "MODEL_STEP", "Qwen2.5-7B-Instruct"),
         "messages": [
             {"role": "system", "content": prompt_system},
             {"role": "user",   "content": prompt}
@@ -81,7 +81,8 @@ def llm_mini(args, prompt_path, ex_prompt):  # It is -o-mini
     return output["choices"][0]['message']["content"]
 
 
-def gpt4_vision(args, prompt_path, ex_prompt, img_path):  # Backward-compatible name for VLM use.
+def vision_llm(args, prompt_path, ex_prompt, img_path):
+    """Call an OpenAI-compatible vision-language model."""
     base64_image = encode_image(img_path)
     api_key = args.API_KEY
 
@@ -91,7 +92,7 @@ def gpt4_vision(args, prompt_path, ex_prompt, img_path):  # Backward-compatible 
     }
     prompt_system, prompt = prompt_make(prompt_path, ex_prompt)
     payload = {
-        "model": getattr(args, "MODEL_VISION", "gpt-4o"),
+        "model": getattr(args, "MODEL_VISION", "Qwen2.5-7B-Instruct"),
         "messages": [...],
         "temperature": getattr(args, "TEMPERATURE", 0.2),
         "max_tokens": getattr(args, "MAX_TOKENS", 1024)

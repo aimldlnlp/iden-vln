@@ -19,7 +19,7 @@ height = 1  # @param {type:"slider", min:-10, max:10, step:0.1}
 # @markdown If not using custom height, default to scene lower limit.
 # @markdown (Cell output provides scene height range from bounding box for reference.)
 display = True
-output_path = "nav_gen/"
+output_path = "iden_vln/"
 
 if display:
     module_path = os.path.abspath('habitat-lab/habitat-lab/habitat/utils/visualizations/maps.py')

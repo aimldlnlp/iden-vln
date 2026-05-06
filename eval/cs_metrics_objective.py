@@ -1,7 +1,7 @@
 """
-cs_metrics_objective.py
+Compute Indonesian-English code-switching metrics for IDEN-VLN outputs.
 
-Menghitung:
+Metrics:
 - M-index
 - Language Entropy (LE)
 - I-index
@@ -9,65 +9,54 @@ Menghitung:
 - Memory
 - Span Entropy (SE)
 - CMI (Code-Mixing Index)
-- T-index (berbasis MarianMT)
+- T-index based on MarianMT
 
-Strategi LID:
-1) Kamus: indonesian_words.txt, english_words.txt
-2) Fallback: langid (hanya id/en)
-3) Kalau tetap tidak yakin -> 'unk'
-Semua metrik hanya pakai token dengan label 'id' atau 'en' (unk diabaikan).
+Language identification strategy:
+1. Wordlist lookup with indonesian_words.txt and english_words.txt.
+2. langid fallback restricted to Indonesian and English.
+3. Low-confidence tokens are labeled as 'unk'.
+
+All aggregate metrics use only tokens labeled 'id' or 'en'. Unknown tokens are
+kept for diagnostics but ignored by the metric formulas.
 """
 
+import collections
 import json
 import math
 import re
 import statistics
-import collections
-from typing import List, Dict, Tuple
+from typing import Dict, List, Tuple
 
 import langid
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 
 # =====================================================================
-# Konfigurasi umum
+# General configuration
 # =====================================================================
 
-JSON_PATH = "logs/925_all_result.json"          # ganti kalau file-mu beda path
+JSON_PATH = "logs/925_all_result.json"
 INDO_WORDLIST_PATH = "indonesian_words.txt"
 EN_WORDLIST_PATH = "english_words.txt"
 
-# Threshold minimum confidence langid, di bawah ini dianggap 'unk'
 LID_MIN_CONF = 0.80
 
-# Model MT untuk T-index (id<->en)
 ID_EN_MODEL_NAME = "Helsinki-NLP/opus-mt-id-en"
 EN_ID_MODEL_NAME = "Helsinki-NLP/opus-mt-en-id"
 
 
 # =====================================================================
-# Tokenisasi
+# Tokenization and wordlists
 # =====================================================================
 
 def tokenize(text: str) -> List[str]:
-    """
-    Tokenisasi sederhana: ambil rangkaian huruf a-z/A-Z dan lowercase.
-    """
+    """Tokenize alphabetic spans and lowercase them."""
     return re.findall(r"[a-zA-Z]+", text.lower())
 
 
-# =====================================================================
-# Load kamus kata Indonesia & Inggris
-# =====================================================================
-
 def load_wordlist(path: str) -> set:
-    """
-    Memuat daftar kata dari file teks:
-    - satu kata per baris
-    - baris kosong / diawali '#' di-skip
-    - semua kata di-lowercase
-    """
+    """Load one lowercased word per line, skipping blanks and comments."""
     words = set()
     try:
         with open(path, "r", encoding="utf-8") as f:
@@ -77,8 +66,7 @@ def load_wordlist(path: str) -> set:
                     continue
                 words.add(line.lower())
     except FileNotFoundError:
-        print(f"[WARNING] File wordlist '{path}' tidak ditemukan. "
-              f"Menggunakan set kosong.\n")
+        print(f"[WARNING] Wordlist file '{path}' was not found. Using an empty set.\n")
     return words
 
 
@@ -87,18 +75,14 @@ ENGLISH_WORDS = load_wordlist(EN_WORDLIST_PATH)
 
 
 # =====================================================================
-# Model LID (langid) - fallback setelah kamus
+# Language identification
 # =====================================================================
 
-# Batasi langid hanya ke id/en untuk lebih stabil
 langid.set_languages(["id", "en"])
 
 
 def lid_predict_lang(token: str) -> str:
-    """
-    Prediksi bahasa token dengan langid, dibatasi ke {id, en}.
-    Kalau confidence < LID_MIN_CONF -> 'unk'.
-    """
+    """Predict token language with langid; low confidence becomes 'unk'."""
     if not token:
         return "unk"
     lang, score = langid.classify(token)
@@ -108,14 +92,7 @@ def lid_predict_lang(token: str) -> str:
 
 
 def detect_lang(token: str) -> str:
-    """
-    Strategi LID:
-    1) Kalau token ada di kamus Indonesia -> 'id'
-    2) Kalau token ada di kamus Inggris   -> 'en'
-    3) Kalau tidak, gunakan langid
-       - kalau confident -> 'id' / 'en'
-       - kalau tidak -> 'unk'
-    """
+    """Classify a token as Indonesian, English, or unknown."""
     t = token.lower()
     if t in INDONESIAN_WORDS:
         return "id"
@@ -124,93 +101,69 @@ def detect_lang(token: str) -> str:
     return lid_predict_lang(t)
 
 
-# =====================================================================
-# Util: sequences & filtering
-# =====================================================================
-
 def sequences_by_utterance(texts: List[str]) -> Tuple[List[List[str]], List[List[str]]]:
-    """
-    Dari list teks -> (tokens_per_utt, tags_per_utt).
-    tags bisa berisi 'id', 'en', 'unk'.
-    """
+    """Convert text strings into token and language-tag sequences."""
     tokens_per_utt = []
     tags_per_utt = []
-    for t in texts:
-        toks = tokenize(t)
-        if not toks:
+    for text in texts:
+        tokens = tokenize(text)
+        if not tokens:
             continue
-        tags = [detect_lang(tok) for tok in toks]
-        tokens_per_utt.append(toks)
+        tags = [detect_lang(token) for token in tokens]
+        tokens_per_utt.append(tokens)
         tags_per_utt.append(tags)
     return tokens_per_utt, tags_per_utt
 
 
 def flatten(seqs: List[List[str]]) -> List[str]:
-    """Gabungkan semua sequence jadi satu list."""
+    """Flatten nested sequences into one list."""
     return [tag for seq in seqs for tag in seq]
 
 
 def filter_id_en(seq: List[str]) -> List[str]:
-    """Ambil hanya label 'id' dan 'en' (abaikan 'unk')."""
+    """Keep only Indonesian and English tags."""
     return [tag for tag in seq if tag in ("id", "en")]
 
 
 def lang_counts(seq: List[str]) -> Dict[str, int]:
-    """
-    Hitung frekuensi 'id' dan 'en' saja (unk diabaikan).
-    """
-    filtered = filter_id_en(seq)
-    return dict(collections.Counter(filtered))
+    """Count Indonesian and English tags only."""
+    return dict(collections.Counter(filter_id_en(seq)))
 
 
 # =====================================================================
-# M-index & Language Entropy
+# Core metrics
 # =====================================================================
 
 def m_index(counts: Dict[str, int]) -> float:
-    """
-    M-index (2 bahasa):
-      p_i = proporsi token bahasa i
-      s   = sum_i p_i^2
-      M   = (1 - s) / s
-    """
+    """Compute M-index for a two-language distribution."""
     total = sum(counts.values())
     if total == 0 or len(counts) <= 1:
         return 0.0
 
-    ps = [c / total for c in counts.values()]
-    s = sum(p * p for p in ps)
-    if s == 0:
+    proportions = [count / total for count in counts.values()]
+    squared_sum = sum(p * p for p in proportions)
+    if squared_sum == 0:
         return 0.0
-    return (1.0 - s) / s
+    return (1.0 - squared_sum) / squared_sum
 
 
 def language_entropy(counts: Dict[str, int]) -> float:
-    """
-    Shannon entropy distribusi bahasa (bit), hanya 'id' & 'en'.
-    """
+    """Compute Shannon entropy in bits for the id/en distribution."""
     total = sum(counts.values())
     if total == 0:
         return 0.0
 
-    H = 0.0
-    for c in counts.values():
-        if c == 0:
+    entropy = 0.0
+    for count in counts.values():
+        if count == 0:
             continue
-        p = c / total
-        H -= p * math.log2(p)
-    return H
+        p = count / total
+        entropy -= p * math.log2(p)
+    return entropy
 
-
-# =====================================================================
-# I-index (probabilitas switch)
-# =====================================================================
 
 def i_index(lang_seq: List[str]) -> float:
-    """
-    I-index: probabilitas bahwa token i != token i-1, hanya untuk id/en.
-    'unk' diabaikan total.
-    """
+    """Compute switch probability between adjacent id/en tags."""
     seq = filter_id_en(lang_seq)
     if len(seq) <= 1:
         return 0.0
@@ -218,22 +171,13 @@ def i_index(lang_seq: List[str]) -> float:
     return switches / (len(seq) - 1)
 
 
-# =====================================================================
-# Spans, Burstiness, Memory, Span Entropy
-# =====================================================================
-
 def compute_spans(lang_seq: List[str]) -> List[Tuple[str, int]]:
-    """
-    Hitung language span hanya untuk id/en.
-      input: ['id','unk','en','en','id']
-      filter -> ['id','en','en','id']
-      output spans: [('id',1), ('en',2), ('id',1)]
-    """
+    """Return contiguous language spans after removing unknown tags."""
     seq = filter_id_en(lang_seq)
-    spans = []
     if not seq:
-        return spans
+        return []
 
+    spans = []
     cur_lang = seq[0]
     cur_len = 1
     for tag in seq[1:]:
@@ -252,35 +196,21 @@ def burstiness_and_memory(
     k: float = 1.0,
     english_lang: str = "en",
 ) -> Tuple[float, float]:
-    """
-    Hitung Burstiness & Memory dari panjang span.
-    Panjang span bahasa non-English bisa dikali faktor k (default 1).
-    """
+    """Compute burstiness and lag-1 memory from language-span lengths."""
     if len(spans) < 2:
         return float("nan"), float("nan")
 
-    lengths_aug = [
+    lengths = [
         length * (k if lang != english_lang else 1.0)
         for lang, length in spans
     ]
 
-    n = len(lengths_aug)
-    mean_all = statistics.mean(lengths_aug)
-    stdev_all = statistics.pstdev(lengths_aug) if n > 1 else 0.0
+    mean_all = statistics.mean(lengths)
+    stdev_all = statistics.pstdev(lengths) if len(lengths) > 1 else 0.0
+    burst = 0.0 if mean_all + stdev_all == 0 else (stdev_all - mean_all) / (stdev_all + mean_all)
 
-    # Burstiness: (σ - μ) / (σ + μ)
-    if mean_all + stdev_all == 0:
-        burst = 0.0
-    else:
-        burst = (stdev_all - mean_all) / (stdev_all + mean_all)
-
-    # Memory: lag-1 autocorrelation
-    if n < 2:
-        return burst, float("nan")
-
-    first = lengths_aug[:-1]
-    second = lengths_aug[1:]
-
+    first = lengths[:-1]
+    second = lengths[1:]
     mean1 = statistics.mean(first)
     mean2 = statistics.mean(second)
     std1 = statistics.pstdev(first) if len(first) > 1 else 0.0
@@ -289,39 +219,28 @@ def burstiness_and_memory(
     if std1 == 0 or std2 == 0:
         memory = 0.0
     else:
-        num = 0.0
-        for x, y in zip(first, second):
-            num += (x - mean1) * (y - mean2)
-        memory = num / ((n - 1) * std1 * std2)
+        numerator = sum((x - mean1) * (y - mean2) for x, y in zip(first, second))
+        memory = numerator / ((len(lengths) - 1) * std1 * std2)
 
     return burst, memory
 
 
 def span_entropy(spans: List[Tuple[str, int]]) -> float:
-    """
-    Entropi distribusi panjang span.
-    """
+    """Compute entropy of the span-length distribution."""
     if not spans:
         return 0.0
     length_counts = collections.Counter(length for _, length in spans)
     total_spans = sum(length_counts.values())
 
-    H = 0.0
-    for cnt in length_counts.values():
-        p = cnt / total_spans
-        H -= p * math.log2(p)
-    return H
+    entropy = 0.0
+    for count in length_counts.values():
+        p = count / total_spans
+        entropy -= p * math.log2(p)
+    return entropy
 
-
-# =====================================================================
-# CMI (Code-Mixing Index)
-# =====================================================================
 
 def cmi_for_sequence(lang_seq: List[str]) -> float:
-    """
-    CMI per utterance, hanya id/en.
-      CMI = ((N - N_max) / N) * 100
-    """
+    """Compute CMI for one utterance or sequence."""
     seq = filter_id_en(lang_seq)
     if not seq:
         return 0.0
@@ -334,52 +253,37 @@ def cmi_for_sequence(lang_seq: List[str]) -> float:
 
 
 def cmi_corpus(seqs: List[List[str]]) -> Tuple[float, float, float]:
-    """
-    Mengembalikan:
-      - CMI_corpus_one_utt : CMI kalau seluruh korpus dianggap 1 utterance
-      - CMI_avg_all        : rata-rata CMI di semua utterance (yg punya id/en)
-      - CMI_avg_mixed      : rata-rata CMI hanya utterance dgn CMI>0
-    """
-    # Flatten & filter id/en
+    """Return corpus-level CMI, all-utterance mean CMI, and mixed-only mean CMI."""
     flat_tags = filter_id_en(flatten(seqs))
     cmi_corpus_one_utt = cmi_for_sequence(flat_tags)
 
-    cmi_utt_all = []
-    for seq in seqs:
-        cmi_val = cmi_for_sequence(seq)
-        cmi_utt_all.append(cmi_val)
+    cmi_all = [cmi_for_sequence(seq) for seq in seqs]
+    cmi_avg_all = sum(cmi_all) / len(cmi_all) if cmi_all else 0.0
 
-    cmi_avg_all = sum(cmi_utt_all) / len(cmi_utt_all) if cmi_utt_all else 0.0
-    cmi_mixed = [c for c in cmi_utt_all if c > 0.0]
+    cmi_mixed = [cmi for cmi in cmi_all if cmi > 0.0]
     cmi_avg_mixed = sum(cmi_mixed) / len(cmi_mixed) if cmi_mixed else 0.0
 
     return cmi_corpus_one_utt, cmi_avg_all, cmi_avg_mixed
 
 
 # =====================================================================
-# Switch words & T-index (MarianMT)
+# Switch words and T-index
 # =====================================================================
 
 def extract_switch_words_per_utt(tokens_per_utt, tags_per_utt):
-    """
-    Ambil kata tepat setelah switch id<->en.
-    Skip jika salah satu sisi 'unk'.
-    Return: list of (word, src_lang, prev_lang)
-    """
+    """Extract words immediately after id/en switches."""
     all_switch_words = []
-    for toks, tags in zip(tokens_per_utt, tags_per_utt):
-        assert len(toks) == len(tags)
-        for i in range(1, len(toks)):
+    for tokens, tags in zip(tokens_per_utt, tags_per_utt):
+        assert len(tokens) == len(tags)
+        for i in range(1, len(tokens)):
             if tags[i] == "unk" or tags[i - 1] == "unk":
                 continue
             if tags[i] != tags[i - 1]:
-                all_switch_words.append((toks[i], tags[i], tags[i - 1]))
+                all_switch_words.append((tokens[i], tags[i], tags[i - 1]))
     return all_switch_words
 
 
-# ---- Load model MT ----
-
-print("[INFO] Memuat model MT Marian (id<->en) untuk T-index...")
+print("[INFO] Loading MarianMT models (id<->en) for T-index...")
 
 try:
     tokenizer_id_en = AutoTokenizer.from_pretrained(ID_EN_MODEL_NAME)
@@ -388,7 +292,7 @@ try:
     model_en_id = AutoModelForSeq2SeqLM.from_pretrained(EN_ID_MODEL_NAME)
 except Exception as e:
     raise RuntimeError(
-        "Gagal memuat model MT. Pastikan 'transformers', 'sentencepiece', dan 'torch' sudah terinstall.\n"
+        "Failed to load MT models. Ensure that transformers, sentencepiece, and torch are installed.\n"
         + str(e)
     )
 
@@ -400,19 +304,7 @@ _MT_CACHE = {}
 
 
 def mt_avg_logprob(word: str, src_lang: str, tgt_lang: str) -> float:
-    """
-    Hitung rata-rata log-probabilitas token terjemahan untuk 'word'
-    menggunakan MarianMT (id<->en).
-
-    - src_lang: 'id' atau 'en'
-    - tgt_lang: 'id' atau 'en'
-
-    Langkah:
-      1. Pilih model/tokenizer sesuai arah (id->en atau en->id).
-      2. Generate terjemahan dengan output_scores=True.
-      3. Ambil log-prob token yang benar-benar dipilih model di setiap langkah.
-      4. Rata-ratakan log-prob → skor MT untuk kata ini.
-    """
+    """Compute average translation-token log probability for one word."""
     if not word:
         return float("nan")
 
@@ -421,12 +313,10 @@ def mt_avg_logprob(word: str, src_lang: str, tgt_lang: str) -> float:
     if key in _MT_CACHE:
         return _MT_CACHE[key]
 
-    # Kalau bahasa sama, tidak ada terjemahan bermakna
     if src_lang == tgt_lang:
         _MT_CACHE[key] = 0.0
         return 0.0
 
-    # Pilih model & tokenizer
     if src_lang == "id" and tgt_lang == "en":
         tokenizer = tokenizer_id_en
         model = model_id_en
@@ -437,11 +327,9 @@ def mt_avg_logprob(word: str, src_lang: str, tgt_lang: str) -> float:
         _MT_CACHE[key] = float("nan")
         return float("nan")
 
-    # Tokenisasi input
     inputs = tokenizer(word_norm, return_tensors="pt")
     inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
 
-    # Generate terjemahan
     with torch.no_grad():
         gen_out = model.generate(
             **inputs,
@@ -452,17 +340,14 @@ def mt_avg_logprob(word: str, src_lang: str, tgt_lang: str) -> float:
             output_scores=True,
         )
 
-    sequences = gen_out.sequences  # (1, seq_len_dec)
-    scores = gen_out.scores        # list panjang = # langkah decode
-
+    sequences = gen_out.sequences
+    scores = gen_out.scores
     if len(sequences) == 0 or len(scores) == 0:
         _MT_CACHE[key] = float("nan")
         return float("nan")
 
     seq = sequences[0]
     log_probs = []
-
-    # scores[i] -> logits untuk token seq[i+1]
     for step, logits in enumerate(scores):
         token_id = seq[step + 1]
         log_prob = torch.log_softmax(logits[0], dim=-1)[token_id].item()
@@ -478,90 +363,75 @@ def mt_avg_logprob(word: str, src_lang: str, tgt_lang: str) -> float:
 
 
 def compute_t_index(switch_words) -> float:
-    """
-    T-index: rata-rata skor log-prob terjemahan pada kata setelah switch id<->en.
-    """
+    """Compute mean MT log-probability over post-switch words."""
     if not switch_words:
         return float("nan")
 
     scores = []
     for word, src_lang, prev_lang in switch_words:
         score = mt_avg_logprob(word, src_lang=src_lang, tgt_lang=prev_lang)
-        if math.isnan(score):
-            continue
-        scores.append(score)
+        if not math.isnan(score):
+            scores.append(score)
 
     if not scores:
         return float("nan")
-
     return sum(scores) / len(scores)
 
 
 # =====================================================================
-# MAIN
+# Main entry point
 # =====================================================================
 
 def main():
-    # Load data JSON
     with open(JSON_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     success_tasks = data["success tasks"]
-
-    # LID per utterance
     tokens_per_utt, tags_per_utt = sequences_by_utterance(success_tasks)
 
-    # Flatten tags (termasuk unk) & hitung distribusi id/en
     flat_tags_all = flatten(tags_per_utt)
     flat_tags_id_en = filter_id_en(flat_tags_all)
     counts = lang_counts(flat_tags_all)
+    unk_count = sum(1 for tag in flat_tags_all if tag == "unk")
 
-    unk_count = sum(1 for t in flat_tags_all if t == "unk")
+    m_value = m_index(counts)
+    le_value = language_entropy(counts)
+    i_value = i_index(flat_tags_all)
 
-    # M-index & Language Entropy
-    M = m_index(counts)
-    LE = language_entropy(counts)
-
-    # I-index
-    I = i_index(flat_tags_all)
-
-    # Spans, Burstiness, Memory, Span Entropy
     spans = compute_spans(flat_tags_all)
-    B, MEM = burstiness_and_memory(spans)
-    SE = span_entropy(spans)
+    burstiness, memory = burstiness_and_memory(spans)
+    se_value = span_entropy(spans)
 
-    # CMI
-    CMI_corpus, CMI_avg_all, CMI_avg_mixed = cmi_corpus(tags_per_utt)
+    cmi_corpus_value, cmi_avg_all, cmi_avg_mixed = cmi_corpus(tags_per_utt)
 
-    # T-index
     switch_words = extract_switch_words_per_utt(tokens_per_utt, tags_per_utt)
-    T = compute_t_index(switch_words)
+    t_value = compute_t_index(switch_words)
 
-    # Print hasil
-    print("===== STATISTIK DASAR =====")
-    print("Jumlah utterance:", len(tokens_per_utt))
-    print("Jumlah token total (incl. unk):", len(flat_tags_all))
-    print("Jumlah token id/en saja       :", len(flat_tags_id_en))
-    print("Jumlah token 'unk'            :", unk_count)
-    print("Distribusi bahasa (id/en saja):", counts)
+    print("===== BASIC STATISTICS =====")
+    print("Utterance count:", len(tokens_per_utt))
+    print("Total token count (incl. unk):", len(flat_tags_all))
+    print("Token count for id/en only   :", len(flat_tags_id_en))
+    print("Token count for 'unk'        :", unk_count)
+    print("Language distribution (id/en):", counts)
     print()
 
-    print("===== METRIK CODE-MIXING (hanya id/en) =====")
-    print(f"M-index          : {M:.6f}")
-    print(f"Language Entropy : {LE:.6f} bit")
-    print(f"I-index          : {I:.6f}")
-    print(f"Burstiness       : {B:.6f}")
-    print(f"Memory           : {MEM:.6f}")
-    print(f"Span Entropy     : {SE:.6f} bit")
+    print("===== CODE-MIXING METRICS (id/en only) =====")
+    print(f"M-index          : {m_value:.6f}")
+    print(f"Language Entropy : {le_value:.6f} bit")
+    print(f"I-index          : {i_value:.6f}")
+    print(f"Burstiness       : {burstiness:.6f}")
+    print(f"Memory           : {memory:.6f}")
+    print(f"Span Entropy     : {se_value:.6f} bit")
     print()
-    print("CMI (Gambäck & Das, hanya id/en):")
-    print(f"  CMI korpus (1 utterance) : {CMI_corpus:.4f}")
-    print(f"  CMI rata-rata semua utt  : {CMI_avg_all:.4f}")
-    print(f"  CMI rata-rata utt mixed  : {CMI_avg_mixed:.4f}")
+    print("CMI (Gamback and Das, id/en only):")
+    print(f"  Corpus CMI (1 utterance) : {cmi_corpus_value:.4f}")
+    print(f"  Average CMI, all utt     : {cmi_avg_all:.4f}")
+    print(f"  Average CMI, mixed utt   : {cmi_avg_mixed:.4f}")
     print()
     print("===== T-INDEX =====")
-    print(f"T-index (avg logprob MT)    : {T}")
+    print(f"T-index (avg MT logprob): {t_value}")
 
 
 if __name__ == "__main__":
     main()
+

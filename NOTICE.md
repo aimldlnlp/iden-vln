@@ -1,6 +1,6 @@
 # Notices and Attribution
 
-IDEN-VLN is an attributed adaptation of the LH-VLN/NavGen data-generation pipeline for Indonesian-English code-switched long-horizon VLN.
+IDEN-VLN is an attributed adaptation of the LH-VLN/NavGen data-generation pipeline for long-horizon VLN with Indonesian-English code-switched instructions.
 
 ## Upstream Pipeline
 
@@ -13,12 +13,12 @@ This repository should be described as an adaptation or extension of LH-VLN/NavG
 
 ## IDEN-VLN Modifications
 
-This adaptation adds or changes the following parts:
+This adaptation adds or changes the following project-facing parts:
 
-- OpenAI-compatible LLM configuration for Qwen2.5 and other open-source instruction models.
-- Indonesian-English code-switched prompt usage.
-- Code-switching evaluation utilities for Indonesian-English output analysis.
-- English-facing documentation and explicit attribution for academic use.
+- Qwen2.5-oriented OpenAI-compatible LLM configuration.
+- Indonesian-English code-switched task and step-instruction prompts.
+- Code-switching evaluation utilities for bilingual balance and switching behavior.
+- English-facing documentation, dataset card, and explicit academic attribution.
 
 ## Third-Party Components
 
@@ -33,4 +33,3 @@ The `recognize_anything/` subtree preserves the upstream RAM/RAM++ license and n
 ## License Status
 
 No new permissive top-level license is granted here because the upstream LH-VLN/NavGen source license is not clearly established in the available project context. Users should verify permissions before redistributing modified versions.
-

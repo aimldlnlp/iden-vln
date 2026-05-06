@@ -1,42 +1,61 @@
-# IDEN-VLN
+# IDEN-VLN: Dataset Generation Pipeline for Long-Horizon VLN with Indonesian-English Code-Switched Instructions
 
-IDEN-VLN is an attributed adaptation of the LH-VLN/NavGen data-generation pipeline for long-horizon Vision-and-Language Navigation (VLN) with Indonesian-English code-switched instructions.
+IDEN-VLN is a dataset-generation pipeline for long-horizon Vision-and-Language Navigation (LH-VLN) with Indonesian-English code-switched instructions. It adapts the LH-VLN/NavGen workflow into an open-source LLM setting and adds language-side evaluation for Indonesian-English code-switching quality.
 
-This repository is not presented as a from-scratch implementation of LH-VLN/NavGen. It builds on the original LH-VLN/NavGen workflow and adapts it for an open-source LLM setting with Qwen2.5, while adding evaluation utilities for Indonesian-English code-switching behavior.
+This repository should be cited as an adaptation or extension of LH-VLN/NavGen, not as a from-scratch replacement for the original project. The IDEN-VLN contribution is the Indonesian-English generation and evaluation layer: Qwen2.5-compatible instruction generation, code-switched prompts, and code-switching metrics for bilingual output analysis.
 
-## Main Contributions
+## Contributions
 
-- Adapts the LH-VLN/NavGen pipeline for Indonesian-English long-horizon VLN data generation.
-- Replaces GPT-oriented generation with OpenAI-compatible LLM endpoints, enabling Qwen2.5 and other open-source instruction models.
-- Adds Indonesian-English code-switching evaluation, including token-level language identification and aggregate mixing metrics.
-- Keeps intermediate artifacts traceable across task generation, Habitat-HM3D rollout, trajectory segmentation, RAM/RAM++ scene tagging, and step-level instruction synthesis.
+- Indonesian-English LH-VLN task and step-instruction generation.
+- Qwen2.5-oriented OpenAI-compatible LLM interface for task and instruction synthesis.
+- Habitat-HM3D rollout validation for generated long-horizon navigation tasks.
+- RAM/RAM++ scene-tag augmentation for segment-level visual context.
+- Code-switching evaluation for bilingual balance, switching intensity, and language-distribution compliance.
 
-## Pipeline Overview
+## Pipeline
 
-The pipeline follows four main stages:
+The pipeline has four operational stages:
 
-1. `gen_task`: generate a high-level multi-target task from scene objects, room context, robot constraints, and bilingual prompting.
-2. `gen_traj`: execute the task in Habitat-Sim over HM3D scenes and record successful or failed rollouts.
+1. `gen_task`: sample scene context and generate a high-level multi-target task with Indonesian-English prompting.
+2. `gen_traj`: execute the task in Habitat-Sim over HM3D scenes and save successful or failed rollouts.
 3. `split_traj`: segment successful rollouts into shorter action spans and attach RAM/RAM++ scene tags.
-4. `gen_step_task`: generate concise Indonesian-English navigation instructions for the segmented spans.
+4. `gen_step_task`: synthesize concise Indonesian-English step-level navigation instructions from segmented trajectories.
 
-The default entry point is:
+Conceptually, the data flow is:
 
-```powershell
-python main.py --API_KEY dummy --API_BASE http://localhost:8000/v1 --MODEL_MAIN Qwen2.5-7B-Instruct --MODEL_MINI Qwen2.5-7B-Instruct
+```text
+HM3D scene context
+  -> Qwen2.5 task generation
+  -> Habitat rollout validation
+  -> trajectory segmentation
+  -> RAM/RAM++ scene tagging
+  -> Indonesian-English instruction synthesis
+  -> code-switching evaluation
 ```
 
-Use the model names expected by your serving backend. Any OpenAI-compatible chat-completions server can be used if it exposes `/v1/chat/completions`.
+## Usage
 
-## Expected External Assets
+Serve Qwen2.5 or another instruction model through an OpenAI-compatible `/v1/chat/completions` endpoint, then run:
 
-The repository intentionally does not include large datasets or model weights. Place them outside the repository, using the default layout or overriding paths through CLI arguments:
+```powershell
+python main.py `
+  --API_KEY dummy `
+  --API_BASE http://localhost:8000/v1 `
+  --MODEL_MAIN Qwen2.5-7B-Instruct `
+  --MODEL_STEP Qwen2.5-7B-Instruct
+```
+
+Model names must match the names exposed by your serving backend.
+
+## External Assets
+
+Large datasets and model weights are intentionally not included. Place them outside the repository and override paths when needed:
 
 - HM3D scene data: `../data/hm3d/`
 - HM3D scene dataset config: `../data/hm3d/hm3d_annotated_basis.scene_dataset_config.json`
 - RAM++ checkpoint: `../data/models/ram_plus_swin_large_14m.pth`
 
-Relevant arguments:
+Example:
 
 ```powershell
 python main.py `
@@ -53,28 +72,26 @@ Runtime outputs are generated locally and ignored by Git:
 - `step_task/`: generated step-level navigation instructions.
 - `logs/`: evaluation logs and RAM/RAM++ processing logs.
 
-These folders are excluded from the repository because they are experiment artifacts, not source code.
+## Evaluation
 
-## Code-Switching Evaluation
+The `eval/` folder contains Indonesian-English code-switching metrics. These metrics evaluate language quality in addition to navigation validity:
 
-The `eval/` folder contains Indonesian-English code-switching analysis utilities. The evaluation focuses on language distribution and switching behavior, such as:
-
-- Indonesian vs. English token ratios.
+- Indonesian and English token distribution.
 - Code-Mixing Index (CMI).
 - I-index and switch-point behavior.
-- Supporting span and entropy-style metrics where configured.
+- Span, entropy, burstiness, memory, and T-index style measurements where configured.
 
-The metrics are intended to evaluate whether generated instructions satisfy the intended Indonesian-English code-switching profile, not only whether they are navigable.
+See `DATASET_CARD.md` for the intended dataset profile, limitations, and reporting notes.
 
 ## Attribution
 
-This repository adapts parts of the LH-VLN/NavGen pipeline by HCPLab-SYSU. Please cite and acknowledge the original project when using this repository:
+IDEN-VLN adapts the LH-VLN/NavGen data-generation workflow by HCPLab-SYSU:
 
 - Original repository: https://github.com/HCPLab-SYSU/LH-VLN
 
-Additional third-party components include Habitat-Sim/HM3D, RAM/RAM++, and Qwen2.5. See `NOTICE.md` for attribution details.
+The repository also depends on Habitat-Sim/HM3D, RAM/RAM++, and Qwen2.5. See `NOTICE.md` and `CITATION.md` for attribution details.
 
 ## License Note
 
-The upstream LH-VLN/NavGen repository does not appear to provide a clear top-level license in the copied source context. For that reason, this repository does not add a new permissive top-level license. Clarify permissions with the upstream authors before public redistribution beyond academic review or private research use.
+The upstream LH-VLN/NavGen repository does not appear to provide a clear top-level license in the available project context. This repository therefore does not add a new permissive top-level license. Verify permissions with the upstream authors before public redistribution beyond academic review or private research use.
 

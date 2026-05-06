@@ -132,7 +132,7 @@ class SceneSimulator:
         Returns:
             None
         """
-        out_path = "nav_gen/data/gen_data/scene/" + file
+        out_path = "iden_vln/data/gen_data/scene/" + file
         useless = ["wall", "frame", "floor", "sheet", "Unknown", "stairs", "unknown",
                     "ceiling", "window", "curtain", "pillow", "beam", "decoration"]
         # if not os.path.exists(out_path):

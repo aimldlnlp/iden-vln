@@ -8,7 +8,7 @@ import csv
 import ast
 import os
 
-from llm import llm_mini, llm
+from llm import llm_step, llm
 
 def sample_obj(scene_dic):
     for key, value in scene_dic.items():
@@ -170,7 +170,7 @@ def gen_task(args):
     prompt = prompt_rule + "\n" + prompt_example + "\n" + prompt_input
     print(prompt)
     
-    task = llm_mini(args, args.prompt_path + "system.txt", prompt)
+    task = llm_step(args, args.prompt_path + "system.txt", prompt)
     if '```' in task:
         task = task[3:-3]
     if "python" in task:
