@@ -6,11 +6,15 @@ IDEN-VLN contains **2,500 tasks, 3,291 step-task segments, and 155 scenes**, wit
 
 This repository accompanies the current research manuscript. It contains the compact dataset, selected experiment sources and summaries, and the attributed LH-VLN/NavGen generation adaptation. Publication venue and DOI are not asserted here.
 
-## Construction pipeline
+[Dataset](#dataset) · [Quickstart](#quickstart) · [Documentation](docs/README.md) · [Results](#navigation-results-and-interpretation) · [Citation](CITATION.md)
 
-![IDEN-VLN construction pipeline: audit-regenerate instruction generation, Habitat rollout and trajectory segmentation, ordered subgoal grounding and step-task export](assets/construction-pipeline.png)
+## Navigation demo
 
-**Construction overview from the manuscript.** Stage A generates candidates with Qwen2.5 7B, an audit-regenerate loop, and rule-based extraction. Stage B retains trajectory-success episodes in Habitat/HM3D and segments their trajectories. Stage C grounds ordered subgoals and exports step-task records. Scene, robot, and RGB-depth illustrations are schematic; they are not measured simulator observations. The figure does not quantify generation success or demonstrate learned-policy success. See [pipeline-to-code mapping](docs/PAPER_CODE_MAP.md).
+https://github.com/user-attachments/assets/7790a556-8685-494a-bb3e-638c4ad7c81d
+
+**Level 3 · 44.4 seconds · 1080p · LM Roman 10.** A selected three-stage simulator demonstration with the original Indonesian–English instruction. Stage names: armchair, TV, bed. This is a **teacher/oracle replay**, not a learned-policy generalization result. It shows navigation only; pickup and placement are not simulated. Completion follows the historical distance scorer and does not establish human-validated target visibility.
+
+[Download MP4](assets/iden-vln-level3.mp4) · [Video source and checks](docs/NAVIGATION_DEMO.md)
 
 ## Dataset
 
@@ -23,7 +27,7 @@ Files are available directly in [dataset/](dataset/):
 
 The compact release excludes raw RGB-D trajectories, HM3D meshes, semantic assets, NavMeshes, and model weights. External assets remain subject to their providers' access conditions. Dataset and project-wide licensing remain unresolved; repository availability is not a new permissive license. See [notices](NOTICE.md).
 
-### Verify the compact release
+## Quickstart
 
 Python 3.9+; no third-party packages or GPU required:
 
@@ -34,6 +38,38 @@ python tools/verify_release.py
 ```
 
 The check validates checksums, unique identifiers, segment-parent mappings, split coverage, split labels, and scene disjointness for the scene-held-out split.
+
+### Read your first task
+
+No simulator, API key, model download, or third-party package is needed for this example:
+
+```python
+import json
+from pathlib import Path
+
+root = Path("dataset")
+with (root / "iden_vln_tasks.jsonl").open(encoding="utf-8") as records:
+    task = json.loads(next(records))
+
+print(task["task_id"], task["level"], task["robot"])
+print(task["task_instruction"])
+
+split = json.loads((root / "splits_scene_heldout.json").read_text(encoding="utf-8"))
+print({name: split[name]["count"] for name in ("train", "val", "test")})
+```
+
+Scene-held-out task counts are **2,019 / 247 / 234** across train/val/test, with no scene overlap. Random task counts are **2,000 / 250 / 250**, with scene overlap. Segment records inherit their parent's split; see the [schema and split rules](dataset/DATA_CARD.md).
+
+### Choose your next step
+
+| Goal | Entry point |
+|---|---|
+| Inspect task/segment fields and limitations | [Release data card](dataset/DATA_CARD.md) |
+| Train textual grounding | [Textual grounding](#textual-grounding) |
+| Reconstruct navigation experiments | [Reproducibility status](docs/REPRODUCIBILITY.md) |
+| Generate new instructions and rollouts | [Generation guide](docs/generation.md) |
+| Find results, source variants, and help | [Documentation guide](docs/README.md) |
+
 
 ## Repository guide
 
@@ -72,8 +108,20 @@ A **separate Balanced100 evaluation** uses 25 tasks per level 2-5, 350 stages, a
 
 Approach-goal IL, matched-contract repairs, recovery training, and STOP-counter ablations use distinct contracts. Teacher replay success is not learned-policy success. Training-set fit and text controls do not establish generalization. See the [experiment mapping](docs/PAPER_CODE_MAP.md) and [experiment recap](docs/experiment-records/experiment-results-recap-20261014.md).
 
+## Construction pipeline
+
+![IDEN-VLN construction pipeline: audit-regenerate instruction generation, Habitat rollout and trajectory segmentation, ordered subgoal grounding and step-task export](assets/construction-pipeline.png)
+
+**Construction overview from the manuscript.** Stage A generates candidates with Qwen2.5 7B, an audit-regenerate loop, and rule-based extraction. Stage B retains trajectory-success episodes in Habitat/HM3D and segments their trajectories. Stage C grounds ordered subgoals and exports step-task records. Scene, robot, and RGB-depth illustrations are schematic; they are not measured simulator observations. The figure does not quantify generation success or demonstrate learned-policy success. See [pipeline-to-code mapping](docs/PAPER_CODE_MAP.md).
+
 ## Generation, attribution, and citation
 
 The root generation pipeline adapts [HCPLab-SYSU/LH-VLN](https://github.com/HCPLab-SYSU/LH-VLN), including NavGen. Qwen-compatible helpers, Indonesian-English prompts, and language metrics form the generation adaptation. Additional project experiment implementations are documented in [provenance](docs/PROVENANCE.md). Existing third-party code is not relabeled as independently authored.
 
 See [generation instructions](docs/generation.md), [citation](CITATION.md), and [notices](NOTICE.md). The inherited root `requirements.txt` is a historical generator dependency list; it is not the tested environment for every later experiment.
+
+## Help and citation
+
+For questions and reproducibility reports, use [GitHub Issues](https://github.com/aimldlnlp/iden-vln/issues). Include the commit, task ID, environment, and minimal command. Do not attach credentials or restricted scene assets.
+
+Use GitHub's **Cite this repository** action, powered by [CITATION.cff](CITATION.cff). The [citation guide](CITATION.md) includes both IDEN-VLN and the upstream LH-VLN/NavGen work. Citation metadata describes the repository, not an accepted paper.

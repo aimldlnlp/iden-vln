@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the upstream LH-VLN/NavGen work. See CITATION.md for both entries."
+type: software
+title: "IDEN-VLN: An Indonesian-English Code-Mixed Dataset for Long-Horizon Vision-and-Language Navigation"
+authors:
+  - family-names: Alsyahana
+    given-names: Zinadine Zidan
+url: "https://github.com/aimldlnlp/iden-vln"
+repository-code: "https://github.com/aimldlnlp/iden-vln"
+abstract: "Paper companion with compact Indonesian-English task records, split assignments, attributed generation code, selected research sources and verification summaries. This repository citation does not assert an accepted publication."
+keywords:
+  - vision-and-language navigation
+  - Indonesian-English
+  - code mixing
+  - dataset

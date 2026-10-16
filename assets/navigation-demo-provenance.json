@@ -1,0 +1,57 @@
+{
+  "task_id": "old_128f8e49ee9cadc2",
+  "source_index": 34,
+  "level": 3,
+  "scene": "00878-XB4GS9ShBRE",
+  "robot": "spot",
+  "instruction_original": "Pergi ke Bedroom lalu ambil armchair dengan perlahan, kemudian move ke Bedroom dan letakkan on tv secara aman, lalu move ke Bedroom cek target",
+  "target_names": [
+    "armchair",
+    "tv",
+    "bed"
+  ],
+  "rooms": [
+    "Bedroom",
+    "Bedroom",
+    "Bedroom"
+  ],
+  "stops": [
+    {
+      "frame": 12,
+      "stage": 0,
+      "distance_m": 0.7819339036941528,
+      "success": true
+    },
+    {
+      "frame": 32,
+      "stage": 1,
+      "distance_m": 0.6662464141845703,
+      "success": true
+    },
+    {
+      "frame": 38,
+      "stage": 2,
+      "distance_m": 0.6200944781303406,
+      "success": true
+    }
+  ],
+  "max_position_replay_error_m": 0.0,
+  "source_type": "selected successful teacher/oracle replay; not learned-policy evidence",
+  "resolver": "historical index-aware snapped AABB; strict geodesic <1m; horizon150",
+  "scope": "navigation only; physical manipulation not performed; RGB grounding not human-validated",
+  "video": {
+    "codec": "H.264",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "duration_seconds": 44.4,
+    "bytes": 3389508,
+    "sha256": "c00918afba53b2f104501c0111bdab91b35b3703cedd92db6cd9e36ed32a039f",
+    "full_decode_passed": true,
+    "font_family": "Latin Modern Roman",
+    "font_optical_design": "LM Roman 10",
+    "file": "assets/iden-vln-level3.mp4"
+  }
+}
