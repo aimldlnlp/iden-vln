@@ -1,0 +1,163 @@
+{
+  "cases": [
+    {
+      "index": 0,
+      "cohort": "train_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 1,
+      "cohort": "train_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 2,
+      "cohort": "train_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 3,
+      "cohort": "train_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 4,
+      "cohort": "train_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 5,
+      "cohort": "train_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 6,
+      "cohort": "train_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 7,
+      "cohort": "train_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 8,
+      "cohort": "dev_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 9,
+      "cohort": "dev_original",
+      "prefix": 0,
+      "forced": []
+    },
+    {
+      "index": 0,
+      "cohort": "train_holdout",
+      "prefix": 13,
+      "forced": [
+        "turn_right",
+        "turn_right",
+        "move_forward"
+      ]
+    },
+    {
+      "index": 1,
+      "cohort": "train_holdout",
+      "prefix": 47,
+      "forced": [
+        "turn_right",
+        "turn_right",
+        "move_forward"
+      ]
+    },
+    {
+      "index": 2,
+      "cohort": "train_holdout",
+      "prefix": 70,
+      "forced": [
+        "turn_right",
+        "turn_right",
+        "move_forward"
+      ]
+    },
+    {
+      "index": 3,
+      "cohort": "train_holdout",
+      "prefix": 32,
+      "forced": [
+        "turn_right",
+        "turn_right",
+        "move_forward"
+      ]
+    },
+    {
+      "index": 4,
+      "cohort": "train_holdout",
+      "prefix": 13,
+      "forced": [
+        "turn_right",
+        "turn_right",
+        "move_forward"
+      ]
+    },
+    {
+      "index": 5,
+      "cohort": "train_holdout",
+      "prefix": 36,
+      "forced": [
+        "turn_right",
+        "turn_right",
+        "move_forward"
+      ]
+    },
+    {
+      "index": 6,
+      "cohort": "train_holdout",
+      "prefix": 16,
+      "forced": [
+        "turn_right",
+        "turn_right",
+        "move_forward"
+      ]
+    },
+    {
+      "index": 7,
+      "cohort": "train_holdout",
+      "prefix": 22,
+      "forced": [
+        "turn_right",
+        "turn_right",
+        "move_forward"
+      ]
+    }
+  ],
+  "arms": [
+    "BC",
+    "BC_recovery"
+  ],
+  "expected_rollouts": 36,
+  "source_hashes": {
+    "/home/aimldl/LH-VLN/runs/approach_matched_il_20261011_v1/bank8/model_manifest_frozen.jsonl": "1b00762d780a70a991d9fd816f8d7fd75f7d62aea2a3caa1675d8475fe5bf83a",
+    "/home/aimldl/LH-VLN/runs/approach_matched_il_20261011_v1/bank8/goal_manifest_frozen.json": "f0e139942765a3c4a88d8531242cec7c239dbd39cd351249946cc5d1a0e0344d",
+    "/home/aimldl/LH-VLN/runs/approach_matched_il_20261011_v1/bank8/causal_features.npz": "fd0fc5c5d7a4b08682d5b4745013675a38e414d173445c59baf8489ab5bd85f0",
+    "/home/aimldl/LH-VLN/runs/approach_clip8_recovery_collection_20261013_v2/protocol_frozen.json": "f1e024eb06e20a8fee46b29fe43e418a5e5221fee1f553a2329c0f7ffa55ce5a",
+    "/home/aimldl/LH-VLN/runs/approach_clip8_human_recovery_pair_20261014_v1/protocol_frozen.json": "73db0a184c93a67fa57a43b8a201fc35c1f65e002b76b4778cc115a53b0c17fe",
+    "/home/aimldl/LH-VLN/runs/idenvln_ordered_eval_20260804_234338/evaluate_human_clip8_recovery_pair.py": "ae95932b40b4817e8a2ef9b946559452d64f2876e0218d4b5422d9e321ac0d39",
+    "/home/aimldl/LH-VLN/runs/approach_clip8_human_recovery_pair_20261014_v1/BC.pt": "8d2aa76d9ea7a49c79abc2ee1fcb2419ed75af31579f2dc6a7366e70828b7b6e",
+    "/home/aimldl/LH-VLN/runs/approach_clip8_human_recovery_pair_20261014_v1/BC_recovery.pt": "49e083e03c0669781a2ecf7f35ff9b836b3ee2295d51b24cfbbada913787d7c6"
+  },
+  "scoring": "two actual actor STOPs; strict geodesic<1m; horizon400 includes teacher prefix and perturbation",
+  "primary": "paired train_holdout success; train_original retention and dev_original separate",
+  "scope": "train_holdout is teacher-prefix robustness on train scenes, not autonomous unseen-scene SR",
+  "dev_scope": "two accepted development tasks; full candidate cohort5 with3held; no test claim"
+}

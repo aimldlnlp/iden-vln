@@ -1,0 +1,44 @@
+\begin{table*}[pos=t]
+\centering
+\caption{Positioning relative to representative VLN and embodied-instruction datasets. The LHPR-VLN row denotes the benchmark introduced within the LH-VLN platform. NR means not reported in the cited source or not exposed by the compact IDEN-VLN release; it is not a zero value.}
+\label{tab:dataset_comparison}
+\footnotesize
+\setlength{\tabcolsep}{2.4pt}
+\renewcommand{\arraystretch}{1.0}
+\textbf{(a) Language and task structure}\\[-2pt]
+\resizebox{\FullWidth}{!}{%
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.11\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}@{}}
+\hline
+Dataset & Language/source & Code-mixing/naturalness & Subgoals & Horizon/trajectory & Environment/embodiment \\
+\hline
+R2R~\cite{anderson2018r2r} & English; human-authored & No; not a code-mix target & Single destination & Route; average steps NR & Matterport3D; discrete graph \\
+R4R~\cite{jain2019r4r} & English; R2R-derived & No; not a code-mix target & Extended joined route & Longer route; average steps NR & Matterport3D; discrete graph \\
+RxR~\cite{ku2020rxr} & English/Hindi/\allowbreak Telugu; human-authored & No; multilingual, not code-mixed & Single route goal & Longer route; dense word/pose alignment & Matterport3D; discrete graph \\
+REVERIE~\cite{qi2020reverie} & English; human-authored & No; not a code-mix target & Remote object target & Route plus object grounding & Matterport3D; discrete graph \\
+ALFRED~\cite{shridhar2020alfred} & English; crowdsourced & No; not a code-mix target & Multi-step household goals & Variable task length & AI2-THOR; interactive embodiment \\
+VLN-CE~\cite{KrantzVLNCE} & English; R2R-derived & No; not a code-mix target & Single route goal & Continuous trajectory; average steps NR & Habitat; continuous navigation \\
+LHPR-VLN~\cite{Song2025} & English; NavGen-generated & No; naturalness audit not reported & 2--4 subtasks & 3,260 tasks; average 150 steps & LH-VLN platform; Stretch/Spot \\
+IDEN-VLN (this work) & Indonesian-English; Qwen-generated and audited & Yes; automatic audit plus limited human audit & Mean 8.08 symbolic subtasks; maximum 13 & 2,500 tasks; average trajectory NR; evaluation horizon 150 & Habitat/HM3D; Stretch/Spot \\
+\hline
+\end{tabular}
+}
+\\[3pt]
+\textbf{(b) Control, observations, evaluation, and release}\\[-2pt]
+\resizebox{\FullWidth}{!}{%
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.11\textwidth}>{\raggedright\arraybackslash}p{0.19\textwidth}>{\raggedright\arraybackslash}p{0.16\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.16\textwidth}>{\raggedright\arraybackslash}p{0.19\textwidth}@{}}
+\hline
+Dataset & Control/actions & Observations & Main success metrics & Human annotation & Availability/evaluator reproducibility \\
+\hline
+R2R~\cite{anderson2018r2r} & Discrete graph navigation; no manipulation & Panoramic RGB & SR, SPL, NE & Crowdsourced route instructions & Public benchmark/evaluator; scene terms apply \\
+R4R~\cite{jain2019r4r} & Discrete graph navigation; no manipulation & Panoramic RGB & SR, SPL, CLS, nDTW & Inherited R2R instructions & Public benchmark/evaluator \\
+RxR~\cite{ku2020rxr} & Discrete graph navigation; no manipulation & Panoramic RGB plus word/pose alignment & SR, SPL, nDTW/SDTW & Human multilingual instructions and alignments & Public benchmark/evaluator \\
+REVERIE~\cite{qi2020reverie} & Discrete graph navigation plus object selection & Panoramic RGB & SR, SPL, RGS/RGSPL & Human referring expressions & Public benchmark/evaluator \\
+ALFRED~\cite{shridhar2020alfred} & Interactive discrete actions plus manipulation & RGB, depth, and segmentation & Task success and goal-condition success & Crowdsourced language; expert trajectories & Public AI2-THOR/evaluator \\
+VLN-CE~\cite{KrantzVLNCE} & Continuous low-level navigation; no manipulation & RGB/RGB-D variants & SR, SPL, NE, nDTW & R2R-derived instructions & Public Habitat/evaluator \\
+LHPR-VLN~\cite{Song2025} & Atomic move/turn/stop; coordinate option & RGB/RGB-D views in paper setting & SR, NE, ISR, CSR, CGT & Automatic generation; human naturalness not reported & Public project/data; simulator access required \\
+IDEN-VLN (this work) & Continuous Habitat pose with discrete move/turn/stop primitives; manipulation symbolic only & RGB in evaluator; compact schema leaves observation config external & SR, OSR, NE, SPL, ISR, CSR, CGT plus grounding metrics & Five-rater audit on 200 tasks; not full annotation & Local pre-release with checksums; raw HM3D and evaluator assets external \\
+\hline
+\end{tabular}
+}
+\end{table*}
+

@@ -1,0 +1,26 @@
+\begin{table}[pos=t]
+\centering
+\caption{Canonical learned-policy diagnostics on the same 100 episodes, identical initial states, and a 150-step horizon. SR (FullChain), OSR, and SPL are 0.00\% for every configuration. ISR and local CSR are percentages computed using \eqref{eq:two_stage_partial_metrics} with two stages per episode; NE is in meters. CGT follows \eqref{eq:cgt}.}
+\label{tab:agent_diagnostics}
+\label{tab:agent_diagnostic}
+\label{tab:agent_behavior_diagnostics}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.06}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\hline
+Policy/configuration & $ISR\uparrow$ & $CSR\uparrow$ & $CGT\uparrow$ & $NE\downarrow$ (m) \\
+\hline
+Random & 3.50 & 2.25 & 1.33 & 10.49 \\
+Frame BC balanced & 2.00 & 1.50 & 0.60 & 10.52 \\
+Target BC mild & 0.50 & 0.25 & 0.17 & 10.67 \\
+Target BC strong & 0.50 & 0.50 & 0.02 & 10.45 \\
+Target BC calibrated & 0.00 & 0.00 & 0.00 & 11.21 \\
+Sequence BC mild & 3.50 & 2.00 & 1.47 & 10.81 \\
+Sequence BC strong & 2.50 & 1.50 & 0.97 & 10.62 \\
+Sequence BC calibrated & 0.50 & 0.50 & 0.52 & 10.92 \\
+Sequence hybrid & 0.50 & 0.50 & 0.52 & 11.04 \\
+DAgger-lite & 3.50 & 3.25 & 1.98 & 9.47 \\
+\hline
+\end{tabular}
+\end{table}

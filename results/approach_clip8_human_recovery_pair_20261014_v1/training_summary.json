@@ -1,0 +1,20 @@
+{
+  "BC": {
+    "samples": 1357,
+    "updates": 1200,
+    "offline_accuracy": 0.9904200442151806,
+    "STOP_recall": 1.0,
+    "initial_state_sha256": "e3328c575516757d0be877fb46b9814d119cedb13f59083d02b568729b34e850",
+    "uniform_draws_sha256": "3d34c906d90fcb2da39609da91028bc58e2d9e2ba84b42eabeb43a9eba4b2201",
+    "checkpoint_sha256": "8d2aa76d9ea7a49c79abc2ee1fcb2419ed75af31579f2dc6a7366e70828b7b6e"
+  },
+  "BC_recovery": {
+    "samples": 2054,
+    "updates": 1200,
+    "offline_accuracy": 0.9751703992210321,
+    "STOP_recall": 1.0,
+    "initial_state_sha256": "e3328c575516757d0be877fb46b9814d119cedb13f59083d02b568729b34e850",
+    "uniform_draws_sha256": "3d34c906d90fcb2da39609da91028bc58e2d9e2ba84b42eabeb43a9eba4b2201",
+    "checkpoint_sha256": "49e083e03c0669781a2ecf7f35ff9b836b3ee2295d51b24cfbbada913787d7c6"
+  }
+}

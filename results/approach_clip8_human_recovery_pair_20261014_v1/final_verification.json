@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "rollouts_verified": 36,
+  "metrics": {
+    "train_original": {
+      "BC": {
+        "episodes": 8,
+        "chain_success": 2,
+        "stage_success": 9,
+        "SR": 0.25,
+        "ISR": 0.5625
+      },
+      "BC_recovery": {
+        "episodes": 8,
+        "chain_success": 0,
+        "stage_success": 7,
+        "SR": 0.0,
+        "ISR": 0.4375
+      }
+    },
+    "train_holdout": {
+      "BC": {
+        "episodes": 8,
+        "chain_success": 1,
+        "stage_success": 5,
+        "SR": 0.125,
+        "ISR": 0.3125
+      },
+      "BC_recovery": {
+        "episodes": 8,
+        "chain_success": 0,
+        "stage_success": 3,
+        "SR": 0.0,
+        "ISR": 0.1875
+      }
+    },
+    "dev_original": {
+      "BC": {
+        "episodes": 2,
+        "chain_success": 0,
+        "stage_success": 0,
+        "SR": 0.0,
+        "ISR": 0.0
+      },
+      "BC_recovery": {
+        "episodes": 2,
+        "chain_success": 0,
+        "stage_success": 0,
+        "SR": 0.0,
+        "ISR": 0.0
+      }
+    }
+  },
+  "paired": {
+    "train_original": [
+      {
+        "index": 0,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 1
+      },
+      {
+        "index": 1,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      },
+      {
+        "index": 2,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": -1
+      },
+      {
+        "index": 3,
+        "BC": true,
+        "BC_recovery": false,
+        "stage_gain": -1
+      },
+      {
+        "index": 4,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      },
+      {
+        "index": 5,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      },
+      {
+        "index": 6,
+        "BC": true,
+        "BC_recovery": false,
+        "stage_gain": -1
+      },
+      {
+        "index": 7,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      }
+    ],
+    "train_holdout": [
+      {
+        "index": 0,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      },
+      {
+        "index": 1,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      },
+      {
+        "index": 2,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": -1
+      },
+      {
+        "index": 3,
+        "BC": true,
+        "BC_recovery": false,
+        "stage_gain": -2
+      },
+      {
+        "index": 4,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      },
+      {
+        "index": 5,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 1
+      },
+      {
+        "index": 6,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      },
+      {
+        "index": 7,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      }
+    ],
+    "dev_original": [
+      {
+        "index": 8,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      },
+      {
+        "index": 9,
+        "BC": false,
+        "BC_recovery": false,
+        "stage_gain": 0
+      }
+    ]
+  },
+  "source_hashes_unchanged": true,
+  "single_seed": true,
+  "human_review_scope": "seven recovery terminal views only; original/dev not newly human-validated",
+  "script_sha256": "2b48d13d545ee5858197d18924d0ecc78d69803ac5162e467cf3f6c7fa221662"
+}

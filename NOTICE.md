@@ -33,3 +33,7 @@ The `recognize_anything/` subtree preserves the upstream RAM/RAM++ license and n
 ## License Status
 
 No new permissive top-level license is granted here because the upstream LH-VLN/NavGen source license is not clearly established in the available project context. Users should verify permissions before redistributing modified versions.
+
+## Research companion package (16 October 2026)
+
+Additional project experiment sources, compact dataset records, selected result summaries, and the manuscript pipeline schematic accompany the generation adaptation. See `docs/PROVENANCE.md` and `docs/source_inventory.json`. Their inclusion does not establish independent authorship of every component or grant a blanket license. Dataset licensing remains unresolved; raw scene assets and model weights are excluded.

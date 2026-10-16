@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "rollouts": 36,
+  "metrics_recomputed": true,
+  "checkpoint_hashes_match": true,
+  "frozen_code_hashes_match": true,
+  "archive_sha256": "75ad9f998c4a528a21c88e9e470d3c82f8594e73d157ad2942c561dacc5fa198",
+  "remote_actor_replay_verified": true
+}

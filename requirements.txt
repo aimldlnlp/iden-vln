@@ -8,7 +8,6 @@ numpy==1.23.5
 openai==2.8.1
 opencv_python==4.7.0.72
 Pillow==10.1.0
-Pillow==12.0.0
 pycocoevalcap==1.2
 pycocotools==2.0.10
 PyQt5==5.15.11
@@ -22,3 +21,4 @@ torch==2.4.1
 torchvision==0.19.1
 tqdm==4.64.1
 transformers==4.37.0
+langid==1.1.6

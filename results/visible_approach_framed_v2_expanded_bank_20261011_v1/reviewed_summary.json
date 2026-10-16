@@ -1,0 +1,84 @@
+{
+  "status": "reviewed expansion frozen",
+  "bank_version": "expanded_bank_v1",
+  "resolver": "visible_approach_framed_v2",
+  "scoring_changed": false,
+  "new_policy_trained": false,
+  "human_validated": false,
+  "batch_selected": {
+    "train": 20,
+    "dev": 3
+  },
+  "batch_replay_pass": {
+    "train": 14,
+    "dev": 2
+  },
+  "batch_accepted": {
+    "train": 4,
+    "dev": 1
+  },
+  "full_dev_cohort": 5,
+  "accepted_dev": 2,
+  "train_target": 25,
+  "target_reached": false,
+  "train_dev_scene_overlap": 0,
+  "banks": {
+    "train": {
+      "tasks": 8,
+      "scenes": 8,
+      "actions": 1357,
+      "STOPs": 16,
+      "manifest_sha256": "d7e72757d6da00df4797285127ce6ca384674ea377d18939ff3e93d657dc4c9c",
+      "goal_sha256": "4d251af6d9d86b204d1b83c13c5d07d9afd4d27af683750a41cc9f785d9d7852"
+    },
+    "dev": {
+      "tasks": 2,
+      "scenes": 2,
+      "actions": 386,
+      "STOPs": 4,
+      "manifest_sha256": "36205fb5ae85b1b28747ae755969ca457b018b3b2a2dea10c7861b2d3fc33641",
+      "goal_sha256": "fa37a625028c6a98772e32d3fa3bb10cc65f864f6511177790b622226ca4fe56"
+    }
+  },
+  "source_index_mapping": [
+    {
+      "batch_source_index": 2,
+      "bank_source_index": 1002,
+      "split": "train",
+      "task_id": "v2_fe92aeee82d455a9"
+    },
+    {
+      "batch_source_index": 6,
+      "bank_source_index": 1006,
+      "split": "train",
+      "task_id": "v2_271f1e2eb072ae21"
+    },
+    {
+      "batch_source_index": 17,
+      "bank_source_index": 1017,
+      "split": "train",
+      "task_id": "v2_aea6a346f3561115"
+    },
+    {
+      "batch_source_index": 18,
+      "bank_source_index": 1018,
+      "split": "train",
+      "task_id": "v2_593007dc876cad2e"
+    },
+    {
+      "batch_source_index": 21,
+      "bank_source_index": 1021,
+      "split": "dev",
+      "task_id": "v2_0f5bba72583c9f5e"
+    }
+  ],
+  "parent_hashes": {
+    "/home/aimldl/LH-VLN/runs/visible_approach_framed_v2_recovered_train4_20261011/reviewed_demonstrations_frozen.jsonl": "4068b6a00f1002135f1e0d2dff3b3ee7097407419c949e1fd6df81bdacf0c8f0",
+    "/home/aimldl/LH-VLN/runs/visible_approach_framed_v2_recovered_train4_20261011/reviewed_goal_manifest_frozen.json": "86696156ba4a31588120f321503e887c1c6dc558598e7ca553917a8ab57b7c91",
+    "/home/aimldl/LH-VLN/runs/visible_approach_framed_v2_dev_20261011/reviewed_demonstrations_frozen.jsonl": "89d5e46d8fc77fc94e5899f0ed047a65aed30a97a79611c9bd55b7c3a16a28c4",
+    "/home/aimldl/LH-VLN/runs/visible_approach_framed_v2_dev_20261011/reviewed_goal_manifest_frozen.json": "4e256d887f70ca672eb212a857f1f48ceb6b66e83355473147ced4f15752fc39"
+  },
+  "frozen_batch_goal_sha256": "1b571250ffd18223729f4600e28226c0f299b35c1a62c26d97af0841ddfd6b12",
+  "decisions_sha256": "a73ecb805a82684a9f68ae7ce8d992680f81f3dc8aef86918db0b58f48725821",
+  "script_sha256": "205aebe37abd1d3c5dd55351fedf40714fc4aab9d331a084494bb49a85f6e559"
+}

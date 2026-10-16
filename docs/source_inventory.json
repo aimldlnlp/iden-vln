@@ -1,0 +1,1001 @@
+{
+  "snapshot_date": "2026-10-16",
+  "github_base_commit": "1e45cb295352d23a0fcba472a99161ffd7e46962",
+  "upstream_commit": "3492080382aba031e9d82a4f630c2b1cdf57df81",
+  "files": [
+    {
+      "path": "dataset/iden_vln_tasks.jsonl",
+      "source": "bahan_ieee_access/release_package/iden_vln_tasks.jsonl",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "30484f5727b566b53ca103ea354ec326d3b3306b9bd79f8342e8dd5041028bcd",
+      "packaged_sha256": "30484f5727b566b53ca103ea354ec326d3b3306b9bd79f8342e8dd5041028bcd"
+    },
+    {
+      "path": "dataset/iden_vln_step_tasks.jsonl",
+      "source": "bahan_ieee_access/release_package/iden_vln_step_tasks.jsonl",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "8e90ef4709312c25248c853217c7a0d721e57fb25831b335ba3901cff0b456ca",
+      "packaged_sha256": "8e90ef4709312c25248c853217c7a0d721e57fb25831b335ba3901cff0b456ca"
+    },
+    {
+      "path": "dataset/splits_random.json",
+      "source": "bahan_ieee_access/release_package/splits_random.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "341e67a4e3e460f4118aaf076de3cc3d117c9c5b63c117098f283f2b78b80d28",
+      "packaged_sha256": "341e67a4e3e460f4118aaf076de3cc3d117c9c5b63c117098f283f2b78b80d28"
+    },
+    {
+      "path": "dataset/splits_scene_heldout.json",
+      "source": "bahan_ieee_access/release_package/splits_scene_heldout.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "918689c2772e430492a262c5793109d7788c8695e60968e4df76920c21254b6d",
+      "packaged_sha256": "918689c2772e430492a262c5793109d7788c8695e60968e4df76920c21254b6d"
+    },
+    {
+      "path": "dataset/release_manifest.json",
+      "source": "bahan_ieee_access/release_package/release_manifest.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "1fb01f2fbd64b9bea33a76b01397b864d4db05426e4f809fee2e68de4fb857c3",
+      "packaged_sha256": "1fb01f2fbd64b9bea33a76b01397b864d4db05426e4f809fee2e68de4fb857c3"
+    },
+    {
+      "path": "dataset/DATA_CARD.md",
+      "source": "bahan_ieee_access/release_package/DATA_CARD.md",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "91378585fa085a96f1f331b8e51db574c6ac09b079512f2f47cd4cb1b044fe1f",
+      "packaged_sha256": "8e99f874b70068ad56fecafa2a2eeb6dff93b186951dd6074cd76356bb9362b3"
+    },
+    {
+      "path": "research/navigation/audit_balanced100_teacher_contract.py",
+      "source": "remote_ordered_eval/audit_balanced100_teacher_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "c5f47c08c2d848c3ef373d43445208ffc38faae65711248ed03ed7a184fadacc",
+      "packaged_sha256": "c5f47c08c2d848c3ef373d43445208ffc38faae65711248ed03ed7a184fadacc"
+    },
+    {
+      "path": "research/navigation/audit_cgt_stage_lengths.py",
+      "source": "remote_ordered_eval/audit_cgt_stage_lengths.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "1f1645b59d8599b7b959bed6b250fef3a0e4bc4a89e8634bb3853758b37b5d6f",
+      "packaged_sha256": "1f1645b59d8599b7b959bed6b250fef3a0e4bc4a89e8634bb3853758b37b5d6f"
+    },
+    {
+      "path": "research/navigation/audit_counter_boundary_evidence.py",
+      "source": "remote_ordered_eval/audit_counter_boundary_evidence.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "a2a86d3ab4e4bf0e44fbd5bb8a2890c6ebc32ed10faa142e7134f89b528c7ffc",
+      "packaged_sha256": "a2a86d3ab4e4bf0e44fbd5bb8a2890c6ebc32ed10faa142e7134f89b528c7ffc"
+    },
+    {
+      "path": "research/navigation/audit_level2_train_cohort.py",
+      "source": "remote_ordered_eval/audit_level2_train_cohort.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "e91c4fb8ccf4b6ec836e4e1d98d5a3fff0357f76ed78bde0e3a806afb0511fbc",
+      "packaged_sha256": "e91c4fb8ccf4b6ec836e4e1d98d5a3fff0357f76ed78bde0e3a806afb0511fbc"
+    },
+    {
+      "path": "research/navigation/audit_original_instruction_contract.py",
+      "source": "remote_ordered_eval/audit_original_instruction_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "2984dc0d5ed33b2e966395fbd99bdf9328f53b2473fbab2fd498b0bedf2dacb1",
+      "packaged_sha256": "2984dc0d5ed33b2e966395fbd99bdf9328f53b2473fbab2fd498b0bedf2dacb1"
+    },
+    {
+      "path": "research/navigation/audit_original_instruction_pairs.py",
+      "source": "remote_ordered_eval/audit_original_instruction_pairs.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "24adb2caf24f0263978e074fa70dab6f20b333b52ac261282348ea49f2bf08e5",
+      "packaged_sha256": "24adb2caf24f0263978e074fa70dab6f20b333b52ac261282348ea49f2bf08e5"
+    },
+    {
+      "path": "research/navigation/audit_recovery_regression_research.py",
+      "source": "remote_ordered_eval/audit_recovery_regression_research.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "f63e2fb1c0e8a8360ae0481619e3c5421e3f1e2db0170e00df24d1fad8de0a88",
+      "packaged_sha256": "f63e2fb1c0e8a8360ae0481619e3c5421e3f1e2db0170e00df24d1fad8de0a88"
+    },
+    {
+      "path": "research/navigation/audit_release_simulator_assets.py",
+      "source": "remote_ordered_eval/audit_release_simulator_assets.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "c136c5811bb71a05a866d65da2133760583d914df0f82ded4934bbc30894c2c3",
+      "packaged_sha256": "c136c5811bb71a05a866d65da2133760583d914df0f82ded4934bbc30894c2c3"
+    },
+    {
+      "path": "research/navigation/audit_stage_metrics.py",
+      "source": "remote_ordered_eval/audit_stage_metrics.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "139cab9d06074069d26fbf4c95af5239c369f78e81f25624e68761a007f8cf10",
+      "packaged_sha256": "139cab9d06074069d26fbf4c95af5239c369f78e81f25624e68761a007f8cf10"
+    },
+    {
+      "path": "research/navigation/build_human_clip8_recovery_cache.py",
+      "source": "remote_ordered_eval/build_human_clip8_recovery_cache.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "cdbd3b916029be9ca467b02b6147f624dfc469eeb2347e2a55d4980d93a662b6",
+      "packaged_sha256": "cdbd3b916029be9ca467b02b6147f624dfc469eeb2347e2a55d4980d93a662b6"
+    },
+    {
+      "path": "research/navigation/build_level_balanced_bank.py",
+      "source": "remote_ordered_eval/build_level_balanced_bank.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "69ec9824e9dd0245889db92bbae8fcc997ef8d607e1d20b2413f892e3a86a27c",
+      "packaged_sha256": "69ec9824e9dd0245889db92bbae8fcc997ef8d607e1d20b2413f892e3a86a27c"
+    },
+    {
+      "path": "research/navigation/build_route_instruction_pilot.py",
+      "source": "remote_ordered_eval/build_route_instruction_pilot.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "3ec10bdd9a2775b729c1c005240bce0d344c94355ab01d7e08938577e06d6738",
+      "packaged_sha256": "3ec10bdd9a2775b729c1c005240bce0d344c94355ab01d7e08938577e06d6738"
+    },
+    {
+      "path": "research/navigation/build_visible_approach_pilot.py",
+      "source": "remote_ordered_eval/build_visible_approach_pilot.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "c54b86ad2219e3d614ded927b69cbbcd4f6cbe15dd56b1f94f40c489d6484998",
+      "packaged_sha256": "c54b86ad2219e3d614ded927b69cbbcd4f6cbe15dd56b1f94f40c489d6484998"
+    },
+    {
+      "path": "research/navigation/collect_approach_clip8_recovery.py",
+      "source": "remote_ordered_eval/collect_approach_clip8_recovery.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "9179169b0a8202946fa4d8378d9d3053df985fb231d1d7de15dc6546319a9726",
+      "packaged_sha256": "9179169b0a8202946fa4d8378d9d3053df985fb231d1d7de15dc6546319a9726"
+    },
+    {
+      "path": "research/navigation/diagnose_held_train_targets.py",
+      "source": "remote_ordered_eval/diagnose_held_train_targets.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "8333d8816453996406eb6c3e7455492026df205d6637458c1f1f70ebabbe2896",
+      "packaged_sha256": "8333d8816453996406eb6c3e7455492026df205d6637458c1f1f70ebabbe2896"
+    },
+    {
+      "path": "research/navigation/evaluate_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/evaluate_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "ae95932b40b4817e8a2ef9b946559452d64f2876e0218d4b5422d9e321ac0d39",
+      "packaged_sha256": "ae95932b40b4817e8a2ef9b946559452d64f2876e0218d4b5422d9e321ac0d39"
+    },
+    {
+      "path": "research/navigation/export_approach_expansion_review.py",
+      "source": "remote_ordered_eval/export_approach_expansion_review.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "121c8b620b6a2954fed2d2b9d8214027be5bf32a969bc3d546d444259fba8c31",
+      "packaged_sha256": "121c8b620b6a2954fed2d2b9d8214027be5bf32a969bc3d546d444259fba8c31"
+    },
+    {
+      "path": "research/navigation/freeze_approach_clip8_recovery.py",
+      "source": "remote_ordered_eval/freeze_approach_clip8_recovery.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "b9dcc1b4e625aa11a5a70b9ace9a45463bd01beee8f7187b7be8527783efcb3f",
+      "packaged_sha256": "b9dcc1b4e625aa11a5a70b9ace9a45463bd01beee8f7187b7be8527783efcb3f"
+    },
+    {
+      "path": "research/navigation/freeze_approach_expansion.py",
+      "source": "remote_ordered_eval/freeze_approach_expansion.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "205aebe37abd1d3c5dd55351fedf40714fc4aab9d331a084494bb49a85f6e559",
+      "packaged_sha256": "205aebe37abd1d3c5dd55351fedf40714fc4aab9d331a084494bb49a85f6e559"
+    },
+    {
+      "path": "research/navigation/frozen_approach_resolver.py",
+      "source": "remote_ordered_eval/frozen_approach_resolver.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "bdf32a2add56bcf6d76a66c4adf6a60929f912d06ccb81a053ef9de9d2dbd053",
+      "packaged_sha256": "bdf32a2add56bcf6d76a66c4adf6a60929f912d06ccb81a053ef9de9d2dbd053"
+    },
+    {
+      "path": "research/navigation/goal_resolver.py",
+      "source": "remote_ordered_eval/goal_resolver.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "9a0fc21bfcecba2120e34128413e2fa9723c3dbedcc6c8a3e61c208816a623c4",
+      "packaged_sha256": "9a0fc21bfcecba2120e34128413e2fa9723c3dbedcc6c8a3e61c208816a623c4"
+    },
+    {
+      "path": "research/navigation/pilot_level_balanced_route.py",
+      "source": "remote_ordered_eval/pilot_level_balanced_route.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "ea53947dbbbcfe4e6be714ca90bbc68e40f3be65d671998371017962d693aa96",
+      "packaged_sha256": "ea53947dbbbcfe4e6be714ca90bbc68e40f3be65d671998371017962d693aa96"
+    },
+    {
+      "path": "research/navigation/pilot_route_fidelity.py",
+      "source": "remote_ordered_eval/pilot_route_fidelity.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "d6f44074e52e1cfacf19de3493c0040dfaee444556a3e4968fa00e5cc8677689",
+      "packaged_sha256": "d6f44074e52e1cfacf19de3493c0040dfaee444556a3e4968fa00e5cc8677689"
+    },
+    {
+      "path": "research/navigation/pilot_simulator_route_stop.py",
+      "source": "remote_ordered_eval/pilot_simulator_route_stop.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "35b3d3872fbb5affe4ab2a9ce2051831bf5e46e690c15e42fe881841a5f66adc",
+      "packaged_sha256": "35b3d3872fbb5affe4ab2a9ce2051831bf5e46e690c15e42fe881841a5f66adc"
+    },
+    {
+      "path": "research/navigation/prepare_approach_expansion.py",
+      "source": "remote_ordered_eval/prepare_approach_expansion.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "95c1d1dfc29891cabccddf55138a56b7d9b783a82a662faa901257e580d24531",
+      "packaged_sha256": "95c1d1dfc29891cabccddf55138a56b7d9b783a82a662faa901257e580d24531"
+    },
+    {
+      "path": "research/navigation/prepare_recovery_lr_drop.py",
+      "source": "remote_ordered_eval/prepare_recovery_lr_drop.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "398d77753d614d5eb1e234ffd32ee9806fec3a1a84143186276a9a4e478b7208",
+      "packaged_sha256": "398d77753d614d5eb1e234ffd32ee9806fec3a1a84143186276a9a4e478b7208"
+    },
+    {
+      "path": "research/navigation/prepare_stop_counter.py",
+      "source": "remote_ordered_eval/prepare_stop_counter.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "148fd3fb4b24dc79e5eb4ee1b8dc52c8436bb5ec9b384f7fd6a613986b1faeec",
+      "packaged_sha256": "148fd3fb4b24dc79e5eb4ee1b8dc52c8436bb5ec9b384f7fd6a613986b1faeec"
+    },
+    {
+      "path": "research/navigation/probe_single_goal_final_visual_train.py",
+      "source": "remote_ordered_eval/probe_single_goal_final_visual_train.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "15e049f2822791fe77617b0a8c3c9d5ec8309f2512d8fc39a13f43c6ce7c779d",
+      "packaged_sha256": "15e049f2822791fe77617b0a8c3c9d5ec8309f2512d8fc39a13f43c6ce7c779d"
+    },
+    {
+      "path": "research/navigation/replay_visible_approach_pilot.py",
+      "source": "remote_ordered_eval/replay_visible_approach_pilot.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "1796e575bd416d0d6ef636d8c6ab8da9178533c9e0153bae7e2ace3e29c39d3d",
+      "packaged_sha256": "1796e575bd416d0d6ef636d8c6ab8da9178533c9e0153bae7e2ace3e29c39d3d"
+    },
+    {
+      "path": "research/navigation/review_three_train_context.py",
+      "source": "remote_ordered_eval/review_three_train_context.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "27b6455c3792a690c1d92e2b3080f38ea43d55b090bfd9e926699f83110a6c32",
+      "packaged_sha256": "27b6455c3792a690c1d92e2b3080f38ea43d55b090bfd9e926699f83110a6c32"
+    },
+    {
+      "path": "research/navigation/run_approach_expansion_audit.py",
+      "source": "remote_ordered_eval/run_approach_expansion_audit.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "ccb82c33f05e4106d4533ca5d34589920b46e1d620e0c0b86c5772d9403fb48b",
+      "packaged_sha256": "ccb82c33f05e4106d4533ca5d34589920b46e1d620e0c0b86c5772d9403fb48b"
+    },
+    {
+      "path": "research/navigation/run_approach_matched_il_v1.py",
+      "source": "remote_ordered_eval/run_approach_matched_il_v1.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "3671a55d8694e1d8ab9db04ee7f0f2c0f95689747b929e7d776e653c5fc02c38",
+      "packaged_sha256": "3671a55d8694e1d8ab9db04ee7f0f2c0f95689747b929e7d776e653c5fc02c38"
+    },
+    {
+      "path": "research/navigation/run_balanced100_matched_contract.py",
+      "source": "remote_ordered_eval/run_balanced100_matched_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "c991735d3a4b0c765df3c8b4a3f812550eda169df97088589f21bc5b3a2061fe",
+      "packaged_sha256": "c991735d3a4b0c765df3c8b4a3f812550eda169df97088589f21bc5b3a2061fe"
+    },
+    {
+      "path": "research/navigation/run_cohort_obb_v1.py",
+      "source": "remote_ordered_eval/run_cohort_obb_v1.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "b1825cf02da37e31129b7ed661115137262fafd589c68ef9cb958dfed58a1613",
+      "packaged_sha256": "b1825cf02da37e31129b7ed661115137262fafd589c68ef9cb958dfed58a1613"
+    },
+    {
+      "path": "research/navigation/run_dagger_lite_dev.py",
+      "source": "remote_ordered_eval/run_dagger_lite_dev.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "c4496ee0bc3f4987b01ead9484ff4b2a04bd5f1411f7c530eca417f138bad122",
+      "packaged_sha256": "c4496ee0bc3f4987b01ead9484ff4b2a04bd5f1411f7c530eca417f138bad122"
+    },
+    {
+      "path": "research/navigation/run_frozen_bank_eval.py",
+      "source": "remote_ordered_eval/run_frozen_bank_eval.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "987e790e3f6dcab8e4e3bb87269b822f244bd8b5a4ca45d9168718fbae1f6fb7",
+      "packaged_sha256": "987e790e3f6dcab8e4e3bb87269b822f244bd8b5a4ca45d9168718fbae1f6fb7"
+    },
+    {
+      "path": "research/navigation/run_oracle_navigation_dev30.py",
+      "source": "remote_ordered_eval/run_oracle_navigation_dev30.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "309323568ce73bc1c7994924cd97ada826bd42f11cdf4e30f255915192cfa048",
+      "packaged_sha256": "309323568ce73bc1c7994924cd97ada826bd42f11cdf4e30f255915192cfa048"
+    },
+    {
+      "path": "research/navigation/run_ordered_metrics_eval.py",
+      "source": "remote_ordered_eval/run_ordered_metrics_eval.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "95aba6f057efbdc6bc8d62550ca513ffb08e676c94513c6f0c969fe817baba73",
+      "packaged_sha256": "95aba6f057efbdc6bc8d62550ca513ffb08e676c94513c6f0c969fe817baba73"
+    },
+    {
+      "path": "research/navigation/run_rgbd_stop_verifier.py",
+      "source": "remote_ordered_eval/run_rgbd_stop_verifier.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "bfd66b235dbd4d7d4223d013798b2e62650af5392c64ef8098b6dd1b4018b93c",
+      "packaged_sha256": "bfd66b235dbd4d7d4223d013798b2e62650af5392c64ef8098b6dd1b4018b93c"
+    },
+    {
+      "path": "research/navigation/run_rollout_target_proposals_train.py",
+      "source": "remote_ordered_eval/run_rollout_target_proposals_train.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "7660c50f7d2346d8423ba636bd07e4fa9154db624928ddc56ee9f6b93a353421",
+      "packaged_sha256": "7660c50f7d2346d8423ba636bd07e4fa9154db624928ddc56ee9f6b93a353421"
+    },
+    {
+      "path": "research/navigation/run_single_goal_route_pilot.py",
+      "source": "remote_ordered_eval/run_single_goal_route_pilot.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "a59c149e43a2fb8b12fdfe248e7dcace37e836b7053fe646dce6895af795c026",
+      "packaged_sha256": "a59c149e43a2fb8b12fdfe248e7dcace37e836b7053fe646dce6895af795c026"
+    },
+    {
+      "path": "research/navigation/single_goal_input_contract.py",
+      "source": "remote_ordered_eval/single_goal_input_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "133e6b5451fda88a9351543a248ad350547ee4116abb92ba641d57a28dcca3c1",
+      "packaged_sha256": "133e6b5451fda88a9351543a248ad350547ee4116abb92ba641d57a28dcca3c1"
+    },
+    {
+      "path": "research/navigation/spatial_clip_features.py",
+      "source": "remote_ordered_eval/spatial_clip_features.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "d7bdf21fba957aa886c3e0fff0ac803a6317f94da4f04ec3b7663615bd9c1044",
+      "packaged_sha256": "d7bdf21fba957aa886c3e0fff0ac803a6317f94da4f04ec3b7663615bd9c1044"
+    },
+    {
+      "path": "research/navigation/train_approach_matched_il_v1.py",
+      "source": "remote_ordered_eval/train_approach_matched_il_v1.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "904b3fa93ed60a23026c074e88a3e4a9dc1b6a7e615b88fc0c95ea7a4c93c8e8",
+      "packaged_sha256": "904b3fa93ed60a23026c074e88a3e4a9dc1b6a7e615b88fc0c95ea7a4c93c8e8"
+    },
+    {
+      "path": "research/navigation/train_causal_sequence_bc.py",
+      "source": "remote_ordered_eval/train_causal_sequence_bc.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "d1d2ffb354f625d4867b94b7ecf41cdf897db509f8c08022f7d6df271b91b2fa",
+      "packaged_sha256": "d1d2ffb354f625d4867b94b7ecf41cdf897db509f8c08022f7d6df271b91b2fa"
+    },
+    {
+      "path": "research/navigation/train_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/train_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "b3f75cd638d4785bb68f07f44029587320ade786ec663ee1f5b5bbe7956b6556",
+      "packaged_sha256": "b3f75cd638d4785bb68f07f44029587320ade786ec663ee1f5b5bbe7956b6556"
+    },
+    {
+      "path": "research/navigation/train_two_reviewed_il_overfit.py",
+      "source": "remote_ordered_eval/train_two_reviewed_il_overfit.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "4b26a50a1838b63d1d5cb48194ef425933a06024257ebb7d4980547c5b1a6ba3",
+      "packaged_sha256": "4b26a50a1838b63d1d5cb48194ef425933a06024257ebb7d4980547c5b1a6ba3"
+    },
+    {
+      "path": "research/navigation/verify_balanced100_matched_contract.py",
+      "source": "remote_ordered_eval/verify_balanced100_matched_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "f9a9b27e589197efc8d07b8cad9ca0cb349cebaf86c519d422a35ae4ab6ebbae",
+      "packaged_sha256": "f9a9b27e589197efc8d07b8cad9ca0cb349cebaf86c519d422a35ae4ab6ebbae"
+    },
+    {
+      "path": "research/navigation/verify_balanced100_teacher_contract.py",
+      "source": "remote_ordered_eval/verify_balanced100_teacher_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "e9d0ee38cbfc19f6e7424e88f32a378b1c08516f122122f86ef59731fdc5985a",
+      "packaged_sha256": "e9d0ee38cbfc19f6e7424e88f32a378b1c08516f122122f86ef59731fdc5985a"
+    },
+    {
+      "path": "research/navigation/verify_frozen_bank_eval.py",
+      "source": "remote_ordered_eval/verify_frozen_bank_eval.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "64ad64fb114f668ac79725e2de85bbb51d8eff890c63ae603006546cc9f54599",
+      "packaged_sha256": "64ad64fb114f668ac79725e2de85bbb51d8eff890c63ae603006546cc9f54599"
+    },
+    {
+      "path": "research/navigation/verify_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/verify_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "2b48d13d545ee5858197d18924d0ecc78d69803ac5162e467cf3f6c7fa221662",
+      "packaged_sha256": "2b48d13d545ee5858197d18924d0ecc78d69803ac5162e467cf3f6c7fa221662"
+    },
+    {
+      "path": "research/navigation/freeze_paired_original_bank.py",
+      "source": "remote_ordered_eval/freeze_paired_original_bank.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "fb689c686b8c38fa735b9fda4c428cc0ab8fa69d464e4a3089254b1612e8f25e",
+      "packaged_sha256": "fb689c686b8c38fa735b9fda4c428cc0ab8fa69d464e4a3089254b1612e8f25e"
+    },
+    {
+      "path": "research/source_variants/server/freeze_paired_original_bank.py",
+      "source": "tmp/freeze_paired_original_bank.py.remote",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "2b23cb4f246cdb75551f4a6bc0f56a75e4d38c56fd2fb91d2f3e623cdc048f1f",
+      "packaged_sha256": "2b23cb4f246cdb75551f4a6bc0f56a75e4d38c56fd2fb91d2f3e623cdc048f1f"
+    },
+    {
+      "path": "research/navigation/validate_level2_il_candidates.py",
+      "source": "remote_ordered_eval/validate_level2_il_candidates.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "a02872ebb89686f6789f61950842f625cea03729dcd99fb8d989bf09b0f2bb61",
+      "packaged_sha256": "a02872ebb89686f6789f61950842f625cea03729dcd99fb8d989bf09b0f2bb61"
+    },
+    {
+      "path": "research/source_variants/server/validate_level2_il_candidates.py",
+      "source": "tmp/validate_level2_il_candidates.py.remote",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "7b5ef6f95adaf9c3f63adaa111f54d9f67910f5e140d457085f9f848838ef0e7",
+      "packaged_sha256": "7b5ef6f95adaf9c3f63adaa111f54d9f67910f5e140d457085f9f848838ef0e7"
+    },
+    {
+      "path": "research/source_variants/server/audit_original_instruction_contract.py",
+      "source": "tmp/audit_original_instruction_contract.py.remote",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "c0830e5a514d9a339bee8defbac8da44f3970d7f82d89140391ad4558a5aef61",
+      "packaged_sha256": "c0830e5a514d9a339bee8defbac8da44f3970d7f82d89140391ad4558a5aef61"
+    },
+    {
+      "path": "research/legacy/run_harmonized_agent_eval.py",
+      "source": "bahan_ieee_access/run_harmonized_agent_eval.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "08be8be55574be85d3b123644ebf36459039a6dff7748a192d5644ff299319c8",
+      "packaged_sha256": "08be8be55574be85d3b123644ebf36459039a6dff7748a192d5644ff299319c8"
+    },
+    {
+      "path": "research/legacy/run_gpu_hybrid_sequence_bc.py",
+      "source": "bahan_ieee_access/run_gpu_hybrid_sequence_bc.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "f6d98fa9fb2d9d20a3cc6213fc0b80da6a906fb21689fdcb06de2e3aed74fbdb",
+      "packaged_sha256": "f6d98fa9fb2d9d20a3cc6213fc0b80da6a906fb21689fdcb06de2e3aed74fbdb"
+    },
+    {
+      "path": "research/legacy/run_publishable_benchmarks.py",
+      "source": "bahan_ieee_access/run_publishable_benchmarks.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "243f2157c51011ad40f2a9964fa93d4766ee8fa226ceb28b218559abc76414ba",
+      "packaged_sha256": "243f2157c51011ad40f2a9964fa93d4766ee8fa226ceb28b218559abc76414ba"
+    },
+    {
+      "path": "research/legacy/run_classic_ml_strengthening.py",
+      "source": "bahan_ieee_access/run_classic_ml_strengthening.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "a1c9974fe3e334466a73460e0006fada177ba9df49261b30665a168c47b6f27b",
+      "packaged_sha256": "a1c9974fe3e334466a73460e0006fada177ba9df49261b30665a168c47b6f27b"
+    },
+    {
+      "path": "research/grounding/train_xlmr_grounding.py",
+      "source": "paper_ieee_access_idenvln_final/scripts/train_xlmr_grounding.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "10a9725fabf4a0a5f3cc4342cab7a0688c109902f910afb3ed29129a65bc59b9",
+      "packaged_sha256": "10a9725fabf4a0a5f3cc4342cab7a0688c109902f910afb3ed29129a65bc59b9"
+    },
+    {
+      "path": "research/data/export_release_package.py",
+      "source": "bahan_ieee_access/release_package/export_release_package.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "655f64f4908f2e3c997bb28e33e6ffd63ae7a518fd1b24ce4daa4aba8fa381c1",
+      "packaged_sha256": "655f64f4908f2e3c997bb28e33e6ffd63ae7a518fd1b24ce4daa4aba8fa381c1"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/causal_collector.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/causal_collector.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "d1d2ffb354f625d4867b94b7ecf41cdf897db509f8c08022f7d6df271b91b2fa",
+      "packaged_sha256": "d1d2ffb354f625d4867b94b7ecf41cdf897db509f8c08022f7d6df271b91b2fa"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/frame_collector_fixed.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/frame_collector_fixed.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "aed5940aa25852507e0c5453754256f464f8307fad70f39f0b6f406f71dd7898",
+      "packaged_sha256": "aed5940aa25852507e0c5453754256f464f8307fad70f39f0b6f406f71dd7898"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/frame_collector_original.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/frame_collector_original.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "4f26543fab1971bc61a9570e8ce27f6b9cba0ebe31a47d74709aaedb6dbd4fff",
+      "packaged_sha256": "4f26543fab1971bc61a9570e8ce27f6b9cba0ebe31a47d74709aaedb6dbd4fff"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/frame_trainer_fixed.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/frame_trainer_fixed.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "845de93602e9bf47050659792fbf7b5bd23ba281a0e841c3c1d112257fa5f935",
+      "packaged_sha256": "845de93602e9bf47050659792fbf7b5bd23ba281a0e841c3c1d112257fa5f935"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/frame_trainer_original.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/frame_trainer_original.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "5021ba9e0165b0a63165702ee2489b51428f81bb2467048fdb19d368dd445664",
+      "packaged_sha256": "5021ba9e0165b0a63165702ee2489b51428f81bb2467048fdb19d368dd445664"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/prepare_fixed_trainers.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/prepare_fixed_trainers.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "3d6769ffa01bde340e418e06c228720b491e971e5b6b86b4b6c790102ca7cc5b",
+      "packaged_sha256": "3d6769ffa01bde340e418e06c228720b491e971e5b6b86b4b6c790102ca7cc5b"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/probe_single_action.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/probe_single_action.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "391061b599856c2ae3675ac71282418efa82ab38be0dde08886fe9d08e9e7513",
+      "packaged_sha256": "391061b599856c2ae3675ac71282418efa82ab38be0dde08886fe9d08e9e7513"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/repair_contract.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/repair_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "2d8e44d2219d507a77906f6fbb52905456438d514d3d63df36d1e67f69b3a942",
+      "packaged_sha256": "2d8e44d2219d507a77906f6fbb52905456438d514d3d63df36d1e67f69b3a942"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/run_repair_pilot.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/run_repair_pilot.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "075d112545427eac977782db6874c4b403cfa0b0e0604ad9056be7ea3e621a77",
+      "packaged_sha256": "075d112545427eac977782db6874c4b403cfa0b0e0604ad9056be7ea3e621a77"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/sequence_trainer_fixed.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/sequence_trainer_fixed.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "a2da624dfa240b65fcff9d255af67d1da6d9def37e44672a9f63aadaccd42b34",
+      "packaged_sha256": "a2da624dfa240b65fcff9d255af67d1da6d9def37e44672a9f63aadaccd42b34"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/sequence_trainer_original.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/sequence_trainer_original.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "f6d98fa9fb2d9d20a3cc6213fc0b80da6a906fb21689fdcb06de2e3aed74fbdb",
+      "packaged_sha256": "f6d98fa9fb2d9d20a3cc6213fc0b80da6a906fb21689fdcb06de2e3aed74fbdb"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/target_trainer_fixed.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/target_trainer_fixed.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "b6b250c13c98f0e727115306480a5e857cfe6d7deed0c63803ebb187ab55e740",
+      "packaged_sha256": "b6b250c13c98f0e727115306480a5e857cfe6d7deed0c63803ebb187ab55e740"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/target_trainer_original.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/target_trainer_original.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "1446280f9193a43340fe8a8e475a973d0b65007e717c92ae3e81442313b61521",
+      "packaged_sha256": "1446280f9193a43340fe8a8e475a973d0b65007e717c92ae3e81442313b61521"
+    },
+    {
+      "path": "research/snapshots/pipeline_repair_20261013_v3/verify_repair_pilot.py",
+      "source": "remote_ordered_eval/pipeline_repair_20261013_v3/verify_repair_pilot.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "366d23ef1aa4daa78f3c7ac3ce6ef41c9e99230fc1b84f01258aa39d3f7d1cc1",
+      "packaged_sha256": "366d23ef1aa4daa78f3c7ac3ce6ef41c9e99230fc1b84f01258aa39d3f7d1cc1"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_stop_counter_20261014_v1/audit_recovery_regression_research.py",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/audit_recovery_regression_research.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "ce8dfdd2d7580d965adf6538dc2053a008e7822a1dd37669bbcc6b436e28317a",
+      "packaged_sha256": "ce8dfdd2d7580d965adf6538dc2053a008e7822a1dd37669bbcc6b436e28317a"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_stop_counter_20261014_v1/check_counter.py",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/check_counter.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "ec36de4a10ffdf26b807d13a22646dd9bfeba0573c5d90ed3911c6a098981a7c",
+      "packaged_sha256": "ec36de4a10ffdf26b807d13a22646dd9bfeba0573c5d90ed3911c6a098981a7c"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_stop_counter_20261014_v1/counter_contract.py",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/counter_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "c604c399b17b269d08ea4d67ffe8063fb9c579034f6db50f184b076ee7513985",
+      "packaged_sha256": "c604c399b17b269d08ea4d67ffe8063fb9c579034f6db50f184b076ee7513985"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_stop_counter_20261014_v1/counter_support.py",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/counter_support.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "b7c87a9a24887c47d72b82a98b167b407d065b71da9879e0cd2723005a42ec44",
+      "packaged_sha256": "b7c87a9a24887c47d72b82a98b167b407d065b71da9879e0cd2723005a42ec44"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_stop_counter_20261014_v1/evaluate_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/evaluate_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "614559b69330f4b0b7455a00b2b5cee417c6f00a13f13e0dd98a8c95c3fcc937",
+      "packaged_sha256": "614559b69330f4b0b7455a00b2b5cee417c6f00a13f13e0dd98a8c95c3fcc937"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_stop_counter_20261014_v1/train_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/train_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "1bbe60075953e0b555ea161a374055e3087bae8f2e4aaa3acf1259ab0822f634",
+      "packaged_sha256": "1bbe60075953e0b555ea161a374055e3087bae8f2e4aaa3acf1259ab0822f634"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_stop_counter_20261014_v1/verify_download.py",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/verify_download.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "095e5b81fa05da975f5d260156f217a7b9e41e4ab2159eb49ccbd0ca69873832",
+      "packaged_sha256": "095e5b81fa05da975f5d260156f217a7b9e41e4ab2159eb49ccbd0ca69873832"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_stop_counter_20261014_v1/verify_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/verify_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "4f5208d3396e6e3685270f470f1cfdfdb4323f600b49395ea730d1152b76e034",
+      "packaged_sha256": "4f5208d3396e6e3685270f470f1cfdfdb4323f600b49395ea730d1152b76e034"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_budget3600_20261014_v1/audit_recovery_regression_research.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/audit_recovery_regression_research.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "5b52b1367cc09a87ff5bd8865b6b62c66cc5fdebcf82a81bc6148025a038402d",
+      "packaged_sha256": "5b52b1367cc09a87ff5bd8865b6b62c66cc5fdebcf82a81bc6148025a038402d"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_budget3600_20261014_v1/budget_contract.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/budget_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "75647af95484efbbe64d34964a1c094d8862cbaaefd9492252ab3efa5928849c",
+      "packaged_sha256": "75647af95484efbbe64d34964a1c094d8862cbaaefd9492252ab3efa5928849c"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_budget3600_20261014_v1/evaluate_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/evaluate_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "21b9c4481d358c38c29130fd632c3c2edfb9153566c4c5141bea101c62638c8d",
+      "packaged_sha256": "21b9c4481d358c38c29130fd632c3c2edfb9153566c4c5141bea101c62638c8d"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_budget3600_20261014_v1/prepare_budget.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/prepare_budget.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "e769f59d79805b1469ee2ecb7e373d7433f30914b8814a3174a57c6b715b6445",
+      "packaged_sha256": "e769f59d79805b1469ee2ecb7e373d7433f30914b8814a3174a57c6b715b6445"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_budget3600_20261014_v1/train_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/train_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "956b01799865aaa907224451c505ed7aaa478080dab6688677836380205987f0",
+      "packaged_sha256": "956b01799865aaa907224451c505ed7aaa478080dab6688677836380205987f0"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_budget3600_20261014_v1/verify_download.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/verify_download.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "0d4ab38dc92d327fb6cab36eef91f4966e20840402ecff6b258cf073ac594712",
+      "packaged_sha256": "0d4ab38dc92d327fb6cab36eef91f4966e20840402ecff6b258cf073ac594712"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_budget3600_20261014_v1/verify_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/verify_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "6ae7380259ad70976096055db87d8f246e2c1f7131bec83fa0ef0536208545d1",
+      "packaged_sha256": "6ae7380259ad70976096055db87d8f246e2c1f7131bec83fa0ef0536208545d1"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_lr_drop_20261014_v1/audit_recovery_regression_research.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/audit_recovery_regression_research.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "b2480e6e7051052748aa038dffa773d78a11f088c3894a98b0320b338338087e",
+      "packaged_sha256": "b2480e6e7051052748aa038dffa773d78a11f088c3894a98b0320b338338087e"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_lr_drop_20261014_v1/budget_contract.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/budget_contract.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "e2a25392e1adbe1a4e62a70bba5b4a42b44bc2758e4c840731e848ac79e58c84",
+      "packaged_sha256": "e2a25392e1adbe1a4e62a70bba5b4a42b44bc2758e4c840731e848ac79e58c84"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_lr_drop_20261014_v1/check_diagnostics.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/check_diagnostics.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "370669e92928f7b60235a9b1e4c230b2cf453bf41b7ed7a972c630f0d78e9f9b",
+      "packaged_sha256": "370669e92928f7b60235a9b1e4c230b2cf453bf41b7ed7a972c630f0d78e9f9b"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_lr_drop_20261014_v1/evaluate_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/evaluate_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "d33b2a19b7cb151e05663b3d1d791c90c8693e2a3ce6f4b62c2a7d64807e156d",
+      "packaged_sha256": "d33b2a19b7cb151e05663b3d1d791c90c8693e2a3ce6f4b62c2a7d64807e156d"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_lr_drop_20261014_v1/train_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/train_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "e101253139649ec71471a482acc92b017b6de6de4384d93d758bb7ee4a2c9df3",
+      "packaged_sha256": "e101253139649ec71471a482acc92b017b6de6de4384d93d758bb7ee4a2c9df3"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_lr_drop_20261014_v1/verify_download.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/verify_download.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "1f6d29bc4c477545828f54ac25cfb9f6b5758aa3a73503d786300a54d4b31ab9",
+      "packaged_sha256": "1f6d29bc4c477545828f54ac25cfb9f6b5758aa3a73503d786300a54d4b31ab9"
+    },
+    {
+      "path": "research/snapshots/approach_clip8_human_recovery_lr_drop_20261014_v1/verify_human_clip8_recovery_pair.py",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/verify_human_clip8_recovery_pair.py",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "ba3e7663227c4e6f3a9eb4f2312ef636491d1bfcc60b17a386e44c63e0abedc5",
+      "packaged_sha256": "ba3e7663227c4e6f3a9eb4f2312ef636491d1bfcc60b17a386e44c63e0abedc5"
+    },
+    {
+      "path": "results/balanced100_eval_20261013_v1/bank_frozen.json",
+      "source": "remote_ordered_eval/balanced100_eval_20261013_v1/bank_frozen.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "9f74e219b74adc3b9807bbde230092415b0b2f5c8fe7e6149162874d34dfeec2",
+      "packaged_sha256": "9f74e219b74adc3b9807bbde230092415b0b2f5c8fe7e6149162874d34dfeec2"
+    },
+    {
+      "path": "results/balanced100_eval_20261013_v1/protocol_frozen.json",
+      "source": "remote_ordered_eval/balanced100_eval_20261013_v1/protocol_frozen.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "5ea633f0bf25cb42516dc259ce38872a7bf43baec5d698f5dc05efc0592e9164",
+      "packaged_sha256": "5ea633f0bf25cb42516dc259ce38872a7bf43baec5d698f5dc05efc0592e9164"
+    },
+    {
+      "path": "results/balanced100_eval_20261013_v1/verified_results.json",
+      "source": "remote_ordered_eval/balanced100_eval_20261013_v1/verified_results.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "25ad36e3709319e2350b3eb50f69bb48a0ec4989c660866fb46b6c62cef42e98",
+      "packaged_sha256": "25ad36e3709319e2350b3eb50f69bb48a0ec4989c660866fb46b6c62cef42e98"
+    },
+    {
+      "path": "results/balanced100_matched_contract_20261013_v1/independent_verification.json",
+      "source": "remote_ordered_eval/balanced100_matched_contract_20261013_v1/independent_verification.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "9707eb72466de2f2b6bf1af9e923ebe64a6819f75a2c02b41074253196b738d7",
+      "packaged_sha256": "9707eb72466de2f2b6bf1af9e923ebe64a6819f75a2c02b41074253196b738d7"
+    },
+    {
+      "path": "results/balanced100_matched_contract_20261013_v1/protocol_frozen.json",
+      "source": "remote_ordered_eval/balanced100_matched_contract_20261013_v1/protocol_frozen.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "09e64a18c198a9a059b6cb4cd18743c95640cfbac413768e7afc9f72f60ea2a1",
+      "packaged_sha256": "09e64a18c198a9a059b6cb4cd18743c95640cfbac413768e7afc9f72f60ea2a1"
+    },
+    {
+      "path": "results/balanced100_matched_contract_20261013_v1/summary.json",
+      "source": "remote_ordered_eval/balanced100_matched_contract_20261013_v1/summary.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "3a18cc6e42649e31cb07fd39ac5e3abcc277775372428c3760f2c5036e68b6a4",
+      "packaged_sha256": "3a18cc6e42649e31cb07fd39ac5e3abcc277775372428c3760f2c5036e68b6a4"
+    },
+    {
+      "path": "results/stage_metric_audit_20260928/cgt_audit.json",
+      "source": "remote_ordered_eval/stage_metric_audit_20260928/cgt_audit.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "c5e50101ae51043f688eaeb2885a0362f6e75bad83658927eaf8a974e88d3a1c",
+      "packaged_sha256": "c5e50101ae51043f688eaeb2885a0362f6e75bad83658927eaf8a974e88d3a1c"
+    },
+    {
+      "path": "results/stage_metric_audit_20260928/stage_metrics.json",
+      "source": "remote_ordered_eval/stage_metric_audit_20260928/stage_metrics.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "211e17f7c6eca6426b1b31529036805aa2487095b188d689822f01bb243e4c02",
+      "packaged_sha256": "211e17f7c6eca6426b1b31529036805aa2487095b188d689822f01bb243e4c02"
+    },
+    {
+      "path": "results/approach_clip8_stop_counter_20261014_v1/contract_frozen.json",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/contract_frozen.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "24bdfa4d883bf05f0f7bd163a08e9263c8e9cc07d4c3bfde15cc28f05ced1c6b",
+      "packaged_sha256": "24bdfa4d883bf05f0f7bd163a08e9263c8e9cc07d4c3bfde15cc28f05ced1c6b"
+    },
+    {
+      "path": "results/approach_clip8_stop_counter_20261014_v1/local_verification.json",
+      "source": "remote_ordered_eval/approach_clip8_stop_counter_20261014_v1/local_verification.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "01a693a2fc24707b1229282a9d5b529510e71da066b8863b670de4f01dc78bf9",
+      "packaged_sha256": "01a693a2fc24707b1229282a9d5b529510e71da066b8863b670de4f01dc78bf9"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_pair_20261014_v1/evaluation_protocol_frozen.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_pair_20261014_v1/evaluation_protocol_frozen.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "a72dac64d1730064907856434933331f2c6bd1d5e77ff9c86dffdf10fa41ddac",
+      "packaged_sha256": "a72dac64d1730064907856434933331f2c6bd1d5e77ff9c86dffdf10fa41ddac"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_pair_20261014_v1/evaluation_summary.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_pair_20261014_v1/evaluation_summary.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "47f9e767c7ea320a31f64490f428bbc0a65dcee6ef4484bfef30717ad943e317",
+      "packaged_sha256": "47f9e767c7ea320a31f64490f428bbc0a65dcee6ef4484bfef30717ad943e317"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_pair_20261014_v1/final_verification.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_pair_20261014_v1/final_verification.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "13e84db1f79dd2536844a8e644f3ac426d0820ef20d49b31d1cbb4b8d4e016fc",
+      "packaged_sha256": "13e84db1f79dd2536844a8e644f3ac426d0820ef20d49b31d1cbb4b8d4e016fc"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_pair_20261014_v1/fitting_verification.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_pair_20261014_v1/fitting_verification.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "8e7d23a5ec190b1742ae063a78ca7e0fb22e0db67674c73524226243a1b97d46",
+      "packaged_sha256": "8e7d23a5ec190b1742ae063a78ca7e0fb22e0db67674c73524226243a1b97d46"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_pair_20261014_v1/independent_evaluation_verification.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_pair_20261014_v1/independent_evaluation_verification.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "0292564e5d6965cc0559e762b56462a3d838922a6a6cc26540c2d2929d3454a3",
+      "packaged_sha256": "0292564e5d6965cc0559e762b56462a3d838922a6a6cc26540c2d2929d3454a3"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_pair_20261014_v1/protocol_frozen.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_pair_20261014_v1/protocol_frozen.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "73db0a184c93a67fa57a43b8a201fc35c1f65e002b76b4778cc115a53b0c17fe",
+      "packaged_sha256": "73db0a184c93a67fa57a43b8a201fc35c1f65e002b76b4778cc115a53b0c17fe"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_pair_20261014_v1/training_summary.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_pair_20261014_v1/training_summary.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "44ffbe3c626e7205e252fd5b4bfec4607e8989d2e6c7b5a2483e3ebf6e483004",
+      "packaged_sha256": "44ffbe3c626e7205e252fd5b4bfec4607e8989d2e6c7b5a2483e3ebf6e483004"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_budget3600_20261014_v1/contract_frozen.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/contract_frozen.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "488eeb110b2dbcff46c8595fdf0e5bb848bd77c13d8684d98dd38f8bdde75695",
+      "packaged_sha256": "488eeb110b2dbcff46c8595fdf0e5bb848bd77c13d8684d98dd38f8bdde75695"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_budget3600_20261014_v1/local_verification.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_budget3600_20261014_v1/local_verification.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "6411543ea2912cb075e9110c7dbb81c7188dfedfecb5a932034fe7c0d5c5b5b0",
+      "packaged_sha256": "6411543ea2912cb075e9110c7dbb81c7188dfedfecb5a932034fe7c0d5c5b5b0"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_lr_drop_20261014_v1/contract_frozen.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/contract_frozen.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "9f407503190c42897303e60219d4289b3d2094cfe3efbc4316c17647171d39da",
+      "packaged_sha256": "9f407503190c42897303e60219d4289b3d2094cfe3efbc4316c17647171d39da"
+    },
+    {
+      "path": "results/approach_clip8_human_recovery_lr_drop_20261014_v1/local_verification.json",
+      "source": "remote_ordered_eval/approach_clip8_human_recovery_lr_drop_20261014_v1/local_verification.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "3613f39187f0749eb605f6fef0090746a6fadc5c69919fdc5920a3255a85996b",
+      "packaged_sha256": "3613f39187f0749eb605f6fef0090746a6fadc5c69919fdc5920a3255a85996b"
+    },
+    {
+      "path": "results/visible_approach_framed_v2_expanded_bank_20261011_v1/protocol.json",
+      "source": "remote_ordered_eval/visible_approach_framed_v2_expanded_bank_20261011_v1/protocol.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "5c43952d0a4fe693bb98bed70df65f868356d17f4de8fd35ffc91209d2544f76",
+      "packaged_sha256": "5c43952d0a4fe693bb98bed70df65f868356d17f4de8fd35ffc91209d2544f76"
+    },
+    {
+      "path": "results/visible_approach_framed_v2_expanded_bank_20261011_v1/reviewed_summary.json",
+      "source": "remote_ordered_eval/visible_approach_framed_v2_expanded_bank_20261011_v1/reviewed_summary.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "5ab9ee47eef9f1d3d4ffd6c70a1b02995e6ed63691a58ebceec0119183d7c696",
+      "packaged_sha256": "5ab9ee47eef9f1d3d4ffd6c70a1b02995e6ed63691a58ebceec0119183d7c696"
+    },
+    {
+      "path": "results/grounding/aggregate_metrics.json",
+      "source": "bahan_ieee_access/xlmr_results/aggregate_metrics.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "361dc2b09311003bf4c665b1978bebcd7189a3ef74709ef13f80e063659abcc1",
+      "packaged_sha256": "361dc2b09311003bf4c665b1978bebcd7189a3ef74709ef13f80e063659abcc1"
+    },
+    {
+      "path": "results/grounding/bootstrap_ci_report.json",
+      "source": "bahan_ieee_access/results/bootstrap_ci_report.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "2114fed866efc6f73543d160e801ab5027fed3ef3d34dbee3177314fd7aeacce",
+      "packaged_sha256": "2114fed866efc6f73543d160e801ab5027fed3ef3d34dbee3177314fd7aeacce"
+    },
+    {
+      "path": "results/grounding/robustness_stratified_report.json",
+      "source": "bahan_ieee_access/results/robustness_stratified_report.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "91787d8120d7c3aecf799e12e04a206ef22cd5720aa14da369f0f9abdea773fd",
+      "packaged_sha256": "91787d8120d7c3aecf799e12e04a206ef22cd5720aa14da369f0f9abdea773fd"
+    },
+    {
+      "path": "results/grounding/sequence_failure_taxonomy.json",
+      "source": "bahan_ieee_access/results/sequence_failure_taxonomy.json",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "1d4cdc455db16961db1a19ef803a9e1d8de8f4c2270189be166abc7c7379ac1c",
+      "packaged_sha256": "1d4cdc455db16961db1a19ef803a9e1d8de8f4c2270189be166abc7c7379ac1c"
+    },
+    {
+      "path": "docs/experiment-records/experiment-results-recap-20261014.md",
+      "source": "paper_ieee_access_idenvln_final/docs/experiment-results-recap-20261014.md",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "e52dd01eda6e71078dd7d0e83694e08e0e31b9a52ed501dbd14edd4ffa4fe468",
+      "packaged_sha256": "e52dd01eda6e71078dd7d0e83694e08e0e31b9a52ed501dbd14edd4ffa4fe468"
+    },
+    {
+      "path": "docs/experiment-records/manuscript-artifact-mapping.md",
+      "source": "paper_ieee_access_idenvln_final/docs/manuscript-artifact-mapping.md",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "40501ab9237110af0ad5c77a6505987161202ecc450165082db12ecef9600f10",
+      "packaged_sha256": "40501ab9237110af0ad5c77a6505987161202ecc450165082db12ecef9600f10"
+    },
+    {
+      "path": "docs/experiment-records/human-clip8-stop-counter-20261014.md",
+      "source": "paper_ieee_access_idenvln_final/docs/human-clip8-stop-counter-20261014.md",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "ecb805615954105b09c9b858c0856302c6daf8c3ee485c9e30c73c02c035c717",
+      "packaged_sha256": "ecb805615954105b09c9b858c0856302c6daf8c3ee485c9e30c73c02c035c717"
+    },
+    {
+      "path": "docs/experiment-records/balanced100-matched-contract-execution-20261013.md",
+      "source": "paper_ieee_access_idenvln_final/docs/balanced100-matched-contract-execution-20261013.md",
+      "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
+      "source_sha256": "ecae75ee48ce86d94be249b80be96cfa00f0238c5572398a4d079c1450f67729",
+      "packaged_sha256": "ecae75ee48ce86d94be249b80be96cfa00f0238c5572398a4d079c1450f67729"
+    },
+    {
+      "path": "research/legacy/run_harmonized_agent_eval_fixed.py",
+      "source": "SSH project tree/runs/idenvln_harmonized_agent_eval_level23_20260707/run_harmonized_agent_eval_fixed.py",
+      "relationship": "server research source snapshot; retains external dependencies",
+      "source_sha256": "08be8be55574be85d3b123644ebf36459039a6dff7748a192d5644ff299319c8",
+      "packaged_sha256": "08be8be55574be85d3b123644ebf36459039a6dff7748a192d5644ff299319c8"
+    },
+    {
+      "path": "research/source_variants/server/run_gpu_hybrid_sequence_bc.py",
+      "source": "SSH project tree/runs/idenvln_gpu_hybrid_sequence_bc_level23_20260707/run_gpu_hybrid_sequence_bc.py",
+      "relationship": "server research source snapshot; retains external dependencies",
+      "source_sha256": "f6d98fa9fb2d9d20a3cc6213fc0b80da6a906fb21689fdcb06de2e3aed74fbdb",
+      "packaged_sha256": "f6d98fa9fb2d9d20a3cc6213fc0b80da6a906fb21689fdcb06de2e3aed74fbdb"
+    },
+    {
+      "path": "research/data/run_downstream_batches.py",
+      "source": "SSH project tree/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_downstream_success2500_20260704/run_downstream_batches.py",
+      "relationship": "server research source snapshot; retains external dependencies",
+      "source_sha256": "f0eee7721a888a63badf1d49c4a31e174f166da45abb9c9055c63fbc9be838cb",
+      "packaged_sha256": "f0eee7721a888a63badf1d49c4a31e174f166da45abb9c9055c63fbc9be838cb"
+    },
+    {
+      "path": "research/legacy/run_tiered_balanced_visual_bc.py",
+      "source": "bahan_ieee_access/run_tiered_balanced_visual_bc.py",
+      "source_sha256": "5021ba9e0165b0a63165702ee2489b51428f81bb2467048fdb19d368dd445664",
+      "packaged_sha256": "5021ba9e0165b0a63165702ee2489b51428f81bb2467048fdb19d368dd445664",
+      "relationship": "project research source; independent authorship and clean-environment replay not established"
+    },
+    {
+      "path": "research/legacy/run_longrun_target_conditioned_bc.py",
+      "source": "bahan_ieee_access/run_longrun_target_conditioned_bc.py",
+      "source_sha256": "1446280f9193a43340fe8a8e475a973d0b65007e717c92ae3e81442313b61521",
+      "packaged_sha256": "1446280f9193a43340fe8a8e475a973d0b65007e717c92ae3e81442313b61521",
+      "relationship": "project research source; independent authorship and clean-environment replay not established"
+    },
+    {
+      "path": "research/legacy/run_visual_il_v2.py",
+      "source": "bahan_ieee_access/run_visual_il_v2.py",
+      "source_sha256": "590cd972cb449e6b9c2d324ee68204d3b78545aaf3fabbde5bcc978b258b3c04",
+      "packaged_sha256": "590cd972cb449e6b9c2d324ee68204d3b78545aaf3fabbde5bcc978b258b3c04",
+      "relationship": "project research source; independent authorship and clean-environment replay not established"
+    },
+    {
+      "path": "research/data/run_grounded_audit_regenerate.py",
+      "source": "human_eval/runpod_results/grounded_validation/run_grounded_audit_regenerate.py",
+      "source_sha256": "97dcc4f859430bc24f372e10cacf796b6f8a6154fccd61d0507060967429a04f",
+      "packaged_sha256": "97dcc4f859430bc24f372e10cacf796b6f8a6154fccd61d0507060967429a04f",
+      "relationship": "project research source; independent authorship and clean-environment replay not established"
+    }
+  ]
+}

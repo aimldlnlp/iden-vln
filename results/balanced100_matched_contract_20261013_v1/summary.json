@@ -1,0 +1,287 @@
+{
+  "train": {
+    "historical_contract": {
+      "episodes": 4,
+      "chains": 0,
+      "stage_success": 0,
+      "stage_count": 10,
+      "ISR_macro": 0.0,
+      "CSR_local_macro": 0.0,
+      "reference_valid_episodes": 4,
+      "by_level": {
+        "2": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "3": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "4": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        },
+        "5": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        }
+      }
+    },
+    "repaired_contract": {
+      "episodes": 4,
+      "chains": 4,
+      "stage_success": 10,
+      "stage_count": 10,
+      "ISR_macro": 1.0,
+      "CSR_local_macro": 1.0,
+      "reference_valid_episodes": 4,
+      "by_level": {
+        "2": {
+          "episodes": 2,
+          "chains": 2,
+          "stages": 4
+        },
+        "3": {
+          "episodes": 2,
+          "chains": 2,
+          "stages": 6
+        },
+        "4": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        },
+        "5": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        }
+      }
+    },
+    "random": {
+      "episodes": 4,
+      "chains": 0,
+      "stage_success": 1,
+      "stage_count": 10,
+      "ISR_macro": 0.08333333333333333,
+      "CSR_local_macro": 0.041666666666666664,
+      "reference_valid_episodes": 4,
+      "by_level": {
+        "2": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "3": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 1
+        },
+        "4": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        },
+        "5": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        }
+      }
+    }
+  },
+  "dev": {
+    "historical_contract": {
+      "episodes": 4,
+      "chains": 0,
+      "stage_success": 0,
+      "stage_count": 10,
+      "ISR_macro": 0.0,
+      "CSR_local_macro": 0.0,
+      "reference_valid_episodes": 4,
+      "by_level": {
+        "2": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "3": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "4": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        },
+        "5": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        }
+      }
+    },
+    "repaired_contract": {
+      "episodes": 4,
+      "chains": 0,
+      "stage_success": 0,
+      "stage_count": 10,
+      "ISR_macro": 0.0,
+      "CSR_local_macro": 0.0,
+      "reference_valid_episodes": 4,
+      "by_level": {
+        "2": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "3": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "4": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        },
+        "5": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        }
+      }
+    },
+    "random": {
+      "episodes": 4,
+      "chains": 0,
+      "stage_success": 0,
+      "stage_count": 10,
+      "ISR_macro": 0.0,
+      "CSR_local_macro": 0.0,
+      "reference_valid_episodes": 4,
+      "by_level": {
+        "2": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "3": {
+          "episodes": 2,
+          "chains": 0,
+          "stages": 0
+        },
+        "4": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        },
+        "5": {
+          "episodes": 0,
+          "chains": 0,
+          "stages": 0
+        }
+      }
+    }
+  },
+  "balanced100": {
+    "historical_contract": {
+      "episodes": 100,
+      "chains": 0,
+      "stage_success": 2,
+      "stage_count": 350,
+      "ISR_macro": 0.005833333333333333,
+      "CSR_local_macro": 0.005833333333333333,
+      "reference_valid_episodes": 99,
+      "by_level": {
+        "2": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 0
+        },
+        "3": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 1
+        },
+        "4": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 1
+        },
+        "5": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 0
+        }
+      }
+    },
+    "repaired_contract": {
+      "episodes": 100,
+      "chains": 0,
+      "stage_success": 12,
+      "stage_count": 350,
+      "ISR_macro": 0.036500000000000005,
+      "CSR_local_macro": 0.033,
+      "reference_valid_episodes": 99,
+      "by_level": {
+        "2": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 2
+        },
+        "3": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 3
+        },
+        "4": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 5
+        },
+        "5": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 2
+        }
+      }
+    },
+    "random": {
+      "episodes": 100,
+      "chains": 0,
+      "stage_success": 11,
+      "stage_count": 350,
+      "ISR_macro": 0.03683333333333334,
+      "CSR_local_macro": 0.024833333333333332,
+      "reference_valid_episodes": 99,
+      "by_level": {
+        "2": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 4
+        },
+        "3": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 1
+        },
+        "4": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 3
+        },
+        "5": {
+          "episodes": 25,
+          "chains": 0,
+          "stages": 3
+        }
+      }
+    }
+  }
+}

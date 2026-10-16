@@ -1,0 +1,103 @@
+{
+  "version": "balanced100_historical_aabb_v1",
+  "release_sha256": "30484f5727b566b53ca103ea354ec326d3b3306b9bd79f8342e8dd5041028bcd",
+  "bank_sha256": "9f74e219b74adc3b9807bbde230092415b0b2f5c8fe7e6149162874d34dfeec2",
+  "cohorts_sha256": "0c0c49cae7c463d7f5a5e83a931db41d2507b9aebebb36263ce17602a39a0299",
+  "runner_sha256": "987e790e3f6dcab8e4e3bb87269b822f244bd8b5a4ca45d9168718fbae1f6fb7",
+  "policies": [
+    {
+      "name": "random",
+      "feature": "random",
+      "checkpoint": null,
+      "exists": null,
+      "sha256": null
+    },
+    {
+      "name": "frame_bc_balanced",
+      "feature": "tiered",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_tiered_balanced_visual_bc_level23_20260706/results/tiered_bc_best_scaled.pt",
+      "exists": true,
+      "sha256": "0a26cdbe2d3a6c92bec16d1f79de7a4c662a7e0ceaecdad6f83cb090cc358762"
+    },
+    {
+      "name": "target_bc_mild",
+      "feature": "target",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_longrun_target_conditioned_bc_level23_20260706/results/target_conditioned_bc_mild_weights.pt",
+      "exists": true,
+      "sha256": "3c479a44bb25f1ae9a22a88533057190d9e4606f7523173ffe7e9ac13f31d6a7"
+    },
+    {
+      "name": "target_bc_strong",
+      "feature": "target",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_longrun_target_conditioned_bc_level23_20260706/results/target_conditioned_bc_strong_weights.pt",
+      "exists": true,
+      "sha256": "e2a8b8ce47e129a77d672077dc42abb7ecf6ddf5ba858e9d67f1c339073294b5"
+    },
+    {
+      "name": "target_bc_calibrated",
+      "feature": "target",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_longrun_target_conditioned_bc_level23_20260706/results/target_conditioned_bc_action_calibrated.pt",
+      "exists": true,
+      "sha256": "3d6a4d7d85d180b99b3c4d8fa0384fb2da0d8ced0c1e943ea97781677afdd922"
+    },
+    {
+      "name": "sequence_bc_mild",
+      "feature": "seq",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_gpu_hybrid_sequence_bc_level23_20260707/results/sequence_bc_best_mild.pt",
+      "exists": true,
+      "sha256": "18ff5fdb94ffad61f45e8258da7357cd669cff13a5ac6fd3217282efb974075b"
+    },
+    {
+      "name": "sequence_bc_strong",
+      "feature": "seq",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_gpu_hybrid_sequence_bc_level23_20260707/results/sequence_bc_best_strong.pt",
+      "exists": true,
+      "sha256": "ffa9638fe16ebf722ded501dec13f0fb67fd2bc29b288124c77734242da31061"
+    },
+    {
+      "name": "sequence_bc_calibrated",
+      "feature": "seq",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_gpu_hybrid_sequence_bc_level23_20260707/results/sequence_bc_best_calibrated.pt",
+      "exists": true,
+      "sha256": "55d801491da06626ee99709049805c7d423ae30b1139c747d9149f8bed32ea36"
+    },
+    {
+      "name": "sequence_hybrid",
+      "feature": "seq",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_gpu_hybrid_sequence_bc_level23_20260707/results/sequence_bc_best_calibrated.pt",
+      "exists": true,
+      "sha256": "55d801491da06626ee99709049805c7d423ae30b1139c747d9149f8bed32ea36"
+    },
+    {
+      "name": "dagger_lite",
+      "feature": "seq",
+      "checkpoint": "/home/aimldl/LH-VLN/runs/idenvln_policy_sweep_20260805_014026/training/dagger/sequence_bc_best_dagger_round2.pt",
+      "exists": true,
+      "sha256": "e6a7de58f61e201ca26bdc5b8e113fc312fb06d4ea72eec090e9771c077e0f63"
+    }
+  ],
+  "requested_per_policy": 100,
+  "max_steps": 150,
+  "strict_stop_distance_m": 1.0,
+  "resolver": "historical index-aware AABB navmesh snap",
+  "start": "source trial_0 first position, yaw mapped as radians(source_yaw-180)",
+  "stage_transition": "every scored STOP advances, including unsuccessful STOP; initial observation STOP does not score",
+  "ISR": "macro mean over episode sum(success)/K; micro also reported",
+  "CSR": "local macro mean sum(u_k*(1+u_previous))/(2K), u_0=1",
+  "failed_episode": "all K stages zero; failure retained in denominator",
+  "invalid_reference": "all K stages zero, counted failure; reference and NE coverage retained",
+  "NE": "historical finite observed-stage mean, conditional coverage explicit",
+  "policy_inputs": "historical feature contract; target/sequence include release object/room metadata, RGB statistics, pose, previous actions; not a metadata-free visual policy",
+  "smoke_indices": [
+    0,
+    25,
+    50,
+    75
+  ],
+  "smoke_gate": "40 runtime-complete checks at first selected task per level; navigation/reference failure retained; full only after pass",
+  "parallelism": 1,
+  "scope": "balanced level development pilot; not full dataset or untouched test",
+  "compiled_paper_update": "only after full completion and verification",
+  "selection": "first25 ascending SHA256(task_id) within each level2..5 from frozen release2500; all splits eligible; no outcome filtering",
+  "parent_bank_sha256": "a51be450b829be0abecbbeea34241463d5b82eec11cf26668a115d11b8f5ae43"
+}

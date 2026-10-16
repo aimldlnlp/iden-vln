@@ -1,0 +1,21 @@
+\begin{table}[pos=htbp]
+\centering
+\caption{Task and scene counts by evaluation split. Scene-held-out partitions have no shared scenes. Random partitions share scenes, so their scene counts must not be summed.}
+\label{tab:splits}
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Protocol & Partition & Tasks & Scenes \\
+\midrule
+\multirow{3}{*}{Random} & Train & 2,000 & 154 \\
+ & Validation & 250 & 112 \\
+ & Test & 250 & 116 \\
+\midrule
+\multirow{3}{*}{Scene-held-out} & Train & 2,019 & 122 \\
+ & Validation & 247 & 16 \\
+ & Test & 234 & 17 \\
+\bottomrule
+\end{tabular}
+\end{table}

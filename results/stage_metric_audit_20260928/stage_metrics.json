@@ -1,0 +1,199 @@
+{
+  "status": "sidecar_audit_not_table_4",
+  "source": "/home/aimldl/LH-VLN/runs/idenvln_policy_sweep_20260805_014026/results/traces",
+  "ISR_local": "sum of successful stages / 200; all 100 tasks have two stages",
+  "CSR_adjacent_provisional": "mean over tasks of [2*s1 + s2*(1+s1)]/4; adjacent-stage interpretation of LH-VLN Eq. 3, initial preceding success=1",
+  "CGT": "not computed: trace has only full-chain reference length, not validated per-stage ground-truth trajectory lengths",
+  "rows": {
+    "random": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 2,
+      "stage2_success": 5,
+      "stage_successes": 7,
+      "ISR_local": 0.035,
+      "CSR_adjacent_provisional": 0.0225,
+      "OCS_from_trace": 0.01,
+      "patterns_first_second": {
+        "00": 93,
+        "10": 2,
+        "01": 5,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "frame_bc_balanced": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 2,
+      "stage2_success": 2,
+      "stage_successes": 4,
+      "ISR_local": 0.02,
+      "CSR_adjacent_provisional": 0.015,
+      "OCS_from_trace": 0.01,
+      "patterns_first_second": {
+        "00": 96,
+        "10": 2,
+        "01": 2,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "target_bc_mild": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 0,
+      "stage2_success": 1,
+      "stage_successes": 1,
+      "ISR_local": 0.005,
+      "CSR_adjacent_provisional": 0.0025,
+      "OCS_from_trace": 0.0,
+      "patterns_first_second": {
+        "00": 99,
+        "10": 0,
+        "01": 1,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "target_bc_strong": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 1,
+      "stage2_success": 0,
+      "stage_successes": 1,
+      "ISR_local": 0.005,
+      "CSR_adjacent_provisional": 0.005,
+      "OCS_from_trace": 0.005,
+      "patterns_first_second": {
+        "00": 99,
+        "10": 1,
+        "01": 0,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "target_bc_calibrated": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 0,
+      "stage2_success": 0,
+      "stage_successes": 0,
+      "ISR_local": 0.0,
+      "CSR_adjacent_provisional": 0.0,
+      "OCS_from_trace": 0.0,
+      "patterns_first_second": {
+        "00": 100,
+        "10": 0,
+        "01": 0,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "sequence_bc_mild": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 1,
+      "stage2_success": 6,
+      "stage_successes": 7,
+      "ISR_local": 0.035,
+      "CSR_adjacent_provisional": 0.02,
+      "OCS_from_trace": 0.005,
+      "patterns_first_second": {
+        "00": 93,
+        "10": 1,
+        "01": 6,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "sequence_bc_strong": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 1,
+      "stage2_success": 4,
+      "stage_successes": 5,
+      "ISR_local": 0.025,
+      "CSR_adjacent_provisional": 0.015,
+      "OCS_from_trace": 0.005,
+      "patterns_first_second": {
+        "00": 95,
+        "10": 1,
+        "01": 4,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "sequence_bc_calibrated": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 1,
+      "stage2_success": 0,
+      "stage_successes": 1,
+      "ISR_local": 0.005,
+      "CSR_adjacent_provisional": 0.005,
+      "OCS_from_trace": 0.005,
+      "patterns_first_second": {
+        "00": 99,
+        "10": 1,
+        "01": 0,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "sequence_hybrid": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 1,
+      "stage2_success": 0,
+      "stage_successes": 1,
+      "ISR_local": 0.005,
+      "CSR_adjacent_provisional": 0.005,
+      "OCS_from_trace": 0.005,
+      "patterns_first_second": {
+        "00": 99,
+        "10": 1,
+        "01": 0,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    },
+    "dagger_lite": {
+      "episodes": 100,
+      "stages_per_episode": 2,
+      "stage1_success": 6,
+      "stage2_success": 1,
+      "stage_successes": 7,
+      "ISR_local": 0.035,
+      "CSR_adjacent_provisional": 0.0325,
+      "OCS_from_trace": 0.03,
+      "patterns_first_second": {
+        "00": 93,
+        "10": 6,
+        "01": 1,
+        "11": 0
+      },
+      "full_chain_successes": 0,
+      "reference_total_present": 100,
+      "reference_stage_lengths_present": 0
+    }
+  }
+}

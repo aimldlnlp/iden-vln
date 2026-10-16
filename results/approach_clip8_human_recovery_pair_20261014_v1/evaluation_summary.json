@@ -1,0 +1,50 @@
+{
+  "train_original": {
+    "BC": {
+      "episodes": 8,
+      "chain_success": 2,
+      "stage_success": 9,
+      "SR": 0.25,
+      "ISR": 0.5625
+    },
+    "BC_recovery": {
+      "episodes": 8,
+      "chain_success": 0,
+      "stage_success": 7,
+      "SR": 0.0,
+      "ISR": 0.4375
+    }
+  },
+  "train_holdout": {
+    "BC": {
+      "episodes": 8,
+      "chain_success": 1,
+      "stage_success": 5,
+      "SR": 0.125,
+      "ISR": 0.3125
+    },
+    "BC_recovery": {
+      "episodes": 8,
+      "chain_success": 0,
+      "stage_success": 3,
+      "SR": 0.0,
+      "ISR": 0.1875
+    }
+  },
+  "dev_original": {
+    "BC": {
+      "episodes": 2,
+      "chain_success": 0,
+      "stage_success": 0,
+      "SR": 0.0,
+      "ISR": 0.0
+    },
+    "BC_recovery": {
+      "episodes": 2,
+      "chain_success": 0,
+      "stage_success": 0,
+      "SR": 0.0,
+      "ISR": 0.0
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-07-08 18:57:44",
+  "seed": 20260708,
+  "bootstrap_resamples": 1000,
+  "models": {
+    "Rule": {
+      "count": 2500,
+      "metrics": {
+        "object_f1": {
+          "mean": 0.689693,
+          "ci_low": 0.683483,
+          "ci_high": 0.69664
+        },
+        "room_f1": {
+          "mean": 0.755726,
+          "ci_low": 0.74714,
+          "ci_high": 0.763853
+        },
+        "sequence_exact": {
+          "mean": 0.1536,
+          "ci_low": 0.1392,
+          "ci_high": 0.168
+        },
+        "edit_similarity": {
+          "mean": 0.553761,
+          "ci_low": 0.544451,
+          "ci_high": 0.562628
+        },
+        "prefix1": {
+          "mean": 0.9808,
+          "ci_low": 0.9752,
+          "ci_high": 0.9856
+        },
+        "prefix2": {
+          "mean": 0.73,
+          "ci_low": 0.714,
+          "ci_high": 0.7472
+        },
+        "prefix3": {
+          "mean": 0.0016,
+          "ci_low": 0.0004,
+          "ci_high": 0.0032
+        }
+      }
+    },
+    "Qwen": {
+      "count": 2500,
+      "metrics": {
+        "object_f1": {
+          "mean": 0.65775,
+          "ci_low": 0.649414,
+          "ci_high": 0.667034
+        },
+        "room_f1": {
+          "mean": 0.758197,
+          "ci_low": 0.749802,
+          "ci_high": 0.765698
+        },
+        "sequence_exact": {
+          "mean": 0.172,
+          "ci_low": 0.1568,
+          "ci_high": 0.1864
+        },
+        "edit_similarity": {
+          "mean": 0.546313,
+          "ci_low": 0.53624,
+          "ci_high": 0.556447
+        },
+        "prefix1": {
+          "mean": 0.9968,
+          "ci_low": 0.9944,
+          "ci_high": 0.9988
+        },
+        "prefix2": {
+          "mean": 0.6416,
+          "ci_low": 0.6228,
+          "ci_high": 0.6608
+        },
+        "prefix3": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    },
+    "Llama": {
+      "count": 2500,
+      "metrics": {
+        "object_f1": {
+          "mean": 0.651396,
+          "ci_low": 0.643345,
+          "ci_high": 0.659009
+        },
+        "room_f1": {
+          "mean": 0.752486,
+          "ci_low": 0.744371,
+          "ci_high": 0.760694
+        },
+        "sequence_exact": {
+          "mean": 0.1288,
+          "ci_low": 0.1156,
+          "ci_high": 0.142
+        },
+        "edit_similarity": {
+          "mean": 0.519068,
+          "ci_low": 0.51045,
+          "ci_high": 0.528209
+        },
+        "prefix1": {
+          "mean": 0.9644,
+          "ci_low": 0.9568,
+          "ci_high": 0.9716
+        },
+        "prefix2": {
+          "mean": 0.5944,
+          "ci_low": 0.5748,
+          "ci_high": 0.6132
+        },
+        "prefix3": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    },
+    "Mistral": {
+      "count": 2500,
+      "metrics": {
+        "object_f1": {
+          "mean": 0.627496,
+          "ci_low": 0.62077,
+          "ci_high": 0.633865
+        },
+        "room_f1": {
+          "mean": 0.76449,
+          "ci_low": 0.756091,
+          "ci_high": 0.772345
+        },
+        "sequence_exact": {
+          "mean": 0.06,
+          "ci_low": 0.0504,
+          "ci_high": 0.0688
+        },
+        "edit_similarity": {
+          "mean": 0.485627,
+          "ci_low": 0.478287,
+          "ci_high": 0.49276
+        },
+        "prefix1": {
+          "mean": 0.9752,
+          "ci_low": 0.9692,
+          "ci_high": 0.9808
+        },
+        "prefix2": {
+          "mean": 0.5376,
+          "ci_low": 0.518,
+          "ci_high": 0.5568
+        },
+        "prefix3": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+\begin{table*}[pos=t]
+\centering
+\caption{Downstream VLN feasibility and target-source diagnostics separated by runtime and privilege level. Panel A reports the privileged gold-target PathFinder reference; Panel B reports headless target resolution; and Panel C reports the rendered Habitat target-source comparison. Results are raw counts with explicit attempted, valid, and failed denominators. The panels are not directly comparable, and none is a learned-policy result. NE is computed only over valid target-resolved records where stated.}
+\label{tab:vln_feasibility}
+\setlength{\tabcolsep}{3.0pt}
+\renewcommand{\arraystretch}{1.08}
+\small
+\textbf{(a) Privileged gold-target PathFinder}
+\\[2pt]
+\begin{tabular}{@{}p{2.7cm}p{4.3cm}rrrrrr@{}}
+\hline
+Condition & Target source & Attempted & Valid & Failed & \shortstack{Success\\($SR{=}$FullChain)} & OSR & NE (m) \\
+\hline
+All & Gold + geometry & 100 & 100 & 0 & 87/100 & 87/100 & 1.291 \\
+Stretch & Gold + geometry & 47 & 47 & 0 & 43/47 & 43/47 & 1.120 \\
+Spot & Gold + geometry & 53 & 53 & 0 & 44/53 & 44/53 & 1.442 \\
+\hline
+\end{tabular}
+\\[2pt]
+\textbf{(b) Headless target resolution}
+\\[2pt]
+\begin{tabular}{@{}p{2.7cm}p{4.3cm}rrrrrr@{}}
+\hline
+Condition & Target source & Attempted & Valid & Failed & \shortstack{Success\\($SR{=}$FullChain)} & OSR & NE (m) \\
+\hline
+Gold target & Task metadata & 100 & 99 & 1 & 93/100 & 93/100 & 1.168 \\
+Predicted target & XLM-R predicted object/room targets & 100 & 66 & 34 & 61/100 & 61/100 & 1.189 \\
+\hline
+\end{tabular}
+\\[2pt]
+\textbf{(c) Rendered Habitat target-source comparison}
+\\[2pt]
+\begin{tabular}{@{}p{2.7cm}p{4.3cm}rrrrrr@{}}
+\hline
+Condition & Target source & Attempted & Valid & Failed & \shortstack{Success\\($SR{=}$FullChain)} & OSR & NE (m) \\
+\hline
+Gold & Task metadata & 100 & 100 & 0 & 87/100 & 87/100 & 1.291 \\
+Qwen & Qwen2.5 predicted object/room targets & 100 & 13 & 87 & 13/100 & 13/100 & 0.851 \\
+XLM-R & XLM-R predicted object/room targets & 100 & 65 & 35 & 65/100 & 65/100 & 0.857 \\
+\hline
+\end{tabular}
+\\[-1pt]
+\parbox{0.98\textwidth}{\small\textit{Notes:} Attempted is the full requested denominator; Valid is the number of records with a resolved target/controller evaluation; Failed is Attempted minus Valid; and Success ($SR{=}$FullChain)/OSR are reported over Attempted. NE is mean terminal navigation error in meters, computed only over Valid target-resolved records. Therefore NE should not be compared directly across rows with different Valid counts. Gold-target rows use privileged target and geometry information; all panels are modular diagnostics rather than learned-policy comparisons.}
+\end{table*}

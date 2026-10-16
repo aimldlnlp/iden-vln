@@ -1,0 +1,226 @@
+{
+  "passed": true,
+  "replayed_rollouts": 36,
+  "max_position_error_m": 0.0,
+  "same_branch_positions": true,
+  "sources_unchanged": true,
+  "records": [
+    {
+      "index": 0,
+      "cohort": "train_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 0,
+      "cohort": "train_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 1,
+      "cohort": "train_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 1,
+      "cohort": "train_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 2,
+      "cohort": "train_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 2,
+      "cohort": "train_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 3,
+      "cohort": "train_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 3,
+      "cohort": "train_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 4,
+      "cohort": "train_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 4,
+      "cohort": "train_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 5,
+      "cohort": "train_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 5,
+      "cohort": "train_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 6,
+      "cohort": "train_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 6,
+      "cohort": "train_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 7,
+      "cohort": "train_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 7,
+      "cohort": "train_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 8,
+      "cohort": "dev_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 8,
+      "cohort": "dev_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 9,
+      "cohort": "dev_original",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 9,
+      "cohort": "dev_original",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 0,
+      "cohort": "train_holdout",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 0,
+      "cohort": "train_holdout",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 1,
+      "cohort": "train_holdout",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 1,
+      "cohort": "train_holdout",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 2,
+      "cohort": "train_holdout",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 2,
+      "cohort": "train_holdout",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 3,
+      "cohort": "train_holdout",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 3,
+      "cohort": "train_holdout",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 4,
+      "cohort": "train_holdout",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 4,
+      "cohort": "train_holdout",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 5,
+      "cohort": "train_holdout",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 5,
+      "cohort": "train_holdout",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 6,
+      "cohort": "train_holdout",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 6,
+      "cohort": "train_holdout",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 7,
+      "cohort": "train_holdout",
+      "arm": "BC",
+      "position_error_m": 0.0
+    },
+    {
+      "index": 7,
+      "cohort": "train_holdout",
+      "arm": "BC_recovery",
+      "position_error_m": 0.0
+    }
+  ],
+  "scope": "fresh actor replay and arithmetic; no unseen-test claim"
+}

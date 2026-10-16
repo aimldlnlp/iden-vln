@@ -1,0 +1,21 @@
+\begin{table*}[pos=tbp]
+\centering
+\caption{Auxiliary TF-IDF baseline results for local first-object and first-room grounding. Flat object-sequence classification is reported separately as an open-set stress test rather than as the primary sequence benchmark or an online navigation result.}
+\label{tab:classic_ml}
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{lllrrrrr}
+\hline
+Split & Model & Target & Classes & Acc. & Macro F1 & Top-3 & Majority \\
+\hline
+Random & LogReg & first object & 408 & 0.6840 & 0.2281 & 0.8960 & 0.0440 \\
+Random & Linear SVM & first object & 408 & 0.9480 & 0.2630 & 0.9520 & 0.0440 \\
+Random & LogReg & first room & 34 & 0.8680 & 0.2858 & 0.9800 & 0.3160 \\
+Random & Linear SVM & first room & 34 & 0.9320 & 0.3101 & 0.9760 & 0.3160 \\
+Scene-held-out & LogReg & first object & 397 & 0.5940 & 0.1767 & 0.8504 & 0.0769 \\
+Scene-held-out & Linear SVM & first object & 397 & 0.8889 & 0.2212 & 0.9017 & 0.0769 \\
+Scene-held-out & LogReg & first room & 33 & 0.8632 & 0.2136 & 0.9487 & 0.2991 \\
+Scene-held-out & Linear SVM & first room & 33 & 0.9359 & 0.2448 & 0.9615 & 0.2991 \\
+\hline
+\end{tabular}
+\end{table*}

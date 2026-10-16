@@ -17,11 +17,13 @@ Use the citation recommended by the upstream LH-VLN authors:
 }
 ```
 
-## IDEN-VLN Adaptation
+## IDEN-VLN repository
+
+This is a repository citation, not an assertion of an accepted publication or a complete manuscript author list.
 
 ```bibtex
 @misc{idenvln2026,
-  title        = {IDEN-VLN: An Indonesian-English Code-Switched Long-Horizon VLN Dataset Adaptation},
+  title        = {IDEN-VLN: An Indonesian-English Code-Mixed Dataset for Long-Horizon Vision-and-Language Navigation},
   author       = {Zinadine Zidan Alsyahana},
   year         = {2026},
   howpublished = {\url{https://github.com/aimldlnlp/iden-vln}},

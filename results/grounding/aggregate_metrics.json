@@ -1,0 +1,246 @@
+{
+  "model": "xlm-roberta-base",
+  "generated_at": "2026-08-01 21:17:19",
+  "aggregate": {
+    "random": {
+      "count": 250,
+      "seed_count": 3,
+      "n_per_seed": 250,
+      "per_seed_success_counts": {
+        "sequence_exact": {"successes": [0, 0, 1], "denominators": [250, 250, 250]},
+        "prefix1": {"successes": [80, 88, 64], "denominators": [250, 250, 250]},
+        "prefix2": {"successes": [1, 0, 1], "denominators": [248, 248, 248]},
+        "prefix3": {"successes": [0, 0, 0], "denominators": [175, 175, 175]}
+      },
+      "aggregation": {
+        "point_estimate": "mean_of_seed_metrics",
+        "ci_estimate": "pooled_seed_task_bootstrap",
+        "effective_denominators": {
+          "sequence_exact": 750,
+          "edit_similarity": 750,
+          "prefix1": 750,
+          "prefix2": 744,
+          "prefix3": 525
+        }
+      },
+      "seed_metrics": [
+        {
+          "object_f1": 0.0,
+          "object_macro_f1": 0.0,
+          "room_f1": 0.6452795600366636,
+          "room_macro_f1": 0.0833455887894745,
+          "first_object_accuracy": 0.652,
+          "first_room_accuracy": 0.724,
+          "sequence_exact": 0.0,
+          "edit_similarity": 0.15313333333333332,
+          "prefix1": 0.32,
+          "prefix2": 0.004032258064516129,
+          "prefix3": 0.0
+        },
+        {
+          "object_f1": 0.027093596059113302,
+          "object_macro_f1": 0.000584608843537415,
+          "room_f1": 0.6110056925996205,
+          "room_macro_f1": 0.07165139531348554,
+          "first_object_accuracy": 0.7,
+          "first_room_accuracy": 0.712,
+          "sequence_exact": 0.0,
+          "edit_similarity": 0.15619999999999998,
+          "prefix1": 0.352,
+          "prefix2": 0.0,
+          "prefix3": 0.0
+        },
+        {
+          "object_f1": 0.0,
+          "object_macro_f1": 0.0,
+          "room_f1": 0.6122840690978887,
+          "room_macro_f1": 0.06661121087554724,
+          "first_object_accuracy": 0.628,
+          "first_room_accuracy": 0.724,
+          "sequence_exact": 0.004,
+          "edit_similarity": 0.12206666666666667,
+          "prefix1": 0.256,
+          "prefix2": 0.004032258064516129,
+          "prefix3": 0.0
+        }
+      ],
+      "metrics": {
+        "object_f1": {
+          "mean": 0.0071555555555555565,
+          "ci_low": 0.0031999999999999997,
+          "ci_high": 0.01137888888888889
+        },
+        "object_macro_f1": {
+          "mean": 0.00019486961451247166,
+          "ci_low": 0.0,
+          "ci_high": 0.000584608843537415
+        },
+        "room_f1": {
+          "mean": 0.6198476190476191,
+          "ci_low": 0.6000693650793651,
+          "ci_high": 0.6397222222222222
+        },
+        "room_macro_f1": {
+          "mean": 0.07386939832616908,
+          "ci_low": 0.06661121087554724,
+          "ci_high": 0.0833455887894745
+        },
+        "first_object_accuracy": {
+          "mean": 0.66,
+          "ci_low": 0.628,
+          "ci_high": 0.6999999999999998
+        },
+        "first_room_accuracy": {
+          "mean": 0.7200000000000001,
+          "ci_low": 0.7120000000000001,
+          "ci_high": 0.7239999999999999
+        },
+        "sequence_exact": {
+          "mean": 0.0013333333333333333,
+          "ci_low": 0.0,
+          "ci_high": 0.004
+        },
+        "edit_similarity": {
+          "mean": 0.1438,
+          "ci_low": 0.12973222222222222,
+          "ci_high": 0.15722222222222224
+        },
+        "prefix1": {
+          "mean": 0.30933333333333335,
+          "ci_low": 0.276,
+          "ci_high": 0.34
+        },
+        "prefix2": {
+          "mean": 0.002688172043010753,
+          "ci_low": 0.0,
+          "ci_high": 0.006720430107526882
+        },
+        "prefix3": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    },
+    "scene_heldout": {
+      "count": 234,
+      "seed_count": 3,
+      "n_per_seed": 234,
+      "per_seed_success_counts": {
+        "sequence_exact": {"successes": [0, 0, 0], "denominators": [234, 234, 234]},
+        "prefix1": {"successes": [75, 81, 75], "denominators": [234, 234, 234]},
+        "prefix2": {"successes": [1, 3, 0], "denominators": [233, 233, 233]},
+        "prefix3": {"successes": [0, 0, 0], "denominators": [156, 156, 156]}
+      },
+      "aggregation": {
+        "point_estimate": "mean_of_seed_metrics",
+        "ci_estimate": "pooled_seed_task_bootstrap",
+        "effective_denominators": {
+          "sequence_exact": 702,
+          "edit_similarity": 702,
+          "prefix1": 702,
+          "prefix2": 699,
+          "prefix3": 468
+        }
+      },
+      "seed_metrics": [
+        {
+          "object_f1": 0.0,
+          "object_macro_f1": 0.0,
+          "room_f1": 0.5859613428280773,
+          "room_macro_f1": 0.07573035608790475,
+          "first_object_accuracy": 0.6452991452991453,
+          "first_room_accuracy": 0.7136752136752137,
+          "sequence_exact": 0.0,
+          "edit_similarity": 0.15163817663817664,
+          "prefix1": 0.32051282051282054,
+          "prefix2": 0.004291845493562232,
+          "prefix3": 0.0
+        },
+        {
+          "object_f1": 0.0,
+          "object_macro_f1": 0.0,
+          "room_f1": 0.6173826173826173,
+          "room_macro_f1": 0.07970689056739623,
+          "first_object_accuracy": 0.6581196581196581,
+          "first_room_accuracy": 0.7136752136752137,
+          "sequence_exact": 0.0,
+          "edit_similarity": 0.1571225071225071,
+          "prefix1": 0.34615384615384615,
+          "prefix2": 0.012875536480686695,
+          "prefix3": 0.0
+        },
+        {
+          "object_f1": 0.015463917525773196,
+          "object_macro_f1": 0.0003132832080200501,
+          "room_f1": 0.594488188976378,
+          "room_macro_f1": 0.06251233631478477,
+          "first_object_accuracy": 0.6709401709401709,
+          "first_room_accuracy": 0.7094017094017094,
+          "sequence_exact": 0.0,
+          "edit_similarity": 0.15135327635327636,
+          "prefix1": 0.32051282051282054,
+          "prefix2": 0.0,
+          "prefix3": 0.0
+        }
+      ],
+      "metrics": {
+        "object_f1": {
+          "mean": 0.0037986704653371318,
+          "ci_low": 0.0009496676163342829,
+          "ci_high": 0.007122507122507123
+        },
+        "object_macro_f1": {
+          "mean": 0.00010442773600668337,
+          "ci_low": 0.0,
+          "ci_high": 0.0003132832080200501
+        },
+        "room_f1": {
+          "mean": 0.5938746438746438,
+          "ci_low": 0.5746922059422059,
+          "ci_high": 0.6157390449057115
+        },
+        "room_macro_f1": {
+          "mean": 0.07264986099002858,
+          "ci_low": 0.06251233631478477,
+          "ci_high": 0.07970689056739623
+        },
+        "first_object_accuracy": {
+          "mean": 0.6581196581196581,
+          "ci_low": 0.6452991452991453,
+          "ci_high": 0.6709401709401709
+        },
+        "first_room_accuracy": {
+          "mean": 0.7122507122507122,
+          "ci_low": 0.7094017094017094,
+          "ci_high": 0.7136752136752137
+        },
+        "sequence_exact": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "edit_similarity": {
+          "mean": 0.1533713200379867,
+          "ci_low": 0.14009852801519468,
+          "ci_high": 0.16747744539411205
+        },
+        "prefix1": {
+          "mean": 0.32905982905982906,
+          "ci_low": 0.2919871794871795,
+          "ci_high": 0.3646723646723647
+        },
+        "prefix2": {
+          "mean": 0.005722460658082976,
+          "ci_low": 0.001430615164520744,
+          "ci_high": 0.011444921316165951
+        },
+        "prefix3": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "DATA_CARD.md": {
+    "sha256": "8e99f874b70068ad56fecafa2a2eeb6dff93b186951dd6074cd76356bb9362b3",
+    "size_bytes": 5171
+  },
+  "iden_vln_step_tasks.jsonl": {
+    "sha256": "8e90ef4709312c25248c853217c7a0d721e57fb25831b335ba3901cff0b456ca",
+    "size_bytes": 3132238
+  },
+  "iden_vln_tasks.jsonl": {
+    "sha256": "30484f5727b566b53ca103ea354ec326d3b3306b9bd79f8342e8dd5041028bcd",
+    "size_bytes": 3748428
+  },
+  "release_manifest.json": {
+    "sha256": "1fb01f2fbd64b9bea33a76b01397b864d4db05426e4f809fee2e68de4fb857c3",
+    "size_bytes": 3249
+  },
+  "splits_random.json": {
+    "sha256": "341e67a4e3e460f4118aaf076de3cc3d117c9c5b63c117098f283f2b78b80d28",
+    "size_bytes": 74654
+  },
+  "splits_scene_heldout.json": {
+    "sha256": "918689c2772e430492a262c5793109d7788c8695e60968e4df76920c21254b6d",
+    "size_bytes": 74647
+  }
+}

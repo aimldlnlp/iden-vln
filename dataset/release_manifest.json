@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-07-08 14:11:59 CST",
+  "export_root": "/home/aimldl/LH-VLN/nav_gen/runs/ieee_access_release_export_20260708",
+  "counts": {
+    "high_level_tasks": 2500,
+    "step_task_segments": 3291,
+    "step_tasks_missing_parent_mapping": 0
+  },
+  "source_paths": {
+    "old_manifest": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_split_step_success1206/logs/success_pool_manifest.jsonl",
+    "downstream_manifest": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_downstream_success2500_20260704/logs/downstream_manifest.jsonl",
+    "step_task_dir": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_downstream_success2500_20260704/step_task",
+    "trail_list": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_downstream_success2500_20260704/split/trail_list.txt",
+    "benchmark_results": "/home/aimldl/LH-VLN/nav_gen/runs/ieee_access_experiments_2500_20260704/results"
+  },
+  "split_summary": {
+    "random": {
+      "train": {
+        "count": 2000,
+        "scene_count": 154,
+        "level": {
+          "2": 558,
+          "3": 561,
+          "4": 473,
+          "5": 408
+        },
+        "robot": {
+          "spot": 989,
+          "stretch": 1011
+        }
+      },
+      "val": {
+        "count": 250,
+        "scene_count": 112,
+        "level": {
+          "2": 76,
+          "3": 56,
+          "4": 63,
+          "5": 55
+        },
+        "robot": {
+          "spot": 123,
+          "stretch": 127
+        }
+      },
+      "test": {
+        "count": 250,
+        "scene_count": 116,
+        "level": {
+          "2": 71,
+          "3": 75,
+          "4": 65,
+          "5": 39
+        },
+        "robot": {
+          "spot": 117,
+          "stretch": 133
+        }
+      },
+      "scene_overlap": {
+        "train_val": 111,
+        "train_test": 116,
+        "val_test": 88
+      }
+    },
+    "scene_heldout": {
+      "train": {
+        "count": 2019,
+        "scene_count": 122,
+        "level": {
+          "2": 553,
+          "3": 569,
+          "4": 493,
+          "5": 404
+        },
+        "robot": {
+          "spot": 992,
+          "stretch": 1027
+        }
+      },
+      "val": {
+        "count": 247,
+        "scene_count": 16,
+        "level": {
+          "2": 78,
+          "3": 64,
+          "4": 57,
+          "5": 48
+        },
+        "robot": {
+          "spot": 118,
+          "stretch": 129
+        }
+      },
+      "test": {
+        "count": 234,
+        "scene_count": 17,
+        "level": {
+          "2": 74,
+          "3": 59,
+          "4": 51,
+          "5": 50
+        },
+        "robot": {
+          "spot": 119,
+          "stretch": 115
+        }
+      },
+      "scene_overlap": {
+        "train_val": 0,
+        "train_test": 0,
+        "val_test": 0
+      }
+    }
+  },
+  "known_limitations": [
+    "License is TBD.",
+    "Code-mixing labels are automatic heuristics, not human linguistic annotation.",
+    "Scene-held-out split is not zero-shot object, room, or language generalization.",
+    "Agent results are controlled downstream diagnostics, not competitive navigation performance.",
+    "Portable release excludes raw trajectory assets and simulator scene files."
+  ]
+}

@@ -1,0 +1,6 @@
+# Preserve exact bytes for released records and historical source/artifact hashes.
+dataset/** -text
+research/** -text
+results/** -text
+docs/experiment-records/** -text
+assets/** -text

@@ -1,0 +1,962 @@
+{
+  "status": "sidecar_audit_not_table_4",
+  "source_traces": "/home/aimldl/LH-VLN/runs/idenvln_policy_sweep_20260805_014026/results/traces",
+  "reference_method": "Habitat geodesic_between on original navmesh, start to saved selected goal 1, then saved goal 1 to saved goal 2",
+  "formula": "mean[(P1/P)*s1 + (P2/P)*s2*(1+s1)/2], P=P1+P2, initial predecessor success=1",
+  "reference_episodes_validated": 100,
+  "max_reference_sum_error_m": 4.970855709274247e-07,
+  "stage_lengths": {
+    "0": {
+      "scene": "00853-5cdEh9F2hJL",
+      "stage_lengths_m": [
+        4.002457618713379,
+        12.326773643493652
+      ],
+      "reference_total_m": 16.329231,
+      "sum_error_m": 2.6220703119861355e-07
+    },
+    "1": {
+      "scene": "00538-3CBBjsNkhqW",
+      "stage_lengths_m": [
+        23.185508728027344,
+        1.6202898025512695
+      ],
+      "reference_total_m": 24.805799,
+      "sum_error_m": 4.6942138709482606e-07
+    },
+    "2": {
+      "scene": "00023-zepmXAdrpjR",
+      "stage_lengths_m": [
+        6.727437973022461,
+        6.985992431640625
+      ],
+      "reference_total_m": 13.71343,
+      "sum_error_m": 4.046630852627686e-07
+    },
+    "3": {
+      "scene": "00733-GtM3JtRvvvR",
+      "stage_lengths_m": [
+        8.205028533935547,
+        3.5912649631500244
+      ],
+      "reference_total_m": 11.796293,
+      "sum_error_m": 4.970855709274247e-07
+    },
+    "4": {
+      "scene": "00712-HZ2iMMBsBQ9",
+      "stage_lengths_m": [
+        6.506084442138672,
+        3.395935297012329
+      ],
+      "reference_total_m": 9.90202,
+      "sum_error_m": 2.608489992894647e-07
+    },
+    "5": {
+      "scene": "00529-W9YAR9qcuvN",
+      "stage_lengths_m": [
+        1.5240073204040527,
+        3.753751039505005
+      ],
+      "reference_total_m": 5.277758,
+      "sum_error_m": 3.5990905722371735e-07
+    },
+    "6": {
+      "scene": "00827-BAbdmeyTvMZ",
+      "stage_lengths_m": [
+        9.353066444396973,
+        7.524178981781006
+      ],
+      "reference_total_m": 16.877245,
+      "sum_error_m": 4.261779800174281e-07
+    },
+    "7": {
+      "scene": "00326-u9rPN5cHWBg",
+      "stage_lengths_m": [
+        14.11897087097168,
+        1.4701695442199707
+      ],
+      "reference_total_m": 15.58914,
+      "sum_error_m": 4.1519164994952007e-07
+    },
+    "8": {
+      "scene": "00324-DoSbsoo4EAg",
+      "stage_lengths_m": [
+        4.3665547370910645,
+        5.9361958503723145
+      ],
+      "reference_total_m": 10.302751,
+      "sum_error_m": 4.1253662175222416e-07
+    },
+    "9": {
+      "scene": "00814-p53SfW6mjZe",
+      "stage_lengths_m": [
+        22.658960342407227,
+        10.667516708374023
+      ],
+      "reference_total_m": 33.326477,
+      "sum_error_m": 5.078125298041414e-08
+    },
+    "10": {
+      "scene": "00025-ixTj1aTMup2",
+      "stage_lengths_m": [
+        7.187806129455566,
+        6.09765625
+      ],
+      "reference_total_m": 13.285462,
+      "sum_error_m": 3.7945556563556693e-07
+    },
+    "11": {
+      "scene": "00685-ENiCjXWB6aQ",
+      "stage_lengths_m": [
+        16.496021270751953,
+        19.48062515258789
+      ],
+      "reference_total_m": 35.976646,
+      "sum_error_m": 4.2333984140441316e-07
+    },
+    "12": {
+      "scene": "00890-6s7QHgap2fW",
+      "stage_lengths_m": [
+        19.24843978881836,
+        2.8793110847473145
+      ],
+      "reference_total_m": 22.127751,
+      "sum_error_m": 1.2643432611980643e-07
+    },
+    "13": {
+      "scene": "00732-Z2DQddYp1fn",
+      "stage_lengths_m": [
+        13.5873441696167,
+        1.7863227128982544
+      ],
+      "reference_total_m": 15.373667,
+      "sum_error_m": 1.1748504569197848e-07
+    },
+    "14": {
+      "scene": "00304-X6Pct1msZv5",
+      "stage_lengths_m": [
+        5.773354530334473,
+        3.7677676677703857
+      ],
+      "reference_total_m": 9.541122,
+      "sum_error_m": 1.981048587396117e-07
+    },
+    "15": {
+      "scene": "00323-yHLr6bvWsVm",
+      "stage_lengths_m": [
+        12.703872680664062,
+        4.3387651443481445
+      ],
+      "reference_total_m": 17.042638,
+      "sum_error_m": 1.7498779314450985e-07
+    },
+    "16": {
+      "scene": "00829-QaLdnwvtxbs",
+      "stage_lengths_m": [
+        13.303815841674805,
+        5.209187030792236
+      ],
+      "reference_total_m": 18.513003,
+      "sum_error_m": 1.2753296019241134e-07
+    },
+    "17": {
+      "scene": "00378-DqJKU7YU7dA",
+      "stage_lengths_m": [
+        19.45032501220703,
+        5.567101001739502
+      ],
+      "reference_total_m": 25.017426,
+      "sum_error_m": 1.3946532817499246e-08
+    },
+    "18": {
+      "scene": "00538-3CBBjsNkhqW",
+      "stage_lengths_m": [
+        25.207536697387695,
+        4.56101131439209
+      ],
+      "reference_total_m": 29.768548,
+      "sum_error_m": 1.1779786035504003e-08
+    },
+    "19": {
+      "scene": "00508-4vwGX7U38Ux",
+      "stage_lengths_m": [
+        3.659848690032959,
+        4.346832275390625
+      ],
+      "reference_total_m": 8.006681,
+      "sum_error_m": 3.457641639670328e-08
+    },
+    "20": {
+      "scene": "00179-MVVzj944atG",
+      "stage_lengths_m": [
+        4.16162109375,
+        5.490584373474121
+      ],
+      "reference_total_m": 9.652205,
+      "sum_error_m": 4.672241207259731e-07
+    },
+    "21": {
+      "scene": "00222-g8Xrdbe9fir",
+      "stage_lengths_m": [
+        6.0189127922058105,
+        6.307927131652832
+      ],
+      "reference_total_m": 12.32684,
+      "sum_error_m": 7.614135810740663e-08
+    },
+    "22": {
+      "scene": "00016-qk9eeNeR4vw",
+      "stage_lengths_m": [
+        3.0644352436065674,
+        2.5558769702911377
+      ],
+      "reference_total_m": 5.620312,
+      "sum_error_m": 2.1389770488156046e-07
+    },
+    "23": {
+      "scene": "00746-RTV2n6fXB2w",
+      "stage_lengths_m": [
+        2.969137191772461,
+        2.229475498199463
+      ],
+      "reference_total_m": 5.198613,
+      "sum_error_m": 3.10028076100366e-07
+    },
+    "24": {
+      "scene": "00378-DqJKU7YU7dA",
+      "stage_lengths_m": [
+        29.949390411376953,
+        10.76352310180664
+      ],
+      "reference_total_m": 40.712914,
+      "sum_error_m": 4.868164040772172e-07
+    },
+    "25": {
+      "scene": "00031-Wo6kuutE9i7",
+      "stage_lengths_m": [
+        6.912491798400879,
+        11.597260475158691
+      ],
+      "reference_total_m": 18.509752,
+      "sum_error_m": 2.735595714398187e-07
+    },
+    "26": {
+      "scene": "00166-RaYrxWt5pR1",
+      "stage_lengths_m": [
+        7.374205589294434,
+        6.3726301193237305
+      ],
+      "reference_total_m": 13.746836,
+      "sum_error_m": 2.913818359928655e-07
+    },
+    "27": {
+      "scene": "00330-WhNyDTnd9g5",
+      "stage_lengths_m": [
+        4.389598369598389,
+        6.829812526702881
+      ],
+      "reference_total_m": 11.219411,
+      "sum_error_m": 1.036987296032521e-07
+    },
+    "28": {
+      "scene": "00382-S7uMvxjBVZq",
+      "stage_lengths_m": [
+        15.085210800170898,
+        4.118618488311768
+      ],
+      "reference_total_m": 19.203829,
+      "sum_error_m": 2.8848266708791925e-07
+    },
+    "29": {
+      "scene": "00434-L5QEsaVqwrY",
+      "stage_lengths_m": [
+        13.180523872375488,
+        13.012325286865234
+      ],
+      "reference_total_m": 26.192849,
+      "sum_error_m": 1.5924072371831244e-07
+    },
+    "30": {
+      "scene": "00025-ixTj1aTMup2",
+      "stage_lengths_m": [
+        2.381401538848877,
+        7.585361480712891
+      ],
+      "reference_total_m": 9.966763,
+      "sum_error_m": 1.956176731710002e-08
+    },
+    "31": {
+      "scene": "00313-PE6kVEtrxtj",
+      "stage_lengths_m": [
+        8.267656326293945,
+        7.93705940246582
+      ],
+      "reference_total_m": 16.204716,
+      "sum_error_m": 2.7124023560531896e-07
+    },
+    "32": {
+      "scene": "00326-u9rPN5cHWBg",
+      "stage_lengths_m": [
+        15.159065246582031,
+        13.57639217376709
+      ],
+      "reference_total_m": 28.735457,
+      "sum_error_m": 4.203491208443211e-07
+    },
+    "33": {
+      "scene": "00475-g7hUFVNac26",
+      "stage_lengths_m": [
+        10.943305969238281,
+        8.22754192352295
+      ],
+      "reference_total_m": 19.170848,
+      "sum_error_m": 1.0723876897600348e-07
+    },
+    "34": {
+      "scene": "00313-PE6kVEtrxtj",
+      "stage_lengths_m": [
+        8.160682678222656,
+        3.3727455139160156
+      ],
+      "reference_total_m": 11.533428,
+      "sum_error_m": 1.9213867119560746e-07
+    },
+    "35": {
+      "scene": "00034-6imZUJGRUq4",
+      "stage_lengths_m": [
+        3.389345645904541,
+        2.1025149822235107
+      ],
+      "reference_total_m": 5.491861,
+      "sum_error_m": 3.718719483458699e-07
+    },
+    "36": {
+      "scene": "00590-qgZhhx1MpTi",
+      "stage_lengths_m": [
+        12.550378799438477,
+        9.894852638244629
+      ],
+      "reference_total_m": 22.445231,
+      "sum_error_m": 4.3768310575842406e-07
+    },
+    "37": {
+      "scene": "00250-U3oQjwTuMX8",
+      "stage_lengths_m": [
+        6.320766925811768,
+        3.374648332595825
+      ],
+      "reference_total_m": 9.695415,
+      "sum_error_m": 2.584075922129614e-07
+    },
+    "38": {
+      "scene": "00877-4ok3usBNeis",
+      "stage_lengths_m": [
+        12.49020767211914,
+        15.01069450378418
+      ],
+      "reference_total_m": 27.500902,
+      "sum_error_m": 1.7590332035410938e-07
+    },
+    "39": {
+      "scene": "00723-hWDDQnSDMXb",
+      "stage_lengths_m": [
+        36.21177291870117,
+        10.719881057739258
+      ],
+      "reference_total_m": 46.931654,
+      "sum_error_m": 2.3559572071008006e-08
+    },
+    "40": {
+      "scene": "00862-LT9Jq6dN3Ea",
+      "stage_lengths_m": [
+        11.874600410461426,
+        24.410856246948242
+      ],
+      "reference_total_m": 36.285457,
+      "sum_error_m": 3.4259033299122166e-07
+    },
+    "41": {
+      "scene": "00758-HfMobPm86Xn",
+      "stage_lengths_m": [
+        16.30284881591797,
+        10.764724731445312
+      ],
+      "reference_total_m": 27.067574,
+      "sum_error_m": 4.5263671921702553e-07
+    },
+    "42": {
+      "scene": "00222-g8Xrdbe9fir",
+      "stage_lengths_m": [
+        6.007415771484375,
+        6.193974494934082
+      ],
+      "reference_total_m": 12.20139,
+      "sum_error_m": 2.6641845707331413e-07
+    },
+    "43": {
+      "scene": "00422-8wJuSPJ9FXG",
+      "stage_lengths_m": [
+        19.483238220214844,
+        17.169435501098633
+      ],
+      "reference_total_m": 36.652674,
+      "sum_error_m": 2.786865209714051e-07
+    },
+    "44": {
+      "scene": "00009-vLpv2VX547B",
+      "stage_lengths_m": [
+        3.977900743484497,
+        11.971795082092285
+      ],
+      "reference_total_m": 15.949696,
+      "sum_error_m": 1.7442321720295695e-07
+    },
+    "45": {
+      "scene": "00476-NtnvZSMK3en",
+      "stage_lengths_m": [
+        7.392331123352051,
+        3.311237335205078
+      ],
+      "reference_total_m": 10.703568,
+      "sum_error_m": 4.585571282689216e-07
+    },
+    "46": {
+      "scene": "00821-eF36g7L6Z9M",
+      "stage_lengths_m": [
+        0.14525428414344788,
+        7.118127346038818
+      ],
+      "reference_total_m": 7.263382,
+      "sum_error_m": 3.6981773376965066e-07
+    },
+    "47": {
+      "scene": "00062-ACZZiU6BXLz",
+      "stage_lengths_m": [
+        12.248678207397461,
+        2.249701976776123
+      ],
+      "reference_total_m": 14.49838,
+      "sum_error_m": 1.841735848273629e-07
+    },
+    "48": {
+      "scene": "00560-gjhYih4upQ9",
+      "stage_lengths_m": [
+        3.7033066749572754,
+        5.447166442871094
+      ],
+      "reference_total_m": 9.150473,
+      "sum_error_m": 1.1782836928375673e-07
+    },
+    "49": {
+      "scene": "00878-XB4GS9ShBRE",
+      "stage_lengths_m": [
+        11.365041732788086,
+        9.271286964416504
+      ],
+      "reference_total_m": 20.636329,
+      "sum_error_m": 3.027954100787156e-07
+    },
+    "50": {
+      "scene": "00643-ggNAcMh8JPT",
+      "stage_lengths_m": [
+        13.295472145080566,
+        13.54442310333252
+      ],
+      "reference_total_m": 26.839895,
+      "sum_error_m": 2.484130874336188e-07
+    },
+    "51": {
+      "scene": "00824-Dd4bFSTQ8gi",
+      "stage_lengths_m": [
+        7.419038772583008,
+        2.5826399326324463
+      ],
+      "reference_total_m": 10.001679,
+      "sum_error_m": 2.9478454521836284e-07
+    },
+    "52": {
+      "scene": "00378-DqJKU7YU7dA",
+      "stage_lengths_m": [
+        19.229185104370117,
+        16.451148986816406
+      ],
+      "reference_total_m": 35.680334,
+      "sum_error_m": 9.118652144479711e-08
+    },
+    "53": {
+      "scene": "00878-XB4GS9ShBRE",
+      "stage_lengths_m": [
+        10.302268981933594,
+        1.819244384765625
+      ],
+      "reference_total_m": 12.121513,
+      "sum_error_m": 3.6669921854581844e-07
+    },
+    "54": {
+      "scene": "00680-YmWinf3mhb5",
+      "stage_lengths_m": [
+        2.033100128173828,
+        5.732929229736328
+      ],
+      "reference_total_m": 7.766029,
+      "sum_error_m": 3.579101566231202e-07
+    },
+    "55": {
+      "scene": "00873-bxsVRursffK",
+      "stage_lengths_m": [
+        13.825014114379883,
+        0.9756865501403809
+      ],
+      "reference_total_m": 14.800701,
+      "sum_error_m": 3.35479736435218e-07
+    },
+    "56": {
+      "scene": "00862-LT9Jq6dN3Ea",
+      "stage_lengths_m": [
+        3.597105026245117,
+        13.991558074951172
+      ],
+      "reference_total_m": 17.588663,
+      "sum_error_m": 1.0119628868210384e-07
+    },
+    "57": {
+      "scene": "00177-VSxVP19Cdyw",
+      "stage_lengths_m": [
+        10.616778373718262,
+        3.91182541847229
+      ],
+      "reference_total_m": 14.528604,
+      "sum_error_m": 2.0780944787190947e-07
+    },
+    "58": {
+      "scene": "00495-CQWES1bawee",
+      "stage_lengths_m": [
+        6.8074541091918945,
+        2.289104461669922
+      ],
+      "reference_total_m": 9.096559,
+      "sum_error_m": 4.291381827670193e-07
+    },
+    "59": {
+      "scene": "00876-mv2HUxq3B53",
+      "stage_lengths_m": [
+        11.277206420898438,
+        12.292219161987305
+      ],
+      "reference_total_m": 23.569426,
+      "sum_error_m": 4.171142578002218e-07
+    },
+    "60": {
+      "scene": "00304-X6Pct1msZv5",
+      "stage_lengths_m": [
+        8.65207576751709,
+        7.704403400421143
+      ],
+      "reference_total_m": 16.356479,
+      "sum_error_m": 1.67938232209508e-07
+    },
+    "61": {
+      "scene": "00606-W16Bm4ysK8v",
+      "stage_lengths_m": [
+        15.52947998046875,
+        10.14855670928955
+      ],
+      "reference_total_m": 25.678037,
+      "sum_error_m": 3.102416989975154e-07
+    },
+    "62": {
+      "scene": "00657-TSJmdttd2GV",
+      "stage_lengths_m": [
+        13.628849983215332,
+        0.9223086833953857
+      ],
+      "reference_total_m": 14.551159,
+      "sum_error_m": 3.3338928240311816e-07
+    },
+    "63": {
+      "scene": "00732-Z2DQddYp1fn",
+      "stage_lengths_m": [
+        15.832327842712402,
+        14.432281494140625
+      ],
+      "reference_total_m": 30.264609,
+      "sum_error_m": 3.368530272496173e-07
+    },
+    "64": {
+      "scene": "00541-FnDDfrBZPhh",
+      "stage_lengths_m": [
+        3.6704301834106445,
+        3.508016586303711
+      ],
+      "reference_total_m": 7.178447,
+      "sum_error_m": 2.3028564477556301e-07
+    },
+    "65": {
+      "scene": "00823-7MXmsvcQjpJ",
+      "stage_lengths_m": [
+        7.50901985168457,
+        1.8357746601104736
+      ],
+      "reference_total_m": 9.344795,
+      "sum_error_m": 4.882049555732237e-07
+    },
+    "66": {
+      "scene": "00732-Z2DQddYp1fn",
+      "stage_lengths_m": [
+        15.822565078735352,
+        10.97828483581543
+      ],
+      "reference_total_m": 26.80085,
+      "sum_error_m": 8.544921925590643e-08
+    },
+    "67": {
+      "scene": "00758-HfMobPm86Xn",
+      "stage_lengths_m": [
+        19.335739135742188,
+        0.8991243839263916
+      ],
+      "reference_total_m": 20.234864,
+      "sum_error_m": 4.803314226364819e-07
+    },
+    "68": {
+      "scene": "00035-3XYAD64HpDr",
+      "stage_lengths_m": [
+        4.613677024841309,
+        2.940150737762451
+      ],
+      "reference_total_m": 7.553828,
+      "sum_error_m": 2.3739624044338825e-07
+    },
+    "69": {
+      "scene": "00401-H8rQCnvBgo6",
+      "stage_lengths_m": [
+        6.93152379989624,
+        7.582577228546143
+      ],
+      "reference_total_m": 14.514101,
+      "sum_error_m": 2.8442382671300948e-08
+    },
+    "70": {
+      "scene": "00832-qyAac8rV8Zk",
+      "stage_lengths_m": [
+        14.968144416809082,
+        0.9296057820320129
+      ],
+      "reference_total_m": 15.89775,
+      "sum_error_m": 1.9884109470069689e-07
+    },
+    "71": {
+      "scene": "00567-KjZrPggnHm8",
+      "stage_lengths_m": [
+        7.287386417388916,
+        2.086782932281494
+      ],
+      "reference_total_m": 9.374169,
+      "sum_error_m": 3.496704099603676e-07
+    },
+    "72": {
+      "scene": "00862-LT9Jq6dN3Ea",
+      "stage_lengths_m": [
+        17.193279266357422,
+        24.587940216064453
+      ],
+      "reference_total_m": 41.781219,
+      "sum_error_m": 4.824218748922249e-07
+    },
+    "73": {
+      "scene": "00871-VBzV5z6i1WS",
+      "stage_lengths_m": [
+        0.9118150472640991,
+        8.280906677246094
+      ],
+      "reference_total_m": 9.192722,
+      "sum_error_m": 2.754898069667888e-07
+    },
+    "74": {
+      "scene": "00861-GLAQ4DNUx5U",
+      "stage_lengths_m": [
+        20.261638641357422,
+        8.050949096679688
+      ],
+      "reference_total_m": 28.312588,
+      "sum_error_m": 2.6196289226732006e-07
+    },
+    "75": {
+      "scene": "00745-yX5efd48dLf",
+      "stage_lengths_m": [
+        10.546248435974121,
+        4.097427845001221
+      ],
+      "reference_total_m": 14.643676,
+      "sum_error_m": 2.809753425481176e-07
+    },
+    "76": {
+      "scene": "00434-L5QEsaVqwrY",
+      "stage_lengths_m": [
+        12.003653526306152,
+        9.589149475097656
+      ],
+      "reference_total_m": 21.592803,
+      "sum_error_m": 1.4038086249001935e-09
+    },
+    "77": {
+      "scene": "00657-TSJmdttd2GV",
+      "stage_lengths_m": [
+        4.671680927276611,
+        14.630295753479004
+      ],
+      "reference_total_m": 19.301977,
+      "sum_error_m": 3.192443855937199e-07
+    },
+    "78": {
+      "scene": "00814-p53SfW6mjZe",
+      "stage_lengths_m": [
+        14.852890968322754,
+        5.145357131958008
+      ],
+      "reference_total_m": 19.998248,
+      "sum_error_m": 1.0028076147250431e-07
+    },
+    "79": {
+      "scene": "00009-vLpv2VX547B",
+      "stage_lengths_m": [
+        6.252039909362793,
+        2.904820203781128
+      ],
+      "reference_total_m": 9.15686,
+      "sum_error_m": 1.1314392089900593e-07
+    },
+    "80": {
+      "scene": "00294-PPTLa8SkUfo",
+      "stage_lengths_m": [
+        17.974485397338867,
+        6.693350791931152
+      ],
+      "reference_total_m": 24.667836,
+      "sum_error_m": 1.8927001832480528e-07
+    },
+    "81": {
+      "scene": "00327-xgLmjqzoAzF",
+      "stage_lengths_m": [
+        14.293596267700195,
+        3.152284622192383
+      ],
+      "reference_total_m": 17.445881,
+      "sum_error_m": 1.1010742184680566e-07
+    },
+    "82": {
+      "scene": "00294-PPTLa8SkUfo",
+      "stage_lengths_m": [
+        12.470956802368164,
+        9.861490249633789
+      ],
+      "reference_total_m": 22.332447,
+      "sum_error_m": 5.2001954742308953e-08
+    },
+    "83": {
+      "scene": "00591-JptJPosx1Z6",
+      "stage_lengths_m": [
+        23.627155303955078,
+        16.738576889038086
+      ],
+      "reference_total_m": 40.365732,
+      "sum_error_m": 1.929931627842052e-07
+    },
+    "84": {
+      "scene": "00099-226REUyJh2K",
+      "stage_lengths_m": [
+        9.660834312438965,
+        5.737530708312988
+      ],
+      "reference_total_m": 15.398365,
+      "sum_error_m": 2.075195304485078e-08
+    },
+    "85": {
+      "scene": "00397-ZNanfzgCdm3",
+      "stage_lengths_m": [
+        6.052774906158447,
+        4.841567039489746
+      ],
+      "reference_total_m": 10.894342,
+      "sum_error_m": 5.4351806610952735e-08
+    },
+    "86": {
+      "scene": "00843-DYehNKdT76V",
+      "stage_lengths_m": [
+        5.3435444831848145,
+        17.828908920288086
+      ],
+      "reference_total_m": 23.172453,
+      "sum_error_m": 4.0347289953501786e-07
+    },
+    "87": {
+      "scene": "00009-vLpv2VX547B",
+      "stage_lengths_m": [
+        3.5357375144958496,
+        3.5187344551086426
+      ],
+      "reference_total_m": 7.054472,
+      "sum_error_m": 3.0395507444325176e-08
+    },
+    "88": {
+      "scene": "00087-YY8rqV6L6rf",
+      "stage_lengths_m": [
+        5.905817985534668,
+        4.342195510864258
+      ],
+      "reference_total_m": 10.248013,
+      "sum_error_m": 4.96398925520225e-07
+    },
+    "89": {
+      "scene": "00696-DsEJeNPcZtE",
+      "stage_lengths_m": [
+        11.518733978271484,
+        4.010398864746094
+      ],
+      "reference_total_m": 15.529133,
+      "sum_error_m": 1.5698242172845767e-07
+    },
+    "90": {
+      "scene": "00525-iKFn6fzyRqs",
+      "stage_lengths_m": [
+        3.314805746078491,
+        17.882545471191406
+      ],
+      "reference_total_m": 21.197351,
+      "sum_error_m": 2.172698962965569e-07
+    },
+    "91": {
+      "scene": "00059-kJxT5qssH4H",
+      "stage_lengths_m": [
+        12.367169380187988,
+        16.5628719329834
+      ],
+      "reference_total_m": 28.930041,
+      "sum_error_m": 3.131713874893194e-07
+    },
+    "92": {
+      "scene": "00326-u9rPN5cHWBg",
+      "stage_lengths_m": [
+        15.581306457519531,
+        10.512426376342773
+      ],
+      "reference_total_m": 26.093733,
+      "sum_error_m": 1.6613769560080982e-07
+    },
+    "93": {
+      "scene": "00847-bCPU9suPUw9",
+      "stage_lengths_m": [
+        9.681614875793457,
+        2.2733259201049805
+      ],
+      "reference_total_m": 11.954941,
+      "sum_error_m": 2.0410156231776e-07
+    },
+    "94": {
+      "scene": "00821-eF36g7L6Z9M",
+      "stage_lengths_m": [
+        2.7941339015960693,
+        2.6031105518341064
+      ],
+      "reference_total_m": 5.397244,
+      "sum_error_m": 4.534301760727999e-07
+    },
+    "95": {
+      "scene": "00384-ceJTwFNjqCt",
+      "stage_lengths_m": [
+        7.006575584411621,
+        4.344770431518555
+      ],
+      "reference_total_m": 11.351346,
+      "sum_error_m": 1.593017628920279e-08
+    },
+    "96": {
+      "scene": "00025-ixTj1aTMup2",
+      "stage_lengths_m": [
+        2.835911750793457,
+        1.9884841442108154
+      ],
+      "reference_total_m": 4.824396,
+      "sum_error_m": 1.04995727667756e-07
+    },
+    "97": {
+      "scene": "00062-ACZZiU6BXLz",
+      "stage_lengths_m": [
+        9.989208221435547,
+        2.2773845195770264
+      ],
+      "reference_total_m": 12.266593,
+      "sum_error_m": 2.5898742705976474e-07
+    },
+    "98": {
+      "scene": "00025-ixTj1aTMup2",
+      "stage_lengths_m": [
+        4.427883148193359,
+        8.988426208496094
+      ],
+      "reference_total_m": 13.416309,
+      "sum_error_m": 3.5668945308486855e-07
+    },
+    "99": {
+      "scene": "00434-L5QEsaVqwrY",
+      "stage_lengths_m": [
+        12.473272323608398,
+        6.356870651245117
+      ],
+      "reference_total_m": 18.830143,
+      "sum_error_m": 2.51464840061999e-08
+    }
+  },
+  "rows": {
+    "random": {
+      "episodes": 100,
+      "CGT_local": 0.01325105678979976,
+      "successful_stages": 7
+    },
+    "frame_bc_balanced": {
+      "episodes": 100,
+      "CGT_local": 0.006009918532329388,
+      "successful_stages": 4
+    },
+    "target_bc_mild": {
+      "episodes": 100,
+      "CGT_local": 0.0017147689998967305,
+      "successful_stages": 1
+    },
+    "target_bc_strong": {
+      "episodes": 100,
+      "CGT_local": 0.00019998162225134643,
+      "successful_stages": 1
+    },
+    "target_bc_calibrated": {
+      "episodes": 100,
+      "CGT_local": 0.0,
+      "successful_stages": 0
+    },
+    "sequence_bc_mild": {
+      "episodes": 100,
+      "CGT_local": 0.014702605846706341,
+      "successful_stages": 7
+    },
+    "sequence_bc_strong": {
+      "episodes": 100,
+      "CGT_local": 0.009720943887543397,
+      "successful_stages": 5
+    },
+    "sequence_bc_calibrated": {
+      "episodes": 100,
+      "CGT_local": 0.005176963774209411,
+      "successful_stages": 1
+    },
+    "sequence_hybrid": {
+      "episodes": 100,
+      "CGT_local": 0.005176963774209411,
+      "successful_stages": 1
+    },
+    "dagger_lite": {
+      "episodes": 100,
+      "CGT_local": 0.019841100883711202,
+      "successful_stages": 7
+    }
+  }
+}

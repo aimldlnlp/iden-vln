@@ -1,0 +1,30 @@
+{
+  "version": "human_clip8_matched_recovery_pair_v1",
+  "source_hashes": {
+    "/home/aimldl/LH-VLN/runs/approach_clip8_human_recovery_cache_20261014_v1/causal_features.npz": "cfb7992429a7aadd39d4aa533ddc18c4257b983ce90d837aaf6edc37e4e6bafa",
+    "/home/aimldl/LH-VLN/runs/approach_clip8_human_recovery_cache_20261014_v1/verification.json": "14599355ef40fd3240911b2bda71bbfdb9d80cdaa19a8e34ec608de6d9f2f4ba",
+    "/home/aimldl/LH-VLN/runs/approach_matched_il_20261011_v1/bank8/model_manifest_frozen.jsonl": "1b00762d780a70a991d9fd816f8d7fd75f7d62aea2a3caa1675d8475fe5bf83a",
+    "/home/aimldl/LH-VLN/runs/approach_matched_il_20261011_v1/bank8/goal_manifest_frozen.json": "f0e139942765a3c4a88d8531242cec7c239dbd39cd351249946cc5d1a0e0344d",
+    "/home/aimldl/LH-VLN/runs/idenvln_gpu_hybrid_sequence_bc_level23_20260707/run_gpu_hybrid_sequence_bc.py": "f6d98fa9fb2d9d20a3cc6213fc0b80da6a906fb21689fdcb06de2e3aed74fbdb",
+    "/home/aimldl/LH-VLN/runs/idenvln_ordered_eval_20260804_234338/train_human_clip8_recovery_pair.py": "b3f75cd638d4785bb68f07f44029587320ade786ec663ee1f5b5bbe7956b6556"
+  },
+  "arms": {
+    "BC": 1357,
+    "BC_recovery": 2054
+  },
+  "unique_train_tasks": 8,
+  "accepted_dev": 2,
+  "full_dev_cohort": 5,
+  "seed": 20260930,
+  "updates": 1200,
+  "batch_size": 128,
+  "optimizer": "AdamW lr0.0012 weight_decay0.0001; clip5",
+  "checkpoint_selection": "final update only; no dev selection",
+  "model": "existing GRU128 input6767 window16; frozen CLIP features",
+  "normalization": "identical frozen original-bank mean/std",
+  "loss_weights": "identical original-bank inverse-action-frequency weights",
+  "sampling": "same uniform draws mapped to each arm sample count; original+recovery uniform, no state selection by outcome",
+  "evaluation_plan": "same8original starts,8reserved different-prefix/right60 train holdout branches,2dev tasks; scoring approach-v2 unchanged",
+  "scope": "one-seed recovery pilot; human review terminal views only; not balanced100 or Table4",
+  "budget_difference_from_archived": "new paired minibatch128 experiment; archived CLIP8 used full batches, so archived scores are context only"
+}

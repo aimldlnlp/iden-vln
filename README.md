@@ -1,97 +1,79 @@
-# IDEN-VLN: Dataset Generation Pipeline for Long-Horizon VLN with Indonesian-English Code-Switched Instructions
+# IDEN-VLN
 
-IDEN-VLN is a dataset-generation pipeline for long-horizon Vision-and-Language Navigation (LH-VLN) with Indonesian-English code-switched instructions. It adapts the LH-VLN/NavGen workflow into an open-source LLM setting and adds language-side evaluation for Indonesian-English code-switching quality.
+**An Indonesian-English Code-Mixed Dataset for Long-Horizon Vision-and-Language Navigation**
 
-This repository should be cited as an adaptation or extension of LH-VLN/NavGen, not as a from-scratch replacement for the original project. The IDEN-VLN contribution is the Indonesian-English generation and evaluation layer: Qwen2.5-compatible instruction generation, code-switched prompts, and code-switching metrics for bilingual output analysis.
+IDEN-VLN contains **2,500 tasks, 3,291 step-task segments, and 155 scenes**, with random and scene-held-out splits. It combines operational Indonesian-English instructions with ordered object/room metadata and simulator-backed navigation diagnostics.
 
-## Contributions
+This repository accompanies the current research manuscript. It contains the compact dataset, selected experiment sources and summaries, and the attributed LH-VLN/NavGen generation adaptation. Publication venue and DOI are not asserted here.
 
-- Indonesian-English LH-VLN task and step-instruction generation.
-- Qwen2.5-oriented OpenAI-compatible LLM interface for task and instruction synthesis.
-- Habitat-HM3D rollout validation for generated long-horizon navigation tasks.
-- RAM/RAM++ scene-tag augmentation for segment-level visual context.
-- Code-switching evaluation for bilingual balance, switching intensity, and language-distribution compliance.
+## Construction pipeline
 
-## Pipeline
+![IDEN-VLN construction pipeline: audit-regenerate instruction generation, Habitat rollout and trajectory segmentation, ordered subgoal grounding and step-task export](assets/construction-pipeline.png)
 
-The pipeline has four operational stages:
+**Construction overview from the manuscript.** Stage A generates candidates with Qwen2.5 7B, an audit-regenerate loop, and rule-based extraction. Stage B retains trajectory-success episodes in Habitat/HM3D and segments their trajectories. Stage C grounds ordered subgoals and exports step-task records. Scene, robot, and RGB-depth illustrations are schematic; they are not measured simulator observations. The figure does not quantify generation success or demonstrate learned-policy success. See [pipeline-to-code mapping](docs/PAPER_CODE_MAP.md).
 
-1. `gen_task`: sample scene context and generate a high-level multi-target task with Indonesian-English prompting.
-2. `gen_traj`: execute the task in Habitat-Sim over HM3D scenes and save successful or failed rollouts.
-3. `split_traj`: segment successful rollouts into shorter action spans and attach RAM/RAM++ scene tags.
-4. `gen_step_task`: synthesize concise Indonesian-English step-level navigation instructions from segmented trajectories.
+## Dataset
 
-Conceptually, the data flow is:
+Files are available directly in [dataset/](dataset/):
 
-```text
-HM3D scene context
-  -> Qwen2.5 task generation
-  -> Habitat rollout validation
-  -> trajectory segmentation
-  -> RAM/RAM++ scene tagging
-  -> Indonesian-English instruction synthesis
-  -> code-switching evaluation
+- [High-level tasks](dataset/iden_vln_tasks.jsonl): 2,500 records.
+- [Step-task segments](dataset/iden_vln_step_tasks.jsonl): 3,291 records.
+- [Random split](dataset/splits_random.json) and [scene-held-out split](dataset/splits_scene_heldout.json).
+- [Data card](dataset/DATA_CARD.md), [source export manifest](dataset/release_manifest.json), and [package checksums](dataset/release_checksums.json).
+
+The compact release excludes raw RGB-D trajectories, HM3D meshes, semantic assets, NavMeshes, and model weights. External assets remain subject to their providers' access conditions. Dataset and project-wide licensing remain unresolved; repository availability is not a new permissive license. See [notices](NOTICE.md).
+
+### Verify the compact release
+
+Python 3.9+; no third-party packages or GPU required:
+
+```bash
+git clone https://github.com/aimldlnlp/iden-vln.git
+cd iden-vln
+python tools/verify_release.py
 ```
 
-## Usage
+The check validates checksums, unique identifiers, segment-parent mappings, split coverage, split labels, and scene disjointness for the scene-held-out split.
 
-Serve Qwen2.5 or another instruction model through an OpenAI-compatible `/v1/chat/completions` endpoint, then run:
+## Repository guide
 
-```powershell
-python main.py `
-  --API_KEY dummy `
-  --API_BASE http://localhost:8000/v1 `
-  --MODEL_MAIN Qwen2.5-7B-Instruct `
-  --MODEL_STEP Qwen2.5-7B-Instruct
+- `dataset/`: portable task records, split assignments, schema, checksums.
+- `research/grounding/`: XLM-R grounding training with dataset/output CLI paths.
+- `research/navigation/`: selected navigation, goal construction, audit, and IL sources plus their static local import dependencies.
+- `research/legacy/`: earlier grounding and policy experiment sources used by later scripts.
+- `research/snapshots/`: preserved per-run repair, recovery, and STOP-counter sources.
+- `research/source_variants/`: server versions retained where local and server sources differ.
+- `research/data/`: source exporter and server generation batch driver.
+- `results/`: selected frozen protocols, metric summaries, and verification records.
+- `results/manuscript_tables/`: numerical table sources from the current manuscript.
+- `docs/`: reproduction boundaries, provenance, and paper-to-code mapping.
+
+**Research snapshots are not a turnkey simulator installation.** Many retain historical absolute paths and need external source records, checkpoints, model assets, and exact run layouts. Copying this folder alone does not reconstruct the original training environment. See [reproducibility](docs/REPRODUCIBILITY.md) before running them.
+
+## Textual grounding
+
+Install PyTorch appropriate for your platform, then the analysis dependencies:
+
+```bash
+python -m pip install -r requirements-analysis.txt
+python research/grounding/train_xlmr_grounding.py --help
+python research/grounding/train_xlmr_grounding.py --data-root dataset --run-root outputs/xlmr --split scene_heldout --seed 20260801
 ```
 
-Model names must match the names exposed by your serving backend.
+The default encoder is `xlm-roberta-base`; pretrained weights are obtained separately. Training can be expensive. This example is an entry point, not a claim that training was rerun during repository packaging. A new seed/run is not automatically identical to the manuscript's multi-run results.
 
-## External Assets
+Rule/LLM extraction and TF-IDF Logistic Regression/SVM sources are under `research/legacy/`. Their historical run paths require adaptation. Aggregate XLM-R and selected grounding diagnostics are in [results/grounding/](results/grounding/).
 
-Large datasets and model weights are intentionally not included. Place them outside the repository and override paths when needed:
+## Navigation results and interpretation
 
-- HM3D scene data: `../data/hm3d/`
-- HM3D scene dataset config: `../data/hm3d/hm3d_annotated_basis.scene_dataset_config.json`
-- RAM++ checkpoint: `../data/models/ram_plus_swin_large_14m.pth`
+The canonical historical evaluation underlying Table 4 uses **100 two-stage episodes per configuration, horizon 150, AABB-based goals, and strict STOP distance <1 m**. Full-chain SR, OSR, and SPL are zero in that historical cohort. ISR, local CSR, CGT, and NE describe additional behavior; their definitions and denominators must remain attached to each experiment.
 
-Example:
+A **separate Balanced100 evaluation** uses 25 tasks per level 2-5, 350 stages, and ten configurations. Random obtains ISR macro **3.68%** (pooled ISR **3.14%**); the best learned ISR macro is **2.62%** for `sequence_bc_mild`. Full-chain SR is zero for all configurations. DAgger-lite OSR is **1.00%**. This is development evidence with training/exposure overlap, not an untouched held-out ranking. See [verified summaries](results/balanced100_eval_20261013_v1/verified_results.json).
 
-```powershell
-python main.py `
-  --scene ../data/hm3d/ `
-  --scene_dataset ../data/hm3d/hm3d_annotated_basis.scene_dataset_config.json `
-  --ram_model ../data/models/ram_plus_swin_large_14m.pth
-```
+Approach-goal IL, matched-contract repairs, recovery training, and STOP-counter ablations use distinct contracts. Teacher replay success is not learned-policy success. Training-set fit and text controls do not establish generalization. See the [experiment mapping](docs/PAPER_CODE_MAP.md) and [experiment recap](docs/experiment-records/experiment-results-recap-20261014.md).
 
-## Outputs
+## Generation, attribution, and citation
 
-Runtime outputs are generated locally and ignored by Git:
+The root generation pipeline adapts [HCPLab-SYSU/LH-VLN](https://github.com/HCPLab-SYSU/LH-VLN), including NavGen. Qwen-compatible helpers, Indonesian-English prompts, and language metrics form the generation adaptation. Additional project experiment implementations are documented in [provenance](docs/PROVENANCE.md). Existing third-party code is not relabeled as independently authored.
 
-- `task/`: high-level task configurations and rollout records.
-- `step_task/`: generated step-level navigation instructions.
-- `logs/`: evaluation logs and RAM/RAM++ processing logs.
-
-## Evaluation
-
-The `eval/` folder contains Indonesian-English code-switching metrics. These metrics evaluate language quality in addition to navigation validity:
-
-- Indonesian and English token distribution.
-- Code-Mixing Index (CMI).
-- I-index and switch-point behavior.
-- Span, entropy, burstiness, memory, and T-index style measurements where configured.
-
-See `DATASET_CARD.md` for the intended dataset profile, limitations, and reporting notes.
-
-## Attribution
-
-IDEN-VLN adapts the LH-VLN/NavGen data-generation workflow by HCPLab-SYSU:
-
-- Original repository: https://github.com/HCPLab-SYSU/LH-VLN
-
-The repository also depends on Habitat-Sim/HM3D, RAM/RAM++, and Qwen2.5. See `NOTICE.md` and `CITATION.md` for attribution details.
-
-## License Note
-
-The upstream LH-VLN/NavGen repository does not appear to provide a clear top-level license in the available project context. This repository therefore does not add a new permissive top-level license. Verify permissions with the upstream authors before public redistribution beyond academic review or private research use.
-
+See [generation instructions](docs/generation.md), [citation](CITATION.md), and [notices](NOTICE.md). The inherited root `requirements.txt` is a historical generator dependency list; it is not the tested environment for every later experiment.

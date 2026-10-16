@@ -1,0 +1,5002 @@
+[
+  {
+    "task_id": "old_3cdfcb880abea695",
+    "split": "val",
+    "level": 2,
+    "scene": "00330-WhNyDTnd9g5",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Bedroom lalu ambil pouffe dengan perlahan, kemudian move ke Kitchen dan letakkan on rug secara aman/success/trial_1/task.json",
+    "source_sha256": "a84d326d0a1dc3735f629d10c845809a91e8869776b38ca76bcc608383648827",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil pouffe dengan perlahan, kemudian move ke Kitchen dan letakkan on rug secara aman",
+      "Scene": "00330-WhNyDTnd9g5",
+      "Robot": "spot",
+      "Object": [
+        "pouffe",
+        "rug"
+      ],
+      "Region": [
+        "6",
+        "11"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Kitchen"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        33,
+        58
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.18954400718212128,
+        2.7934396266937256,
+        -3.7378082275390625
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 285
+  },
+  {
+    "task_id": "old_c0a2498f9b570822",
+    "split": "train",
+    "level": 2,
+    "scene": "00547-9h5JJxM6E5S",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Bedroom lalu ambil lamp dengan perlahan, kemudian move ke Bedroom dan letakkan on picture secara aman/success/trial_1/task.json",
+    "source_sha256": "77e179512b6f3ceeb1c7e2c8cb8bc2ce34682f1d467a5ca0281402eb7104a5f4",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil lamp dengan perlahan, kemudian move ke Bedroom dan letakkan on picture secara aman",
+      "Scene": "00547-9h5JJxM6E5S",
+      "Robot": "stretch",
+      "Object": [
+        "lamp",
+        "picture"
+      ],
+      "Region": [
+        "12",
+        "13"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        143,
+        40
+      ]
+    },
+    "start_state": {
+      "position": [
+        2.640321969985962,
+        0.1610340178012848,
+        -0.39640018343925476
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 893
+  },
+  {
+    "task_id": "old_ff426d46cdf7624b",
+    "split": "train",
+    "level": 2,
+    "scene": "00835-q3zU7Yy5E5s",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Hall lalu ambil picture dengan perlahan, kemudian move ke mixed room dan letakkan on rug secara aman/success/trial_1/task.json",
+    "source_sha256": "3d5a3a8ded8bde07004cbf0cb2fe7465ffbc3b8be01e7d301abb09a44b5bdf82",
+    "config": {
+      "Task instruction": "Pergi ke Hall lalu ambil picture dengan perlahan, kemudian move ke mixed room dan letakkan on rug secara aman",
+      "Scene": "00835-q3zU7Yy5E5s",
+      "Robot": "spot",
+      "Object": [
+        "picture",
+        "rug"
+      ],
+      "Region": [
+        "8",
+        "3"
+      ],
+      "Region Name": [
+        "Hall",
+        "Tie: Kitchen & Living room"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        29,
+        15
+      ]
+    },
+    "start_state": {
+      "position": [
+        -5.640577793121338,
+        0.03521956503391266,
+        -1.4988651275634766
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1202
+  },
+  {
+    "task_id": "v2_ed448c8e14302389",
+    "split": "val",
+    "level": 2,
+    "scene": "00757-LVgQNuK8vtv",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Bathroom lalu ambil door dengan perlahan, kemudian move ke Kitchen dan letakkan on coffee machine secara aman__source_batch_0049/success/trial_1/task.json",
+    "source_sha256": "09a482c097193bf0796507f59f39cc60ce076b049e57f51468ec9808467fb4a0",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil door dengan perlahan, kemudian move ke Kitchen dan letakkan on coffee machine secara aman",
+      "Scene": "00757-LVgQNuK8vtv",
+      "Robot": "stretch",
+      "Object": [
+        "door",
+        "coffee machine"
+      ],
+      "Region": [
+        "10",
+        "4"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Kitchen"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        89,
+        57
+      ]
+    },
+    "start_state": {
+      "position": [
+        -1.2694807052612305,
+        0.19365596771240234,
+        -3.8571114540100098
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2413
+  },
+  {
+    "task_id": "old_902eb627ee94e545",
+    "split": "train",
+    "level": 2,
+    "scene": "00307-vDfkYo5VqEQ",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Living room lalu ambil couch dengan perlahan, kemudian move ke Bedroom dan letakkan on drawer secara aman/success/trial_1/task.json",
+    "source_sha256": "5286b67eb90511b2ec74bffd3902785631662963a7a682632142d6a15448fcd3",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil couch dengan perlahan, kemudian move ke Bedroom dan letakkan on drawer secara aman",
+      "Scene": "00307-vDfkYo5VqEQ",
+      "Robot": "spot",
+      "Object": [
+        "couch",
+        "drawer"
+      ],
+      "Region": [
+        "3",
+        "4"
+      ],
+      "Region Name": [
+        "Living room",
+        "Bedroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        116,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        7.889516830444336,
+        -3.117990493774414,
+        0.20697784423828125
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 683
+  },
+  {
+    "task_id": "v2_b354676bc411f68a",
+    "split": "train",
+    "level": 2,
+    "scene": "00016-qk9eeNeR4vw",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Bathroom lalu ambil toilet dengan perlahan, kemudian move ke Living room dan letakkan on vase secara aman__source_batch_0040/success/trial_1/task.json",
+    "source_sha256": "2c5337c2f6c33ff3c78aa890882939530369b069f9c9c8c8c57280174b606833",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil toilet dengan perlahan, kemudian move ke Living room dan letakkan on vase secara aman",
+      "Scene": "00016-qk9eeNeR4vw",
+      "Robot": "stretch",
+      "Object": [
+        "toilet",
+        "vase"
+      ],
+      "Region": [
+        "13",
+        "6"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Living room"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        15,
+        12
+      ]
+    },
+    "start_state": {
+      "position": [
+        -7.590395927429199,
+        0.08975833654403687,
+        -1.1694873571395874
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2102
+  },
+  {
+    "task_id": "old_2259f5211ac723e5",
+    "split": "val",
+    "level": 2,
+    "scene": "00591-JptJPosx1Z6",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Bathroom lalu ambil countertop dengan perlahan, kemudian move ke Bedroom dan letakkan on storage box secara aman/success/trial_1/task.json",
+    "source_sha256": "2626241611d93ef7c2a84940e6e82ab87105745873651bf73c65617fea042486",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil countertop dengan perlahan, kemudian move ke Bedroom dan letakkan on storage box secara aman",
+      "Scene": "00591-JptJPosx1Z6",
+      "Robot": "spot",
+      "Object": [
+        "countertop",
+        "storage box"
+      ],
+      "Region": [
+        "20",
+        "0"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        140,
+        117
+      ]
+    },
+    "start_state": {
+      "position": [
+        -12.675371170043945,
+        0.16929110884666443,
+        -6.342065811157227
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 153
+  },
+  {
+    "task_id": "v2_966b5490c8d8f5f6",
+    "split": "test",
+    "level": 2,
+    "scene": "00506-QVAA6zecMHu",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Bedroom lalu ambil chest of drawers dengan perlahan, kemudian move ke Bedroom dan letakkan on door secara aman__source_batch_0042/success/trial_1/task.json",
+    "source_sha256": "735b83959d6b7c23a58e651bf628b470ac1b8687c7ffdb0a77086f89847c5953",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil chest of drawers dengan perlahan, kemudian move ke Bedroom dan letakkan on door secara aman",
+      "Scene": "00506-QVAA6zecMHu",
+      "Robot": "spot",
+      "Object": [
+        "chest of drawers",
+        "door"
+      ],
+      "Region": [
+        "3",
+        "3"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        10,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.8565187454223633,
+        0.03892159461975098,
+        0.25061774253845215
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1963
+  },
+  {
+    "task_id": "v2_e83e8a30f0615b92",
+    "split": "train",
+    "level": 2,
+    "scene": "00025-ixTj1aTMup2",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Bathroom lalu ambil bathtub dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet paper secara aman__source_batch_0017/success/trial_1/task.json",
+    "source_sha256": "77858ed18d2ca955f7e9c2e32056cce1194fcb9d2c864f87e44eb884dcdfe93c",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil bathtub dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet paper secara aman",
+      "Scene": "00025-ixTj1aTMup2",
+      "Robot": "stretch",
+      "Object": [
+        "bathtub",
+        "toilet paper"
+      ],
+      "Region": [
+        "6",
+        "8"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bathroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        37,
+        30
+      ]
+    },
+    "start_state": {
+      "position": [
+        -2.0567467212677,
+        0.207916259765625,
+        1.8299548625946045
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2384
+  },
+  {
+    "task_id": "v2_a3fdd54206e43afd",
+    "split": "train",
+    "level": 2,
+    "scene": "00313-PE6kVEtrxtj",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Bathroom lalu ambil shower hose dengan perlahan, kemudian move ke Bedroom dan letakkan on jar secara aman__source_batch_0029/success/trial_1/task.json",
+    "source_sha256": "9aff3de6b5457fe219971ecccb0e7e57774c968df1670dcd552e82f0c872f3e8",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil shower hose dengan perlahan, kemudian move ke Bedroom dan letakkan on jar secara aman",
+      "Scene": "00313-PE6kVEtrxtj",
+      "Robot": "stretch",
+      "Object": [
+        "shower hose",
+        "jar"
+      ],
+      "Region": [
+        "9",
+        "7"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        43,
+        49
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.4738763570785522,
+        0.09852778911590576,
+        3.1531641483306885
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2028
+  },
+  {
+    "task_id": "topup_07c4a3e7cdd05cb0",
+    "split": "train",
+    "level": 2,
+    "scene": "00378-DqJKU7YU7dA",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_topup2500_qwen7b_20260703/combined_task/2/Pergi ke Bathroom lalu ambil case dengan perlahan, kemudian move ke Office dan letakkan on utensil secara aman__source_batch_0001/success/trial_1/task.json",
+    "source_sha256": "711ad17da5d23f1b0417988456aa4318da36b45ece1b49b015320f3b223b0143",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil case dengan perlahan, kemudian move ke Office dan letakkan on utensil secara aman",
+      "Scene": "00378-DqJKU7YU7dA",
+      "Robot": "stretch",
+      "Object": [
+        "case",
+        "utensil"
+      ],
+      "Region": [
+        "10",
+        "7"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Office"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        109,
+        29
+      ]
+    },
+    "start_state": {
+      "position": [
+        -3.220643997192383,
+        0.079173743724823,
+        27.351139068603516
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1206
+  },
+  {
+    "task_id": "v2_6b383649afaadecd",
+    "split": "val",
+    "level": 2,
+    "scene": "00757-LVgQNuK8vtv",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Living room lalu ambil lamp dengan perlahan, kemudian move ke Office dan letakkan on lamp secara aman__source_batch_0021/success/trial_1/task.json",
+    "source_sha256": "95fd4d376b8ed242c12fc6886a30fcab3105bc9e1217f9f00a9f23b72b9cb6c1",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil lamp dengan perlahan, kemudian move ke Office dan letakkan on lamp secara aman",
+      "Scene": "00757-LVgQNuK8vtv",
+      "Robot": "spot",
+      "Object": [
+        "lamp",
+        "lamp"
+      ],
+      "Region": [
+        "5",
+        "7"
+      ],
+      "Region Name": [
+        "Living room",
+        "Office"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        23,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        -1.2694807052612305,
+        0.19365596771240234,
+        -3.8571114540100098
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1787
+  },
+  {
+    "task_id": "old_f60f76f199a11323",
+    "split": "train",
+    "level": 2,
+    "scene": "00723-hWDDQnSDMXb",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Bedroom lalu ambil high shelf dengan perlahan, kemudian move ke mixed room dan letakkan on table cloth secara aman/success/trial_1/task.json",
+    "source_sha256": "98d5d129384c5f3946799f8f50b6f12d24dac25abc89cd4b25af1d5d9e933c5b",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil high shelf dengan perlahan, kemudian move ke mixed room dan letakkan on table cloth secara aman",
+      "Scene": "00723-hWDDQnSDMXb",
+      "Robot": "spot",
+      "Object": [
+        "high shelf",
+        "table cloth"
+      ],
+      "Region": [
+        "2",
+        "4"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Tie: Office & Hall"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        100,
+        81
+      ]
+    },
+    "start_state": {
+      "position": [
+        14.097477912902832,
+        1.6414520740509033,
+        15.170467376708984
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1159
+  },
+  {
+    "task_id": "old_ccc7cd7ca4b23c4d",
+    "split": "train",
+    "level": 2,
+    "scene": "00324-DoSbsoo4EAg",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Bedroom lalu ambil wardrobe dengan perlahan, kemudian move ke Bathroom dan letakkan on plunger secara aman/success/trial_1/task.json",
+    "source_sha256": "8f31f29d24ea4fd893af726da73decf2b76edc4c9ce4c36caea74bf26b7735d6",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil wardrobe dengan perlahan, kemudian move ke Bathroom dan letakkan on plunger secara aman",
+      "Scene": "00324-DoSbsoo4EAg",
+      "Robot": "stretch",
+      "Object": [
+        "wardrobe",
+        "plunger"
+      ],
+      "Region": [
+        "4",
+        "0"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        18,
+        19
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.640016794204712,
+        0.08375927805900574,
+        4.417952537536621
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 947
+  },
+  {
+    "task_id": "v2_290e6547116e23be",
+    "split": "test",
+    "level": 2,
+    "scene": "00105-xWvSkKiWQpC",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Office lalu ambil grass dengan perlahan, kemudian move ke Office dan letakkan on poster secara aman__source_batch_0001/success/trial_1/task.json",
+    "source_sha256": "c4027693379d347a8f4958aac01fae425cac8cc8db65944455d6cd846326b99e",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil grass dengan perlahan, kemudian move ke Office dan letakkan on poster secara aman",
+      "Scene": "00105-xWvSkKiWQpC",
+      "Robot": "spot",
+      "Object": [
+        "grass",
+        "poster"
+      ],
+      "Region": [
+        "0",
+        "10"
+      ],
+      "Region Name": [
+        "Office",
+        "Office"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        59,
+        75
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.6497302055358887,
+        0.016809388995170593,
+        3.0253190994262695
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1459
+  },
+  {
+    "task_id": "old_287962a27f6f80bd",
+    "split": "train",
+    "level": 2,
+    "scene": "00307-vDfkYo5VqEQ",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Bedroom lalu ambil lamp dengan perlahan, kemudian move ke Bathroom dan letakkan on bathtub secara aman/success/trial_1/task.json",
+    "source_sha256": "911e15433f7a4753ae0f570f8aa9c0d3a0e52c860bbbf1dc4e9e58c29ed47244",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil lamp dengan perlahan, kemudian move ke Bathroom dan letakkan on bathtub secara aman",
+      "Scene": "00307-vDfkYo5VqEQ",
+      "Robot": "spot",
+      "Object": [
+        "lamp",
+        "bathtub"
+      ],
+      "Region": [
+        "4",
+        "7"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        102,
+        23
+      ]
+    },
+    "start_state": {
+      "position": [
+        7.889516830444336,
+        -3.117990493774414,
+        0.20697784423828125
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 191
+  },
+  {
+    "task_id": "old_bb248ad3f7af0d7c",
+    "split": "train",
+    "level": 2,
+    "scene": "00750-E1NrAhMoqvB",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Laundry room lalu ambil laundry basket dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet secara aman/success/trial_1/task.json",
+    "source_sha256": "c5e756f4d9783af6377412dea9eb5adf017f5095c9cf6d3cb6849dab86dbe7d6",
+    "config": {
+      "Task instruction": "Pergi ke Laundry room lalu ambil laundry basket dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet secara aman",
+      "Scene": "00750-E1NrAhMoqvB",
+      "Robot": "spot",
+      "Object": [
+        "laundry basket",
+        "toilet"
+      ],
+      "Region": [
+        "8",
+        "6"
+      ],
+      "Region Name": [
+        "Laundry room",
+        "Bathroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        49,
+        32
+      ]
+    },
+    "start_state": {
+      "position": [
+        -2.960761547088623,
+        0.06217825412750244,
+        3.028719902038574
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 875
+  },
+  {
+    "task_id": "v2_56f3d2de1892d5d7",
+    "split": "train",
+    "level": 2,
+    "scene": "00606-W16Bm4ysK8v",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Bedroom lalu ambil book dengan perlahan, kemudian move ke Living room dan letakkan on mortar secara aman__source_batch_0011/success/trial_1/task.json",
+    "source_sha256": "76b3d13625c7d329f80a562c3c7a211918c5ef5d671282b2c1278a5b6652654c",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil book dengan perlahan, kemudian move ke Living room dan letakkan on mortar secara aman",
+      "Scene": "00606-W16Bm4ysK8v",
+      "Robot": "stretch",
+      "Object": [
+        "book",
+        "mortar"
+      ],
+      "Region": [
+        "8",
+        "9"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Living room"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        82,
+        50
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.1812230348587036,
+        2.8644237518310547,
+        -6.789949417114258
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1679
+  },
+  {
+    "task_id": "old_e04c1e18c2fce664",
+    "split": "train",
+    "level": 2,
+    "scene": "00087-YY8rqV6L6rf",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Bathroom lalu ambil bathroom accessory dengan perlahan, kemudian move ke Kitchen dan letakkan on cabinet clutter secara aman/success/trial_1/task.json",
+    "source_sha256": "1c29bf03486a891b1480ee0a807c3dd41ea2dab45fb049e948de3f74c7e93ec2",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil bathroom accessory dengan perlahan, kemudian move ke Kitchen dan letakkan on cabinet clutter secara aman",
+      "Scene": "00087-YY8rqV6L6rf",
+      "Robot": "spot",
+      "Object": [
+        "bathroom accessory",
+        "cabinet clutter"
+      ],
+      "Region": [
+        "4",
+        "5"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Kitchen"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        25,
+        17
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.5480287075042725,
+        0.02108585834503174,
+        -3.778297185897827
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1051
+  },
+  {
+    "task_id": "v2_46e9633268ebb3dc",
+    "split": "val",
+    "level": 2,
+    "scene": "00815-h1zeeAwLh9Z",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Living room lalu ambil flower stand dengan perlahan, kemudian move ke Office dan letakkan on door secara aman__source_batch_0037/success/trial_1/task.json",
+    "source_sha256": "38bc82f39567cf3b16d0c8ba45b4394c4a6d55fcf0fe676c1a5b09ffa39037d0",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil flower stand dengan perlahan, kemudian move ke Office dan letakkan on door secara aman",
+      "Scene": "00815-h1zeeAwLh9Z",
+      "Robot": "stretch",
+      "Object": [
+        "flower stand",
+        "door"
+      ],
+      "Region": [
+        "7",
+        "11"
+      ],
+      "Region Name": [
+        "Living room",
+        "Office"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        40,
+        26
+      ]
+    },
+    "start_state": {
+      "position": [
+        8.093880653381348,
+        0.04902343451976776,
+        -6.598226547241211
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1600
+  },
+  {
+    "task_id": "v2_c35a4fa2b29a920f",
+    "split": "train",
+    "level": 2,
+    "scene": "00062-ACZZiU6BXLz",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Living room lalu ambil tv dengan perlahan, kemudian move ke Bathroom dan letakkan on bathtub secara aman__source_batch_0028/success/trial_1/task.json",
+    "source_sha256": "ab3ebc8399b3bd54cf8314b29ee8cb929ec274e27c0d5e19c7fdd1428b73f978",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil tv dengan perlahan, kemudian move ke Bathroom dan letakkan on bathtub secara aman",
+      "Scene": "00062-ACZZiU6BXLz",
+      "Robot": "stretch",
+      "Object": [
+        "tv",
+        "bathtub"
+      ],
+      "Region": [
+        "9",
+        "6"
+      ],
+      "Region Name": [
+        "Living room",
+        "Bathroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        11,
+        14
+      ]
+    },
+    "start_state": {
+      "position": [
+        2.0713276863098145,
+        0.08928397297859192,
+        2.1344826221466064
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2192
+  },
+  {
+    "task_id": "v2_26746b87679868ca",
+    "split": "train",
+    "level": 2,
+    "scene": "00862-LT9Jq6dN3Ea",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/2/Pergi ke Living room lalu ambil couch dengan perlahan, kemudian move ke Dining room dan letakkan on basket of something secara aman__source_batch_0006/success/trial_1/task.json",
+    "source_sha256": "a2b4a8c668b355c40482d45026042bfe5ac6ad7e17b4bc261f6916b9c193e2cd",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil couch dengan perlahan, kemudian move ke Dining room dan letakkan on basket of something secara aman",
+      "Scene": "00862-LT9Jq6dN3Ea",
+      "Robot": "stretch",
+      "Object": [
+        "couch",
+        "basket of something"
+      ],
+      "Region": [
+        "24",
+        "11"
+      ],
+      "Region Name": [
+        "Living room",
+        "Dining room"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        19,
+        67
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.23785090446472168,
+        3.306028127670288,
+        3.590038299560547
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1444
+  },
+  {
+    "task_id": "topup_9ad6e6ceb1d47ac0",
+    "split": "train",
+    "level": 2,
+    "scene": "00746-RTV2n6fXB2w",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_topup2500_qwen7b_20260703/combined_task/2/Pergi ke Office lalu ambil plate dengan perlahan, kemudian move ke Kitchen dan letakkan on iron secara aman__source_batch_0002/success/trial_1/task.json",
+    "source_sha256": "8a79986b6579069250f223eb48fc9b48074c5ed0a51cdaa5b2cdb956b2b248ba",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil plate dengan perlahan, kemudian move ke Kitchen dan letakkan on iron secara aman",
+      "Scene": "00746-RTV2n6fXB2w",
+      "Robot": "stretch",
+      "Object": [
+        "plate",
+        "iron"
+      ],
+      "Region": [
+        "0",
+        "5"
+      ],
+      "Region Name": [
+        "Office",
+        "Kitchen"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        16,
+        10
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.4190624952316284,
+        0.09139084070920944,
+        2.265650987625122
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1242
+  },
+  {
+    "task_id": "old_4b72982b6323db12",
+    "split": "train",
+    "level": 2,
+    "scene": "00313-PE6kVEtrxtj",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Hall lalu ambil painting dengan perlahan, kemudian move ke Bedroom dan letakkan on laundry basket secara aman/success/trial_1/task.json",
+    "source_sha256": "4a8e44d2d4c8784d092ce656df1289ac1e2ab9c37e00a6a4df454b8cddcd0b6c",
+    "config": {
+      "Task instruction": "Pergi ke Hall lalu ambil painting dengan perlahan, kemudian move ke Bedroom dan letakkan on laundry basket secara aman",
+      "Scene": "00313-PE6kVEtrxtj",
+      "Robot": "stretch",
+      "Object": [
+        "painting",
+        "laundry basket"
+      ],
+      "Region": [
+        "0",
+        "7"
+      ],
+      "Region Name": [
+        "Hall",
+        "Bedroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        13,
+        69
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.4738763570785522,
+        0.09852778911590576,
+        3.1531641483306885
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 357
+  },
+  {
+    "task_id": "old_44e44cd4d374f11f",
+    "split": "test",
+    "level": 2,
+    "scene": "00869-MHPLjHsuG27",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/2/Pergi ke Kitchen lalu ambil oven dengan perlahan, kemudian move ke Bathroom dan letakkan on bathroom counter secara aman/success/trial_1/task.json",
+    "source_sha256": "241f459acbb55e42161132c9f7eee6dc0759679a1aa0e786cc1ca98eaf0b4285",
+    "config": {
+      "Task instruction": "Pergi ke Kitchen lalu ambil oven dengan perlahan, kemudian move ke Bathroom dan letakkan on bathroom counter secara aman",
+      "Scene": "00869-MHPLjHsuG27",
+      "Robot": "stretch",
+      "Object": [
+        "oven",
+        "bathroom counter"
+      ],
+      "Region": [
+        "1",
+        "4"
+      ],
+      "Region Name": [
+        "Kitchen",
+        "Bathroom"
+      ],
+      "Generated level": 2,
+      "gt_step": [
+        35,
+        9
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.6538906097412109,
+        -1.4139410257339478,
+        7.006070613861084
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 326
+  },
+  {
+    "task_id": "old_2a0bb34a1bf7f606",
+    "split": "train",
+    "level": 3,
+    "scene": "00539-zUG6FL9TYeR",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Bathroom lalu ambil basket dengan perlahan, kemudian move ke mixed room dan letakkan on cabinet secara aman, lalu move ke mixed room cek target/success/trial_1/task.json",
+    "source_sha256": "85cb65afd7599eb57f9d426ae6750cf69253474b4b4e78f8d2cbb2411d5bcf85",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil basket dengan perlahan, kemudian move ke mixed room dan letakkan on cabinet secara aman, lalu move ke mixed room cek target",
+      "Scene": "00539-zUG6FL9TYeR",
+      "Robot": "spot",
+      "Object": [
+        "basket",
+        "cabinet",
+        "door"
+      ],
+      "Region": [
+        "10",
+        "4",
+        "4"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Tie: Living room & Hall",
+        "Tie: Living room & Hall"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        51,
+        82,
+        9
+      ]
+    },
+    "start_state": {
+      "position": [
+        3.6592507362365723,
+        2.717231035232544,
+        6.003589630126953
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 198
+  },
+  {
+    "task_id": "old_c8361fd052839b78",
+    "split": "val",
+    "level": 3,
+    "scene": "00330-WhNyDTnd9g5",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Bedroom lalu ambil chest of drawers dengan perlahan, kemudian move ke Bathroom dan letakkan on shelf secara aman, lalu move ke Kitchen cek target/success/trial_1/task.json",
+    "source_sha256": "8883559bf9f2ce3d31a43d816d60fb6dcfe61d3edad536902f424c7fd18c6b50",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil chest of drawers dengan perlahan, kemudian move ke Bathroom dan letakkan on shelf secara aman, lalu move ke Kitchen cek target",
+      "Scene": "00330-WhNyDTnd9g5",
+      "Robot": "stretch",
+      "Object": [
+        "chest of drawers",
+        "shelf",
+        "desk"
+      ],
+      "Region": [
+        "3",
+        "8",
+        "11"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Kitchen"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        39,
+        21,
+        22
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.18954400718212128,
+        2.7934396266937256,
+        -3.7378082275390625
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 932
+  },
+  {
+    "task_id": "old_1f572df6f2816bac",
+    "split": "train",
+    "level": 3,
+    "scene": "00612-GsQBY83r3hb",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Bedroom lalu ambil candle dengan perlahan, kemudian move ke Living room dan letakkan on painting secara aman, lalu move ke Bathroom cek target/success/trial_1/task.json",
+    "source_sha256": "216b50c18df7a4bb6e7d867ba8bb2bc723205210593b67b280054a72e8074765",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil candle dengan perlahan, kemudian move ke Living room dan letakkan on painting secara aman, lalu move ke Bathroom cek target",
+      "Scene": "00612-GsQBY83r3hb",
+      "Robot": "stretch",
+      "Object": [
+        "candle",
+        "painting",
+        "toilet"
+      ],
+      "Region": [
+        "3",
+        "0",
+        "2"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Living room",
+        "Bathroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        14,
+        23,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.032739728689193726,
+        0.13590310513973236,
+        -0.42872053384780884
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 140
+  },
+  {
+    "task_id": "v2_ee1cb587d7f9bf5d",
+    "split": "train",
+    "level": 3,
+    "scene": "00034-6imZUJGRUq4",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Hall lalu ambil shelf dengan perlahan, kemudian move ke Bedroom dan letakkan on lamp secara aman, lalu move ke Garage cek target__source_batch_0027/success/trial_1/task.json",
+    "source_sha256": "41e6777be1224a3fea7efb69c94ff14284f57fb4faca369774ec016a01a47997",
+    "config": {
+      "Task instruction": "Pergi ke Hall lalu ambil shelf dengan perlahan, kemudian move ke Bedroom dan letakkan on lamp secara aman, lalu move ke Garage cek target",
+      "Scene": "00034-6imZUJGRUq4",
+      "Robot": "spot",
+      "Object": [
+        "shelf",
+        "lamp",
+        "tool box"
+      ],
+      "Region": [
+        "8",
+        "5",
+        "1"
+      ],
+      "Region Name": [
+        "Hall",
+        "Bedroom",
+        "Garage"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        7,
+        28,
+        86
+      ]
+    },
+    "start_state": {
+      "position": [
+        -0.804446280002594,
+        0.11008644104003906,
+        2.535551071166992
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2417
+  },
+  {
+    "task_id": "old_655cbf627eabb366",
+    "split": "train",
+    "level": 3,
+    "scene": "00706-YHmAkqgwe2p",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Kitchen lalu ambil stove dengan perlahan, kemudian move ke mixed room dan letakkan on pot secara aman, lalu move ke Bedroom cek target/success/trial_1/task.json",
+    "source_sha256": "2e53dba0ac9b926e78b8e3cb3859d31fb1ac1c6a9ee38286653fba35317bc35a",
+    "config": {
+      "Task instruction": "Pergi ke Kitchen lalu ambil stove dengan perlahan, kemudian move ke mixed room dan letakkan on pot secara aman, lalu move ke Bedroom cek target",
+      "Scene": "00706-YHmAkqgwe2p",
+      "Robot": "stretch",
+      "Object": [
+        "stove",
+        "pot",
+        "radiator"
+      ],
+      "Region": [
+        "7",
+        "6",
+        "1"
+      ],
+      "Region Name": [
+        "Kitchen",
+        "Tie: Laundry room & Kitchen & Bathroom",
+        "Bedroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        56,
+        20,
+        16
+      ]
+    },
+    "start_state": {
+      "position": [
+        -9.120838165283203,
+        0.07948863506317139,
+        -2.1886134147644043
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 476
+  },
+  {
+    "task_id": "v2_f108ba1ef7d027ea",
+    "split": "train",
+    "level": 3,
+    "scene": "00025-ixTj1aTMup2",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Bathroom lalu ambil showerhead dengan perlahan, kemudian move ke Kitchen dan letakkan on picture secara aman, lalu move ke Kitchen cek target__source_batch_0040/success/trial_1/task.json",
+    "source_sha256": "acc30856bdf73abb5a1a36feaa816c081fbfd58e709fc96c76a8eee3f2bb334d",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil showerhead dengan perlahan, kemudian move ke Kitchen dan letakkan on picture secara aman, lalu move ke Kitchen cek target",
+      "Scene": "00025-ixTj1aTMup2",
+      "Robot": "spot",
+      "Object": [
+        "showerhead",
+        "picture",
+        "chair"
+      ],
+      "Region": [
+        "4",
+        "11",
+        "10"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Kitchen",
+        "Kitchen"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        55,
+        55,
+        9
+      ]
+    },
+    "start_state": {
+      "position": [
+        -2.0567467212677,
+        0.207916259765625,
+        1.8299548625946045
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2430
+  },
+  {
+    "task_id": "v2_7d66be32d3f8675a",
+    "split": "train",
+    "level": 3,
+    "scene": "00712-HZ2iMMBsBQ9",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Bedroom lalu ambil lamp dengan perlahan, kemudian move ke Bedroom dan letakkan on desk secara aman, lalu move ke Living room cek target__source_batch_0048/success/trial_1/task.json",
+    "source_sha256": "ba6d692b6b2748d540c8bef305a1d646b47602f9bc686bccd16101c96f0717ff",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil lamp dengan perlahan, kemudian move ke Bedroom dan letakkan on desk secara aman, lalu move ke Living room cek target",
+      "Scene": "00712-HZ2iMMBsBQ9",
+      "Robot": "spot",
+      "Object": [
+        "lamp",
+        "desk",
+        "couch"
+      ],
+      "Region": [
+        "7",
+        "7",
+        "6"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bedroom",
+        "Living room"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        25,
+        14,
+        65
+      ]
+    },
+    "start_state": {
+      "position": [
+        -4.166093826293945,
+        0.1964448243379593,
+        -3.758091926574707
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1856
+  },
+  {
+    "task_id": "v2_8c47359a19771356",
+    "split": "train",
+    "level": 3,
+    "scene": "00862-LT9Jq6dN3Ea",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Living room lalu ambil chair dengan perlahan, kemudian move ke Kitchen dan letakkan on dishwasher secara aman, lalu move ke mixed room cek target__source_batch_0003/success/trial_1/task.json",
+    "source_sha256": "5d96a85f19ff404be8b3503954fa67584626ad3fd66804e63fd92aa7bb444a80",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil chair dengan perlahan, kemudian move ke Kitchen dan letakkan on dishwasher secara aman, lalu move ke mixed room cek target",
+      "Scene": "00862-LT9Jq6dN3Ea",
+      "Robot": "stretch",
+      "Object": [
+        "chair",
+        "dishwasher",
+        "display cabinet"
+      ],
+      "Region": [
+        "24",
+        "13",
+        "1"
+      ],
+      "Region Name": [
+        "Living room",
+        "Kitchen",
+        "Tie"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        14,
+        67,
+        5
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.23785090446472168,
+        3.306028127670288,
+        3.590038299560547
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1925
+  },
+  {
+    "task_id": "old_c70df17db2f5b37e",
+    "split": "train",
+    "level": 3,
+    "scene": "00664-u5atqC7vRCY",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Bathroom lalu ambil door dengan perlahan, kemudian move ke Bedroom dan letakkan on tv secara aman, lalu move ke mixed room cek target/success/trial_1/task.json",
+    "source_sha256": "d9fdf9a397146b94476557a54dad73d40023c0fda5d856ca995aa35301c8af46",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil door dengan perlahan, kemudian move ke Bedroom dan letakkan on tv secara aman, lalu move ke mixed room cek target",
+      "Scene": "00664-u5atqC7vRCY",
+      "Robot": "stretch",
+      "Object": [
+        "door",
+        "tv",
+        "boxes with books"
+      ],
+      "Region": [
+        "8",
+        "10",
+        "1"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom",
+        "Tie: Office & Living room & Hall"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        39,
+        18,
+        134
+      ]
+    },
+    "start_state": {
+      "position": [
+        -4.488890171051025,
+        2.7261593341827393,
+        0.04077097773551941
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 921
+  },
+  {
+    "task_id": "old_128f8e49ee9cadc2",
+    "split": "train",
+    "level": 3,
+    "scene": "00878-XB4GS9ShBRE",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Bedroom lalu ambil armchair dengan perlahan, kemudian move ke Bedroom dan letakkan on tv secara aman, lalu move ke Bedroom cek target/success/trial_1/task.json",
+    "source_sha256": "e71f0bc3dab7a4eaec0cf3c75c0f3c6d434fbc8e769cc6330d68325ea0b0afac",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil armchair dengan perlahan, kemudian move ke Bedroom dan letakkan on tv secara aman, lalu move ke Bedroom cek target",
+      "Scene": "00878-XB4GS9ShBRE",
+      "Robot": "spot",
+      "Object": [
+        "armchair",
+        "tv",
+        "bed"
+      ],
+      "Region": [
+        "5",
+        "1",
+        "2"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        13,
+        19,
+        4
+      ]
+    },
+    "start_state": {
+      "position": [
+        -3.205141067504883,
+        2.7961292266845703,
+        -1.0185062885284424
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 83
+  },
+  {
+    "task_id": "v2_3d488013beaa652b",
+    "split": "test",
+    "level": 3,
+    "scene": "00366-fxbzYAGkrtm",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Bathroom lalu ambil lamp dengan perlahan, kemudian move ke Office dan letakkan on printer secara aman, lalu move ke Bedroom cek target__source_batch_0030/success/trial_1/task.json",
+    "source_sha256": "d3b6f31645a1c8f0d6a57175f87f0dd3b5c775bdd39ed4058ccb815d51296a7a",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil lamp dengan perlahan, kemudian move ke Office dan letakkan on printer secara aman, lalu move ke Bedroom cek target",
+      "Scene": "00366-fxbzYAGkrtm",
+      "Robot": "spot",
+      "Object": [
+        "lamp",
+        "printer",
+        "door"
+      ],
+      "Region": [
+        "7",
+        "1",
+        "12"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Office",
+        "Bedroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        88,
+        49,
+        11
+      ]
+    },
+    "start_state": {
+      "position": [
+        -0.49848610162734985,
+        -3.1826224327087402,
+        7.552849769592285
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1552
+  },
+  {
+    "task_id": "old_bbd4033a1e0bb8fd",
+    "split": "train",
+    "level": 3,
+    "scene": "00723-hWDDQnSDMXb",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Bedroom lalu ambil night lamp dengan perlahan, kemudian move ke Office dan letakkan on laptop secara aman, lalu move ke Bathroom cek target/success/trial_1/task.json",
+    "source_sha256": "a30cc4bf0715fd874ae8fbfc6f89cbcccad3622c22bc99d92ea1db5431001165",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil night lamp dengan perlahan, kemudian move ke Office dan letakkan on laptop secara aman, lalu move ke Bathroom cek target",
+      "Scene": "00723-hWDDQnSDMXb",
+      "Robot": "stretch",
+      "Object": [
+        "night lamp",
+        "laptop",
+        "washing machine"
+      ],
+      "Region": [
+        "9",
+        "18",
+        "16"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Office",
+        "Bathroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        197,
+        82,
+        23
+      ]
+    },
+    "start_state": {
+      "position": [
+        14.097477912902832,
+        1.6414520740509033,
+        15.170467376708984
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 877
+  },
+  {
+    "task_id": "v2_da1242b6b0336838",
+    "split": "train",
+    "level": 3,
+    "scene": "00723-hWDDQnSDMXb",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Office lalu ambil cabinet dengan perlahan, kemudian move ke Kitchen dan letakkan on oven secara aman, lalu move ke Office cek target__source_batch_0049/success/trial_1/task.json",
+    "source_sha256": "6c947b03672ccdc315f63f0e37aa0f8c21af8569be256cab0d67b16615d2b329",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil cabinet dengan perlahan, kemudian move ke Kitchen dan letakkan on oven secara aman, lalu move ke Office cek target",
+      "Scene": "00723-hWDDQnSDMXb",
+      "Robot": "spot",
+      "Object": [
+        "cabinet",
+        "oven",
+        "cabinet"
+      ],
+      "Region": [
+        "18",
+        "13",
+        "21"
+      ],
+      "Region Name": [
+        "Office",
+        "Kitchen",
+        "Office"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        173,
+        13,
+        13
+      ]
+    },
+    "start_state": {
+      "position": [
+        14.097477912902832,
+        1.6414520740509033,
+        15.170467376708984
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2310
+  },
+  {
+    "task_id": "old_4b279b354e7fbe00",
+    "split": "train",
+    "level": 3,
+    "scene": "00706-YHmAkqgwe2p",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Living room lalu ambil cabinet dengan perlahan, kemudian move ke Living room dan letakkan on table secara aman, lalu move ke Bathroom cek target/success/trial_1/task.json",
+    "source_sha256": "6de485d785a83130e1e0f01b3d605f702bf214b8bfc37053130477c221274c5d",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil cabinet dengan perlahan, kemudian move ke Living room dan letakkan on table secara aman, lalu move ke Bathroom cek target",
+      "Scene": "00706-YHmAkqgwe2p",
+      "Robot": "spot",
+      "Object": [
+        "cabinet",
+        "table",
+        "shower hose"
+      ],
+      "Region": [
+        "2",
+        "2",
+        "4"
+      ],
+      "Region Name": [
+        "Living room",
+        "Living room",
+        "Bathroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        56,
+        5,
+        6
+      ]
+    },
+    "start_state": {
+      "position": [
+        -9.120838165283203,
+        0.07948863506317139,
+        -2.1886134147644043
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 355
+  },
+  {
+    "task_id": "v2_9691c80482856bb1",
+    "split": "test",
+    "level": 3,
+    "scene": "00172-bB6nKqfsb1z",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Bathroom lalu ambil toilet paper dengan perlahan, kemudian move ke Bathroom dan letakkan on door secara aman, lalu move ke Bathroom cek target__source_batch_0014/success/trial_1/task.json",
+    "source_sha256": "7256cee215a95a5a2082e3d10e4e2c8484168d80a9084197f0f74ae1d1f35311",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil toilet paper dengan perlahan, kemudian move ke Bathroom dan letakkan on door secara aman, lalu move ke Bathroom cek target",
+      "Scene": "00172-bB6nKqfsb1z",
+      "Robot": "spot",
+      "Object": [
+        "toilet paper",
+        "door",
+        "blinds"
+      ],
+      "Region": [
+        "3",
+        "10",
+        "8"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bathroom",
+        "Bathroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        121,
+        49,
+        5
+      ]
+    },
+    "start_state": {
+      "position": [
+        2.2256579399108887,
+        -3.2899491786956787,
+        6.597413063049316
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1965
+  },
+  {
+    "task_id": "v2_c090c8d59c1d1f45",
+    "split": "train",
+    "level": 3,
+    "scene": "00508-4vwGX7U38Ux",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Bedroom lalu ambil binder dengan perlahan, kemudian move ke Bathroom dan letakkan on cabinet secara aman, lalu move ke mixed room cek target__source_batch_0010/success/trial_1/task.json",
+    "source_sha256": "fc2551aa6dfd50e041e21494dbdc31bb6baea5c30bccafdf544ba68c17ec535c",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil binder dengan perlahan, kemudian move ke Bathroom dan letakkan on cabinet secara aman, lalu move ke mixed room cek target",
+      "Scene": "00508-4vwGX7U38Ux",
+      "Robot": "spot",
+      "Object": [
+        "binder",
+        "cabinet",
+        "door"
+      ],
+      "Region": [
+        "0",
+        "3",
+        "7"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Tie"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        29,
+        7,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        -2.567751407623291,
+        0.13024532794952393,
+        0.7322719097137451
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2176
+  },
+  {
+    "task_id": "v2_d042d168dd4cf065",
+    "split": "train",
+    "level": 3,
+    "scene": "00878-XB4GS9ShBRE",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke mixed room lalu ambil guitar dengan perlahan, kemudian move ke Hall dan letakkan on photo secara aman, lalu move ke Bathroom cek target__source_batch_0016/success/trial_1/task.json",
+    "source_sha256": "d8f964b9e466a170aeeea54e3f25070fd882d01fc3e6bd4a61e907fff1756bdb",
+    "config": {
+      "Task instruction": "Pergi ke mixed room lalu ambil guitar dengan perlahan, kemudian move ke Hall dan letakkan on photo secara aman, lalu move ke Bathroom cek target",
+      "Scene": "00878-XB4GS9ShBRE",
+      "Robot": "spot",
+      "Object": [
+        "guitar",
+        "photo",
+        "shoe"
+      ],
+      "Region": [
+        "12",
+        "7",
+        "6"
+      ],
+      "Region Name": [
+        "Tie",
+        "Hall",
+        "Bathroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        98,
+        76,
+        36
+      ]
+    },
+    "start_state": {
+      "position": [
+        -3.205141067504883,
+        2.7961292266845703,
+        -1.0185062885284424
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2259
+  },
+  {
+    "task_id": "v2_40896258fb7b3045",
+    "split": "train",
+    "level": 3,
+    "scene": "00203-VoVGtfYrpuQ",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Kitchen lalu ambil table dengan perlahan, kemudian move ke Kitchen dan letakkan on dishwasher secara aman, lalu move ke Living room cek target__source_batch_0029/success/trial_1/task.json",
+    "source_sha256": "fb09e3882b0213b0856186b595b73d30d5679108c3adc1eb832176ee4104a119",
+    "config": {
+      "Task instruction": "Pergi ke Kitchen lalu ambil table dengan perlahan, kemudian move ke Kitchen dan letakkan on dishwasher secara aman, lalu move ke Living room cek target",
+      "Scene": "00203-VoVGtfYrpuQ",
+      "Robot": "spot",
+      "Object": [
+        "table",
+        "dishwasher",
+        "sofa"
+      ],
+      "Region": [
+        "17",
+        "17",
+        "3"
+      ],
+      "Region Name": [
+        "Kitchen",
+        "Kitchen",
+        "Living room"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        73,
+        6,
+        73
+      ]
+    },
+    "start_state": {
+      "position": [
+        -0.20059245824813843,
+        1.15226411819458,
+        -0.4325678050518036
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1567
+  },
+  {
+    "task_id": "v2_7019cc8c6ba9111b",
+    "split": "train",
+    "level": 3,
+    "scene": "00434-L5QEsaVqwrY",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Kitchen lalu ambil microwave dengan perlahan, kemudian move ke Bathroom dan letakkan on shower secara aman, lalu move ke Kitchen cek target__source_batch_0027/success/trial_1/task.json",
+    "source_sha256": "e4be965d58fbf49565685a369dcba9d6ded47b8fec93467fccaf682777e1cd08",
+    "config": {
+      "Task instruction": "Pergi ke Kitchen lalu ambil microwave dengan perlahan, kemudian move ke Bathroom dan letakkan on shower secara aman, lalu move ke Kitchen cek target",
+      "Scene": "00434-L5QEsaVqwrY",
+      "Robot": "spot",
+      "Object": [
+        "microwave",
+        "shower",
+        "rug"
+      ],
+      "Region": [
+        "21",
+        "15",
+        "8"
+      ],
+      "Region Name": [
+        "Kitchen",
+        "Bathroom",
+        "Kitchen"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        122,
+        35,
+        29
+      ]
+    },
+    "start_state": {
+      "position": [
+        4.883459091186523,
+        0.05638301372528076,
+        16.986902236938477
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1805
+  },
+  {
+    "task_id": "old_4fbacef42df5675f",
+    "split": "train",
+    "level": 3,
+    "scene": "00873-bxsVRursffK",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Bathroom lalu ambil bathroom shelf dengan perlahan, kemudian move ke Bedroom dan letakkan on backpack secara aman, lalu move ke Bedroom cek target/success/trial_1/task.json",
+    "source_sha256": "637fd6a2baa935e02af4584fbbfd0af7c75c3d99af3941fd69bc7a9ffaa12091",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil bathroom shelf dengan perlahan, kemudian move ke Bedroom dan letakkan on backpack secara aman, lalu move ke Bedroom cek target",
+      "Scene": "00873-bxsVRursffK",
+      "Robot": "spot",
+      "Object": [
+        "bathroom shelf",
+        "backpack",
+        "bed"
+      ],
+      "Region": [
+        "7",
+        "5",
+        "3"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        70,
+        13,
+        10
+      ]
+    },
+    "start_state": {
+      "position": [
+        -5.16827392578125,
+        -2.975324869155884,
+        -0.6520857214927673
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 379
+  },
+  {
+    "task_id": "v2_fdfe7c5b0e19e282",
+    "split": "train",
+    "level": 3,
+    "scene": "00810-CrMo8WxCyVb",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Bedroom lalu ambil door dengan perlahan, kemudian move ke mixed room dan letakkan on couch secara aman, lalu move ke Bedroom cek target__source_batch_0058/success/trial_1/task.json",
+    "source_sha256": "5fc881e466601c648c143c0191c59e6c7255d5499ef173f7fe1d1a15aadc9799",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil door dengan perlahan, kemudian move ke mixed room dan letakkan on couch secara aman, lalu move ke Bedroom cek target",
+      "Scene": "00810-CrMo8WxCyVb",
+      "Robot": "stretch",
+      "Object": [
+        "door",
+        "couch",
+        "nightstand"
+      ],
+      "Region": [
+        "4",
+        "13",
+        "7"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Tie",
+        "Bedroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        81,
+        77,
+        74
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.3279999494552612,
+        -2.899935483932495,
+        4.441991329193115
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2489
+  },
+  {
+    "task_id": "v2_7e07f2ab14035e47",
+    "split": "val",
+    "level": 3,
+    "scene": "00020-XYyR54sxe6b",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Living room lalu ambil cabinet dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet brush secara aman, lalu move ke Living room cek target__source_batch_0009/success/trial_1/task.json",
+    "source_sha256": "a8c8cfd9a32bbe6d86ed9454a952a2432041917e5b525750f7ac2903e5f299ad",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil cabinet dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet brush secara aman, lalu move ke Living room cek target",
+      "Scene": "00020-XYyR54sxe6b",
+      "Robot": "stretch",
+      "Object": [
+        "cabinet",
+        "toilet brush",
+        "couch"
+      ],
+      "Region": [
+        "3",
+        "10",
+        "3"
+      ],
+      "Region Name": [
+        "Living room",
+        "Bathroom",
+        "Living room"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        54,
+        11,
+        12
+      ]
+    },
+    "start_state": {
+      "position": [
+        -4.1787333488464355,
+        2.91707706451416,
+        -4.796143054962158
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1860
+  },
+  {
+    "task_id": "v2_b269ab4735ebf5e6",
+    "split": "val",
+    "level": 3,
+    "scene": "00250-U3oQjwTuMX8",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke Bedroom lalu ambil stool dengan perlahan, kemudian move ke Bathroom dan letakkan on door secara aman, lalu move ke Bathroom cek target__source_batch_0024/success/trial_1/task.json",
+    "source_sha256": "74f4644b224ba1602943ef673591f9c5c17da6c567aac3028132c9b919893352",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil stool dengan perlahan, kemudian move ke Bathroom dan letakkan on door secara aman, lalu move ke Bathroom cek target",
+      "Scene": "00250-U3oQjwTuMX8",
+      "Robot": "stretch",
+      "Object": [
+        "stool",
+        "door",
+        "towel"
+      ],
+      "Region": [
+        "1",
+        "15",
+        "15"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Bathroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        84,
+        54,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        -11.02191162109375,
+        0.07911548018455505,
+        -3.164605140686035
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2096
+  },
+  {
+    "task_id": "old_382c73a8dcce0c38",
+    "split": "train",
+    "level": 3,
+    "scene": "00880-Nfvxx8J5NCo",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/3/Pergi ke Kitchen lalu ambil microwave dengan perlahan, kemudian move ke Bathroom dan letakkan on high shelf secara aman, lalu move ke Laundry room cek target/success/trial_1/task.json",
+    "source_sha256": "8b880e0cf345becdd4f3e7a0ef578f3d4ff64aac36105ccbdaaac5bff4d8494e",
+    "config": {
+      "Task instruction": "Pergi ke Kitchen lalu ambil microwave dengan perlahan, kemudian move ke Bathroom dan letakkan on high shelf secara aman, lalu move ke Laundry room cek target",
+      "Scene": "00880-Nfvxx8J5NCo",
+      "Robot": "stretch",
+      "Object": [
+        "microwave",
+        "high shelf",
+        "shelf"
+      ],
+      "Region": [
+        "1",
+        "11",
+        "4"
+      ],
+      "Region Name": [
+        "Kitchen",
+        "Bathroom",
+        "Laundry room"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        7,
+        11,
+        22
+      ]
+    },
+    "start_state": {
+      "position": [
+        -5.682469367980957,
+        0.1808570772409439,
+        0.8966403007507324
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 264
+  },
+  {
+    "task_id": "v2_4a499fe6674a7d96",
+    "split": "test",
+    "level": 3,
+    "scene": "00733-GtM3JtRvvvR",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/3/Pergi ke mixed room lalu ambil door dengan perlahan, kemudian move ke Bedroom dan letakkan on chest of drawers secara aman, lalu move ke Bedroom cek target__source_batch_0018/success/trial_1/task.json",
+    "source_sha256": "5577b2b1cdc6496f87a2e6ec40374587fa6c21027b1f2c89099bc867f260d4ec",
+    "config": {
+      "Task instruction": "Pergi ke mixed room lalu ambil door dengan perlahan, kemudian move ke Bedroom dan letakkan on chest of drawers secara aman, lalu move ke Bedroom cek target",
+      "Scene": "00733-GtM3JtRvvvR",
+      "Robot": "spot",
+      "Object": [
+        "door",
+        "chest of drawers",
+        "door"
+      ],
+      "Region": [
+        "1",
+        "10",
+        "10"
+      ],
+      "Region Name": [
+        "Tie",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 3,
+      "gt_step": [
+        2,
+        30,
+        31
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.47874346375465393,
+        0.11806264519691467,
+        1.5804461240768433
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1619
+  },
+  {
+    "task_id": "v2_101b0c6931f330a7",
+    "split": "train",
+    "level": 4,
+    "scene": "00680-YmWinf3mhb5",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bathroom lalu ambil cosmetics dengan perlahan, kemudian move ke Bedroom dan letakkan on table secara aman, lalu move ke Bathroom cek target, lalu move ke Living room c end__source_batch_0037/success/trial_1/task.json",
+    "source_sha256": "078398b02390e21642575b6574ac7268bce5b16269c9635f418ae7f319abe23d",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil cosmetics dengan perlahan, kemudian move ke Bedroom dan letakkan on table secara aman, lalu move ke Bathroom cek target, lalu move ke Living room c end",
+      "Scene": "00680-YmWinf3mhb5",
+      "Robot": "spot",
+      "Object": [
+        "cosmetics",
+        "table",
+        "bathroom towel",
+        "table"
+      ],
+      "Region": [
+        "7",
+        "6",
+        "1",
+        "5"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom",
+        "Bathroom",
+        "Living room"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        6,
+        8,
+        38,
+        43
+      ]
+    },
+    "start_state": {
+      "position": [
+        3.1778855323791504,
+        0.11967906355857849,
+        -2.4113502502441406
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1342
+  },
+  {
+    "task_id": "v2_0cdcfe0ecfaa4d47",
+    "split": "train",
+    "level": 4,
+    "scene": "00476-NtnvZSMK3en",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bathroom lalu ambil radiator dengan perlahan, kemudian move ke Dining room dan letakkan on dining chair secara aman, lalu move ke Kitchen cek target, lalu move ke mixe end__source_batch_0036/success/trial_1/task.json",
+    "source_sha256": "90cc3ae0fe9e9e2ebea286927399ce71c9440a1e3fc916aa0fb533bcc2b5f851",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil radiator dengan perlahan, kemudian move ke Dining room dan letakkan on dining chair secara aman, lalu move ke Kitchen cek target, lalu move ke mixe end",
+      "Scene": "00476-NtnvZSMK3en",
+      "Robot": "stretch",
+      "Object": [
+        "radiator",
+        "dining chair",
+        "dog bed",
+        "box"
+      ],
+      "Region": [
+        "4",
+        "10",
+        "11",
+        "12"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Dining room",
+        "Kitchen",
+        "Tie"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        30,
+        25,
+        14,
+        3
+      ]
+    },
+    "start_state": {
+      "position": [
+        -3.2295854091644287,
+        3.155179262161255,
+        -3.6971077919006348
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1318
+  },
+  {
+    "task_id": "v2_37e2cf2020ff3018",
+    "split": "train",
+    "level": 4,
+    "scene": "00803-k1cupFYWXJ6",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Hall lalu ambil picture dengan perlahan, kemudian move ke Hall dan letakkan on air vent secara aman, lalu move ke Hall cek target, lalu move ke Living room cek target__source_batch_0035/success/trial_1/task.json",
+    "source_sha256": "08e3b78af7d156530614dc5f6be1f01c92071a6f0c9de336f380bd1b6dfa72f8",
+    "config": {
+      "Task instruction": "Pergi ke Hall lalu ambil picture dengan perlahan, kemudian move ke Hall dan letakkan on air vent secara aman, lalu move ke Hall cek target, lalu move ke Living room cek target",
+      "Scene": "00803-k1cupFYWXJ6",
+      "Robot": "stretch",
+      "Object": [
+        "picture",
+        "air vent",
+        "exhibition panel",
+        "armchair"
+      ],
+      "Region": [
+        "4",
+        "1",
+        "4",
+        "8"
+      ],
+      "Region Name": [
+        "Hall",
+        "Hall",
+        "Hall",
+        "Living room"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        2,
+        17,
+        10,
+        176
+      ]
+    },
+    "start_state": {
+      "position": [
+        -4.56555700302124,
+        -5.6722283363342285,
+        0.16813960671424866
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1525
+  },
+  {
+    "task_id": "v2_99314cea6cdfe62c",
+    "split": "train",
+    "level": 4,
+    "scene": "00832-qyAac8rV8Zk",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bathroom lalu ambil toilet paper dengan perlahan, kemudian move ke Kitchen dan letakkan on tray secara aman, lalu move ke Kitchen cek target, lalu move ke Bedroom cek end__source_batch_0012/success/trial_1/task.json",
+    "source_sha256": "d07468ad6fd7e5ae2dd4628f4ecef9f3019ccdf4fcea4cc422acb9486450daa5",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil toilet paper dengan perlahan, kemudian move ke Kitchen dan letakkan on tray secara aman, lalu move ke Kitchen cek target, lalu move ke Bedroom cek end",
+      "Scene": "00832-qyAac8rV8Zk",
+      "Robot": "spot",
+      "Object": [
+        "toilet paper",
+        "tray",
+        "kitchen cabinet",
+        "cabinet"
+      ],
+      "Region": [
+        "12",
+        "8",
+        "8",
+        "0"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Kitchen",
+        "Kitchen",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        36,
+        37,
+        2,
+        41
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.17519864439964294,
+        0.01920294761657715,
+        3.0449161529541016
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1972
+  },
+  {
+    "task_id": "v2_5315e4e37c3573f9",
+    "split": "train",
+    "level": 4,
+    "scene": "00832-qyAac8rV8Zk",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bathroom lalu ambil door dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet brush secara aman, lalu move ke Hall cek target, lalu move ke Bedroom cek target__source_batch_0010/success/trial_1/task.json",
+    "source_sha256": "c1b4075c05ba03c79a0f74efcf6178e982936cd8536608afe57cfbf791dc1c1b",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil door dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet brush secara aman, lalu move ke Hall cek target, lalu move ke Bedroom cek target",
+      "Scene": "00832-qyAac8rV8Zk",
+      "Robot": "spot",
+      "Object": [
+        "door",
+        "toilet brush",
+        "lamp",
+        "record player"
+      ],
+      "Region": [
+        "4",
+        "12",
+        "13",
+        "0"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bathroom",
+        "Hall",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        91,
+        83,
+        2,
+        49
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.17519864439964294,
+        0.01920294761657715,
+        3.0449161529541016
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1663
+  },
+  {
+    "task_id": "v2_1de404075ee1aa2c",
+    "split": "train",
+    "level": 4,
+    "scene": "00582-TYDavTf8oyy",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke mixed room lalu ambil chest dengan perlahan, kemudian move ke Bedroom dan letakkan on bed secara aman, lalu move ke Garage cek target, lalu move ke Hall cek target__source_batch_0001/success/trial_1/task.json",
+    "source_sha256": "49cfb06a1ef1029b052c13125bdb23925e05ff193f0ffdd8c6e09b78072f1570",
+    "config": {
+      "Task instruction": "Pergi ke mixed room lalu ambil chest dengan perlahan, kemudian move ke Bedroom dan letakkan on bed secara aman, lalu move ke Garage cek target, lalu move ke Hall cek target",
+      "Scene": "00582-TYDavTf8oyy",
+      "Robot": "spot",
+      "Object": [
+        "chest",
+        "bed",
+        "blanket",
+        "exercise machine"
+      ],
+      "Region": [
+        "1",
+        "13",
+        "2",
+        "7"
+      ],
+      "Region Name": [
+        "Tie",
+        "Bedroom",
+        "Garage",
+        "Hall"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        154,
+        42,
+        105,
+        93
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.4546518325805664,
+        -2.6879663467407227,
+        -6.811927795410156
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1401
+  },
+  {
+    "task_id": "v2_b1754e1bbab61a7c",
+    "split": "val",
+    "level": 4,
+    "scene": "00591-JptJPosx1Z6",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bedroom lalu ambil picture dengan perlahan, kemudian move ke Bathroom dan letakkan on countertop secara aman, lalu move ke Office cek target, lalu move ke Bathroom cek end__source_batch_0035/success/trial_1/task.json",
+    "source_sha256": "d90c4888d72395b5fe23643fff89c5d395b634b8f9dbdf6b6cb648a9a9b4c170",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil picture dengan perlahan, kemudian move ke Bathroom dan letakkan on countertop secara aman, lalu move ke Office cek target, lalu move ke Bathroom cek end",
+      "Scene": "00591-JptJPosx1Z6",
+      "Robot": "stretch",
+      "Object": [
+        "picture",
+        "countertop",
+        "table",
+        "picture"
+      ],
+      "Region": [
+        "11",
+        "20",
+        "6",
+        "19"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Office",
+        "Bathroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        70,
+        101,
+        123,
+        63
+      ]
+    },
+    "start_state": {
+      "position": [
+        -12.675371170043945,
+        0.16929110884666443,
+        -6.342065811157227
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2092
+  },
+  {
+    "task_id": "old_c26175cb0add1b85",
+    "split": "train",
+    "level": 4,
+    "scene": "00606-W16Bm4ysK8v",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke Kitchen lalu ambil blinds dengan perlahan, kemudian move ke Bathroom dan letakkan on bath secara aman, lalu move ke Kitchen cek target, lalu move ke Bedroom cek target/success/trial_1/task.json",
+    "source_sha256": "a67428cbc37641e4cddc67005318402910aa8f49f8269aafa0ce027358b2421f",
+    "config": {
+      "Task instruction": "Pergi ke Kitchen lalu ambil blinds dengan perlahan, kemudian move ke Bathroom dan letakkan on bath secara aman, lalu move ke Kitchen cek target, lalu move ke Bedroom cek target",
+      "Scene": "00606-W16Bm4ysK8v",
+      "Robot": "stretch",
+      "Object": [
+        "blinds",
+        "bath",
+        "door",
+        "bed"
+      ],
+      "Region": [
+        "7",
+        "0",
+        "7",
+        "4"
+      ],
+      "Region Name": [
+        "Kitchen",
+        "Bathroom",
+        "Kitchen",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        59,
+        33,
+        15,
+        64
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.1812230348587036,
+        2.8644237518310547,
+        -6.789949417114258
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 895
+  },
+  {
+    "task_id": "v2_0780d165bed1b994",
+    "split": "train",
+    "level": 4,
+    "scene": "00843-DYehNKdT76V",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bathroom lalu ambil tap dengan perlahan, kemudian move ke Bedroom dan letakkan on electrical controller secara aman, lalu move ke Bathroom cek target, lalu move ke Bat end__source_batch_0032/success/trial_1/task.json",
+    "source_sha256": "d1f5241a473e485238709bf2c030a1bdfef9f2b5a9c29853b01794a59de2ff2c",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil tap dengan perlahan, kemudian move ke Bedroom dan letakkan on electrical controller secara aman, lalu move ke Bathroom cek target, lalu move ke Bat end",
+      "Scene": "00843-DYehNKdT76V",
+      "Robot": "stretch",
+      "Object": [
+        "tap",
+        "electrical controller",
+        "tap",
+        "shower cabin"
+      ],
+      "Region": [
+        "5",
+        "3",
+        "2",
+        "5"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom",
+        "Bathroom",
+        "Bathroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        33,
+        4,
+        2,
+        94
+      ]
+    },
+    "start_state": {
+      "position": [
+        -3.6155807971954346,
+        3.3365070819854736,
+        -5.284048080444336
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1294
+  },
+  {
+    "task_id": "old_2585d63965a222b0",
+    "split": "train",
+    "level": 4,
+    "scene": "00567-KjZrPggnHm8",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke Bedroom lalu ambil door dengan perlahan, kemudian move ke Bedroom dan letakkan on door secara aman, lalu move ke Bathroom cek target, lalu move ke Bedroom cek target/success/trial_1/task.json",
+    "source_sha256": "a27b8fea031dff14dd832bae1ef46f2e5255948d0c22ffdaf1114fa11907415a",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil door dengan perlahan, kemudian move ke Bedroom dan letakkan on door secara aman, lalu move ke Bathroom cek target, lalu move ke Bedroom cek target",
+      "Scene": "00567-KjZrPggnHm8",
+      "Robot": "stretch",
+      "Object": [
+        "door",
+        "door",
+        "towel",
+        "rug"
+      ],
+      "Region": [
+        "13",
+        "8",
+        "1",
+        "4"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bedroom",
+        "Bathroom",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        48,
+        2,
+        10,
+        55
+      ]
+    },
+    "start_state": {
+      "position": [
+        10.600582122802734,
+        0.08355426788330078,
+        -3.613435745239258
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 169
+  },
+  {
+    "task_id": "v2_8b679d06684a560a",
+    "split": "test",
+    "level": 4,
+    "scene": "00326-u9rPN5cHWBg",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Laundry room lalu ambil partition dengan perlahan, kemudian move ke Hall dan letakkan on flowerpot secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom c end__source_batch_0018/success/trial_1/task.json",
+    "source_sha256": "8cdfcd2a657c74c287115ed567c8688a5d34ab87321b88b1f464451131434ce3",
+    "config": {
+      "Task instruction": "Pergi ke Laundry room lalu ambil partition dengan perlahan, kemudian move ke Hall dan letakkan on flowerpot secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom c end",
+      "Scene": "00326-u9rPN5cHWBg",
+      "Robot": "spot",
+      "Object": [
+        "partition",
+        "flowerpot",
+        "recycle bin",
+        "hanging clothes"
+      ],
+      "Region": [
+        "4",
+        "15",
+        "12",
+        "20"
+      ],
+      "Region Name": [
+        "Laundry room",
+        "Hall",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        106,
+        35,
+        62,
+        87
+      ]
+    },
+    "start_state": {
+      "position": [
+        18.154953002929688,
+        0.16440987586975098,
+        2.7635891437530518
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1923
+  },
+  {
+    "task_id": "old_aff6676e5e93ded2",
+    "split": "train",
+    "level": 4,
+    "scene": "00820-mL8ThkuaVTM",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke mixed room lalu ambil heater dengan perlahan, kemudian move ke Bedroom dan letakkan on heater secara aman, lalu move ke Bathroom cek target, lalu move ke Bedroom cek t end/success/trial_1/task.json",
+    "source_sha256": "617f55cbce7059d9820bb977f0ad4577759c9b9937d87290fa7187e5ab3db2b9",
+    "config": {
+      "Task instruction": "Pergi ke mixed room lalu ambil heater dengan perlahan, kemudian move ke Bedroom dan letakkan on heater secara aman, lalu move ke Bathroom cek target, lalu move ke Bedroom cek t end",
+      "Scene": "00820-mL8ThkuaVTM",
+      "Robot": "stretch",
+      "Object": [
+        "heater",
+        "heater",
+        "handrail",
+        "bed"
+      ],
+      "Region": [
+        "9",
+        "8",
+        "10",
+        "8"
+      ],
+      "Region Name": [
+        "Tie: Bedroom & Living room",
+        "Bedroom",
+        "Bathroom",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        60,
+        2,
+        49,
+        32
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.6799848079681396,
+        0.6276538372039795,
+        -2.2079033851623535
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 828
+  },
+  {
+    "task_id": "old_2705ba8072dac8f7",
+    "split": "train",
+    "level": 4,
+    "scene": "00025-ixTj1aTMup2",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke Bathroom lalu ambil sink dengan perlahan, kemudian move ke Bedroom dan letakkan on table secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom cek target/success/trial_1/task.json",
+    "source_sha256": "1644adea088b4da7d24a3875838d9bf8c350d86ff6c164513b820e8940f5ed30",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil sink dengan perlahan, kemudian move ke Bedroom dan letakkan on table secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom cek target",
+      "Scene": "00025-ixTj1aTMup2",
+      "Robot": "stretch",
+      "Object": [
+        "sink",
+        "table",
+        "towel",
+        "brochure"
+      ],
+      "Region": [
+        "8",
+        "2",
+        "12",
+        "12"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        2,
+        46,
+        47,
+        3
+      ]
+    },
+    "start_state": {
+      "position": [
+        -2.0567467212677,
+        0.207916259765625,
+        1.8299548625946045
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 178
+  },
+  {
+    "task_id": "old_ac648f9fd309d913",
+    "split": "train",
+    "level": 4,
+    "scene": "00294-PPTLa8SkUfo",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke Living room lalu ambil carpet dengan perlahan, kemudian move ke Bedroom dan letakkan on bag secara aman, lalu move ke Hall cek target, lalu move ke Bedroom cek target/success/trial_1/task.json",
+    "source_sha256": "303c5e7b71c19dcb0cc8ae6afbba15f808c157981f3e7f7f11238f12d7608a8c",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil carpet dengan perlahan, kemudian move ke Bedroom dan letakkan on bag secara aman, lalu move ke Hall cek target, lalu move ke Bedroom cek target",
+      "Scene": "00294-PPTLa8SkUfo",
+      "Robot": "spot",
+      "Object": [
+        "carpet",
+        "bag",
+        "railing",
+        "telephone"
+      ],
+      "Region": [
+        "10",
+        "8",
+        "1",
+        "3"
+      ],
+      "Region Name": [
+        "Living room",
+        "Bedroom",
+        "Hall",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        57,
+        22,
+        55,
+        101
+      ]
+    },
+    "start_state": {
+      "position": [
+        15.050067901611328,
+        -0.5347746014595032,
+        3.753354072570801
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 809
+  },
+  {
+    "task_id": "v2_380068c16bbdca16",
+    "split": "train",
+    "level": 4,
+    "scene": "00539-zUG6FL9TYeR",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bedroom lalu ambil bed dengan perlahan, kemudian move ke Bathroom dan letakkan on sink cabinet secara aman, lalu move ke Bedroom cek target, lalu move ke Bathroom cek end__source_batch_0049/success/trial_1/task.json",
+    "source_sha256": "6be7a26f18b7136c03ee7f2573b7bdf4cf59cb8af5052a0ed5eca2cdbdd72ef1",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil bed dengan perlahan, kemudian move ke Bathroom dan letakkan on sink cabinet secara aman, lalu move ke Bedroom cek target, lalu move ke Bathroom cek end",
+      "Scene": "00539-zUG6FL9TYeR",
+      "Robot": "spot",
+      "Object": [
+        "bed",
+        "sink cabinet",
+        "table",
+        "ventilation"
+      ],
+      "Region": [
+        "1",
+        "8",
+        "6",
+        "10"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Bedroom",
+        "Bathroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        66,
+        34,
+        54,
+        17
+      ]
+    },
+    "start_state": {
+      "position": [
+        3.6592507362365723,
+        2.717231035232544,
+        6.003589630126953
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1527
+  },
+  {
+    "task_id": "v2_b05db83bb8c43bfc",
+    "split": "test",
+    "level": 4,
+    "scene": "00269-JNiWU5TZLtt",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Office lalu ambil cabinet dengan perlahan, kemudian move ke Living room dan letakkan on pot secara aman, lalu move ke Living room cek target, lalu move ke Kitchen cek end__source_batch_0035/success/trial_1/task.json",
+    "source_sha256": "0ef6b0346f9bce2c1e8cf4aaea8a82fe4902e64bf74135f672e8523e9e05eedd",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil cabinet dengan perlahan, kemudian move ke Living room dan letakkan on pot secara aman, lalu move ke Living room cek target, lalu move ke Kitchen cek end",
+      "Scene": "00269-JNiWU5TZLtt",
+      "Robot": "spot",
+      "Object": [
+        "cabinet",
+        "pot",
+        "box",
+        "clothes hanger"
+      ],
+      "Region": [
+        "10",
+        "8",
+        "8",
+        "11"
+      ],
+      "Region Name": [
+        "Office",
+        "Living room",
+        "Living room",
+        "Kitchen"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        154,
+        21,
+        26,
+        30
+      ]
+    },
+    "start_state": {
+      "position": [
+        -0.339977502822876,
+        0.0724058449268341,
+        -30.299203872680664
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2086
+  },
+  {
+    "task_id": "old_0877ffb31e98e459",
+    "split": "train",
+    "level": 4,
+    "scene": "00033-oPj9qMxrDEa",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke Bathroom lalu ambil rack dengan perlahan, kemudian move ke mixed room dan letakkan on fire extinguisher secara aman, lalu move ke mixed room cek target, lalu move ke K end/success/trial_1/task.json",
+    "source_sha256": "38a1a01dc3c8377f37b33cb4cf0ba412e63c655e4413cabc261e601a3d2cc131",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil rack dengan perlahan, kemudian move ke mixed room dan letakkan on fire extinguisher secara aman, lalu move ke mixed room cek target, lalu move ke K end",
+      "Scene": "00033-oPj9qMxrDEa",
+      "Robot": "spot",
+      "Object": [
+        "rack",
+        "fire extinguisher",
+        "blanket",
+        "picture"
+      ],
+      "Region": [
+        "2",
+        "7",
+        "7",
+        "1"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Tie: Laundry room & Bedroom & Kitchen",
+        "Tie: Laundry room & Bedroom & Kitchen",
+        "Kitchen"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        63,
+        51,
+        2,
+        11
+      ]
+    },
+    "start_state": {
+      "position": [
+        2.3072261810302734,
+        0.13368353247642517,
+        7.026257514953613
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 50
+  },
+  {
+    "task_id": "v2_b08f297db2678482",
+    "split": "train",
+    "level": 4,
+    "scene": "00135-HeSYRw7eMtG",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Laundry room lalu ambil door dengan perlahan, kemudian move ke Office dan letakkan on stack of papers secara aman, lalu move ke Bedroom cek target, lalu move ke Kitche end__source_batch_0026/success/trial_1/task.json",
+    "source_sha256": "efb341bceff188efec904ee55c89092f25a2e0bb859386631e6437700591375a",
+    "config": {
+      "Task instruction": "Pergi ke Laundry room lalu ambil door dengan perlahan, kemudian move ke Office dan letakkan on stack of papers secara aman, lalu move ke Bedroom cek target, lalu move ke Kitche end",
+      "Scene": "00135-HeSYRw7eMtG",
+      "Robot": "stretch",
+      "Object": [
+        "door",
+        "stack of papers",
+        "door",
+        "dishwasher"
+      ],
+      "Region": [
+        "4",
+        "9",
+        "16",
+        "11"
+      ],
+      "Region Name": [
+        "Laundry room",
+        "Office",
+        "Bedroom",
+        "Kitchen"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        95,
+        61,
+        61,
+        81
+      ]
+    },
+    "start_state": {
+      "position": [
+        -3.075312614440918,
+        3.2445802688598633,
+        -6.368801116943359
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2090
+  },
+  {
+    "task_id": "old_14180793e1d8afee",
+    "split": "train",
+    "level": 4,
+    "scene": "00582-TYDavTf8oyy",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke Bathroom lalu ambil toilet dengan perlahan, kemudian move ke Bedroom dan letakkan on cabinet secara aman, lalu move ke Hall cek target, lalu move ke Dining room cek target/success/trial_1/task.json",
+    "source_sha256": "55801171539bb1be5433828a41b2faae50995396a50c9af58bd48fe1ab68fdd6",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil toilet dengan perlahan, kemudian move ke Bedroom dan letakkan on cabinet secara aman, lalu move ke Hall cek target, lalu move ke Dining room cek target",
+      "Scene": "00582-TYDavTf8oyy",
+      "Robot": "spot",
+      "Object": [
+        "toilet",
+        "cabinet",
+        "fireplace",
+        "decorative plant"
+      ],
+      "Region": [
+        "3",
+        "14",
+        "9",
+        "11"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom",
+        "Hall",
+        "Dining room"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        90,
+        102,
+        52,
+        27
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.4546518325805664,
+        -2.6879663467407227,
+        -6.811927795410156
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 94
+  },
+  {
+    "task_id": "v2_def4a3014ee87275",
+    "split": "train",
+    "level": 4,
+    "scene": "00022-gmuS7Wgsbrx",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bedroom lalu ambil fan dengan perlahan, kemudian move ke Hall dan letakkan on painting secara aman, lalu move ke Bedroom cek target, lalu move ke Kitchen cek target__source_batch_0033/success/trial_1/task.json",
+    "source_sha256": "1d521b57fad75345417a5f924bc422163714f926a33db2e78d485254faefda3e",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil fan dengan perlahan, kemudian move ke Hall dan letakkan on painting secara aman, lalu move ke Bedroom cek target, lalu move ke Kitchen cek target",
+      "Scene": "00022-gmuS7Wgsbrx",
+      "Robot": "stretch",
+      "Object": [
+        "fan",
+        "painting",
+        "cabinet",
+        "sink"
+      ],
+      "Region": [
+        "22",
+        "9",
+        "22",
+        "12"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Hall",
+        "Bedroom",
+        "Kitchen"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        99,
+        78,
+        79,
+        34
+      ]
+    },
+    "start_state": {
+      "position": [
+        12.282620429992676,
+        -0.12860135734081268,
+        -1.057969570159912
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2334
+  },
+  {
+    "task_id": "v2_4602cf5caa7770ec",
+    "split": "test",
+    "level": 4,
+    "scene": "00326-u9rPN5cHWBg",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Office lalu ambil computer dengan perlahan, kemudian move ke Bathroom dan letakkan on door secara aman, lalu move ke Bedroom cek target, lalu move ke Bathroom cek target__source_batch_0004/success/trial_1/task.json",
+    "source_sha256": "1e91a64c149b10f7f2930ff229f0f14b9f864e8dc9f516683558bac643e9196c",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil computer dengan perlahan, kemudian move ke Bathroom dan letakkan on door secara aman, lalu move ke Bedroom cek target, lalu move ke Bathroom cek target",
+      "Scene": "00326-u9rPN5cHWBg",
+      "Robot": "stretch",
+      "Object": [
+        "computer",
+        "door",
+        "hat",
+        "toilet paper"
+      ],
+      "Region": [
+        "14",
+        "3",
+        "5",
+        "18"
+      ],
+      "Region Name": [
+        "Office",
+        "Bathroom",
+        "Bedroom",
+        "Bathroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        123,
+        19,
+        26,
+        75
+      ]
+    },
+    "start_state": {
+      "position": [
+        18.154953002929688,
+        0.16440987586975098,
+        2.7635891437530518
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1597
+  },
+  {
+    "task_id": "v2_5814296f065a948c",
+    "split": "train",
+    "level": 4,
+    "scene": "00662-aRKASs4e8j1",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke mixed room lalu ambil bowl dengan perlahan, kemudian move ke mixed room dan letakkan on pillar secara aman, lalu move ke mixed room cek target, lalu move ke Bathroom c end__source_batch_0036/success/trial_1/task.json",
+    "source_sha256": "a67925198a25654feebfe5718cd99ec068e1fed22ce4b2806cf8368f3b59c2b7",
+    "config": {
+      "Task instruction": "Pergi ke mixed room lalu ambil bowl dengan perlahan, kemudian move ke mixed room dan letakkan on pillar secara aman, lalu move ke mixed room cek target, lalu move ke Bathroom c end",
+      "Scene": "00662-aRKASs4e8j1",
+      "Robot": "stretch",
+      "Object": [
+        "bowl",
+        "pillar",
+        "chair",
+        "light fixture"
+      ],
+      "Region": [
+        "2",
+        "2",
+        "2",
+        "1"
+      ],
+      "Region Name": [
+        "Tie",
+        "Tie",
+        "Tie",
+        "Bathroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        22,
+        14,
+        2,
+        52
+      ]
+    },
+    "start_state": {
+      "position": [
+        6.053474426269531,
+        0.030031893402338028,
+        -4.773262023925781
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1683
+  },
+  {
+    "task_id": "old_bdb1e102742e41ad",
+    "split": "train",
+    "level": 4,
+    "scene": "00827-BAbdmeyTvMZ",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke Bedroom lalu ambil hanging clothes dengan perlahan, kemudian move ke Living room dan letakkan on table secara aman, lalu move ke mixed room cek target, lalu move ke Be end/success/trial_1/task.json",
+    "source_sha256": "d1ccd0efda5e77869710aa492db3d48dff835fbe2c41b7386d2d102096298fa6",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil hanging clothes dengan perlahan, kemudian move ke Living room dan letakkan on table secara aman, lalu move ke mixed room cek target, lalu move ke Be end",
+      "Scene": "00827-BAbdmeyTvMZ",
+      "Robot": "stretch",
+      "Object": [
+        "hanging clothes",
+        "table",
+        "couch",
+        "chair"
+      ],
+      "Region": [
+        "4",
+        "1",
+        "6",
+        "4"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Living room",
+        "Tie: Living room & Hall",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        53,
+        28,
+        15,
+        8
+      ]
+    },
+    "start_state": {
+      "position": [
+        5.014364242553711,
+        0.08264219015836716,
+        6.58034610748291
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 884
+  },
+  {
+    "task_id": "old_f47ad8334695f454",
+    "split": "train",
+    "level": 4,
+    "scene": "00832-qyAac8rV8Zk",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/4/Pergi ke mixed room lalu ambil picture dengan perlahan, kemudian move ke Hall dan letakkan on air conditioning secara aman, lalu move ke Office cek target, lalu move ke Bedroom end/success/trial_1/task.json",
+    "source_sha256": "b8d5cadb9d97025381bfbd4cbf3c9a76805bde594db1c33de15fbe2dd08bbada",
+    "config": {
+      "Task instruction": "Pergi ke mixed room lalu ambil picture dengan perlahan, kemudian move ke Hall dan letakkan on air conditioning secara aman, lalu move ke Office cek target, lalu move ke Bedroom end",
+      "Scene": "00832-qyAac8rV8Zk",
+      "Robot": "stretch",
+      "Object": [
+        "picture",
+        "air conditioning",
+        "computer desk",
+        "door"
+      ],
+      "Region": [
+        "14",
+        "13",
+        "10",
+        "1"
+      ],
+      "Region Name": [
+        "Tie: Bedroom & Living room",
+        "Hall",
+        "Office",
+        "Bedroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        8,
+        9,
+        2,
+        84
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.17519864439964294,
+        0.01920294761657715,
+        3.0449161529541016
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1146
+  },
+  {
+    "task_id": "v2_879f0ccf593c5429",
+    "split": "train",
+    "level": 4,
+    "scene": "00624-ooq3SnvC79d",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/4/Pergi ke Bedroom lalu ambil lamp dengan perlahan, kemudian move ke mixed room dan letakkan on cabinet secara aman, lalu move ke Kitchen cek target, lalu move ke Bathroom cek target__source_batch_0044/success/trial_1/task.json",
+    "source_sha256": "88a013a05933dc58e03b26d5e8a3e7e57726de9806f8eadbd7fcb1bc0cb1b683",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil lamp dengan perlahan, kemudian move ke mixed room dan letakkan on cabinet secara aman, lalu move ke Kitchen cek target, lalu move ke Bathroom cek target",
+      "Scene": "00624-ooq3SnvC79d",
+      "Robot": "stretch",
+      "Object": [
+        "lamp",
+        "cabinet",
+        "countertop",
+        "cosmetic"
+      ],
+      "Region": [
+        "6",
+        "7",
+        "11",
+        "2"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Tie",
+        "Kitchen",
+        "Bathroom"
+      ],
+      "Generated level": 4,
+      "gt_step": [
+        2,
+        23,
+        19,
+        32
+      ]
+    },
+    "start_state": {
+      "position": [
+        -2.772132635116577,
+        0.11453929543495178,
+        6.089217662811279
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1903
+  },
+  {
+    "task_id": "v2_9fb801f88cccfb33",
+    "split": "train",
+    "level": 5,
+    "scene": "00876-mv2HUxq3B53",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Bedroom lalu ambil telephone dengan perlahan, kemudian move ke Bathroom dan letakkan on lamp secara aman, lalu move ke Bedroom cek target, lalu move ke Kitchen cek tar end__source_batch_0034/success/trial_1/task.json",
+    "source_sha256": "580c4e10b9eb011e1e0de4fa8b1048381cd14755441bb886845b2baf075e5e9a",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil telephone dengan perlahan, kemudian move ke Bathroom dan letakkan on lamp secara aman, lalu move ke Bedroom cek target, lalu move ke Kitchen cek tar end",
+      "Scene": "00876-mv2HUxq3B53",
+      "Robot": "spot",
+      "Object": [
+        "telephone",
+        "lamp",
+        "telephone",
+        "newspaper",
+        "clothes dryer"
+      ],
+      "Region": [
+        "13",
+        "5",
+        "4",
+        "2",
+        "7"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Bedroom",
+        "Kitchen",
+        "Laundry room"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        23,
+        36,
+        37,
+        13,
+        17
+      ]
+    },
+    "start_state": {
+      "position": [
+        3.34482479095459,
+        0.050354525446891785,
+        9.988510131835938
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2006
+  },
+  {
+    "task_id": "v2_19abecc077c8bfd0",
+    "split": "train",
+    "level": 5,
+    "scene": "00853-5cdEh9F2hJL",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Laundry room lalu ambil washing machine dengan perlahan, kemudian move ke Bedroom dan letakkan on island secara aman, lalu move ke Bathroom cek target, lalu move ke Be end__source_batch_0022/success/trial_1/task.json",
+    "source_sha256": "584e47d49cc6027719dd2072a8094714fec75e9db75cc9d87a79e1d5b3d83f7b",
+    "config": {
+      "Task instruction": "Pergi ke Laundry room lalu ambil washing machine dengan perlahan, kemudian move ke Bedroom dan letakkan on island secara aman, lalu move ke Bathroom cek target, lalu move ke Be end",
+      "Scene": "00853-5cdEh9F2hJL",
+      "Robot": "stretch",
+      "Object": [
+        "washing machine",
+        "island",
+        "toilet",
+        "closet door",
+        "door"
+      ],
+      "Region": [
+        "9",
+        "11",
+        "1",
+        "12",
+        "11"
+      ],
+      "Region Name": [
+        "Laundry room",
+        "Bedroom",
+        "Bathroom",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        47,
+        51,
+        71,
+        56,
+        9
+      ]
+    },
+    "start_state": {
+      "position": [
+        3.1986353397369385,
+        0.018403440713882446,
+        -3.6933751106262207
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1384
+  },
+  {
+    "task_id": "old_74197ff9a899005d",
+    "split": "train",
+    "level": 5,
+    "scene": "00410-v7DzfFFEpsD",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Office lalu ambil ornament dengan perlahan, kemudian move ke Kitchen dan letakkan on draw secara aman, lalu move ke Bedroom cek target, lalu move ke Hall cek target, l end/success/trial_1/task.json",
+    "source_sha256": "5e1e2ea55ab8ef046565030d1b16200a3bdb8964957c1139365d69b2814ec854",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil ornament dengan perlahan, kemudian move ke Kitchen dan letakkan on draw secara aman, lalu move ke Bedroom cek target, lalu move ke Hall cek target, l end",
+      "Scene": "00410-v7DzfFFEpsD",
+      "Robot": "stretch",
+      "Object": [
+        "ornament",
+        "draw",
+        "lamp",
+        "light fixture",
+        "toilet brush"
+      ],
+      "Region": [
+        "4",
+        "16",
+        "14",
+        "11",
+        "7"
+      ],
+      "Region Name": [
+        "Office",
+        "Kitchen",
+        "Bedroom",
+        "Hall",
+        "Bathroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        106,
+        20,
+        19,
+        2,
+        16
+      ]
+    },
+    "start_state": {
+      "position": [
+        13.167753219604492,
+        -3.0946311950683594,
+        1.0350338220596313
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 551
+  },
+  {
+    "task_id": "old_dd152fafc45a5d77",
+    "split": "train",
+    "level": 5,
+    "scene": "00803-k1cupFYWXJ6",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Living room lalu ambil pipe dengan perlahan, kemudian move ke Living room dan letakkan on fire alarm secara aman, lalu move ke Hall cek target, lalu move ke Hall cek t end/success/trial_1/task.json",
+    "source_sha256": "fbf4598deb456f2fa8aef5dca78ca06a0c09f0cbdd6bbfe4a701a4b3df597f9d",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil pipe dengan perlahan, kemudian move ke Living room dan letakkan on fire alarm secara aman, lalu move ke Hall cek target, lalu move ke Hall cek t end",
+      "Scene": "00803-k1cupFYWXJ6",
+      "Robot": "stretch",
+      "Object": [
+        "pipe",
+        "fire alarm",
+        "picture",
+        "elevator door",
+        "chassis"
+      ],
+      "Region": [
+        "8",
+        "8",
+        "6",
+        "5",
+        "8"
+      ],
+      "Region Name": [
+        "Living room",
+        "Living room",
+        "Hall",
+        "Hall",
+        "Living room"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        196,
+        65,
+        61,
+        47,
+        110
+      ]
+    },
+    "start_state": {
+      "position": [
+        -4.56555700302124,
+        -5.6722283363342285,
+        0.16813960671424866
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1028
+  },
+  {
+    "task_id": "v2_6b2ad4a41d9183b8",
+    "split": "train",
+    "level": 5,
+    "scene": "00267-gQ3xxshDiCz",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Bedroom lalu ambil basket dengan perlahan, kemudian move ke Living room dan letakkan on rug secara aman, lalu move ke Bedroom cek target, lalu move ke Living room cek end__source_batch_0056/success/trial_1/task.json",
+    "source_sha256": "13c2ac878c56ca7317ce368933f1baa5d8bf6fabea5c188effa73ffa815e50ec",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil basket dengan perlahan, kemudian move ke Living room dan letakkan on rug secara aman, lalu move ke Bedroom cek target, lalu move ke Living room cek end",
+      "Scene": "00267-gQ3xxshDiCz",
+      "Robot": "stretch",
+      "Object": [
+        "basket",
+        "rug",
+        "hanging clothes",
+        "basket of something",
+        "shelf"
+      ],
+      "Region": [
+        "0",
+        "9",
+        "8",
+        "9",
+        "6"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Living room",
+        "Bedroom",
+        "Living room",
+        "Kitchen"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        30,
+        30,
+        33,
+        36,
+        16
+      ]
+    },
+    "start_state": {
+      "position": [
+        -1.0697040557861328,
+        0.15884733200073242,
+        -5.4435296058654785
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1785
+  },
+  {
+    "task_id": "old_939a70d48b170125",
+    "split": "train",
+    "level": 5,
+    "scene": "00210-j2EJhFEQGCL",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Bedroom lalu ambil wardrobe dengan perlahan, kemudian move ke Bedroom dan letakkan on dispenser secara aman, lalu move ke Living room cek target, lalu move ke Kitchen end/success/trial_1/task.json",
+    "source_sha256": "0111dcd73cbc383e7d4fe2250ccc55f99f830780b38eacc3ed6f98838621a6e2",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil wardrobe dengan perlahan, kemudian move ke Bedroom dan letakkan on dispenser secara aman, lalu move ke Living room cek target, lalu move ke Kitchen end",
+      "Scene": "00210-j2EJhFEQGCL",
+      "Robot": "spot",
+      "Object": [
+        "wardrobe",
+        "dispenser",
+        "lamp",
+        "cabinet",
+        "nightstand"
+      ],
+      "Region": [
+        "1",
+        "6",
+        "4",
+        "3",
+        "7"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bedroom",
+        "Living room",
+        "Kitchen",
+        "Bedroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        142,
+        53,
+        22,
+        2,
+        67
+      ]
+    },
+    "start_state": {
+      "position": [
+        6.784296035766602,
+        0.046073123812675476,
+        7.2706499099731445
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 698
+  },
+  {
+    "task_id": "v2_a1366f92c8b875e9",
+    "split": "train",
+    "level": 5,
+    "scene": "00434-L5QEsaVqwrY",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Bathroom lalu ambil bathtub dengan perlahan, kemudian move ke Garage dan letakkan on doormat secara aman, lalu move ke Bedroom cek target, lalu move ke Living room cek end__source_batch_0013/success/trial_1/task.json",
+    "source_sha256": "2983c399f4392886fc6a7878ed847fbbacab4948c8650a1ddef33d8faee39d3a",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil bathtub dengan perlahan, kemudian move ke Garage dan letakkan on doormat secara aman, lalu move ke Bedroom cek target, lalu move ke Living room cek end",
+      "Scene": "00434-L5QEsaVqwrY",
+      "Robot": "stretch",
+      "Object": [
+        "bathtub",
+        "doormat",
+        "wardrobe",
+        "book",
+        "throw blanket"
+      ],
+      "Region": [
+        "3",
+        "22",
+        "5",
+        "14",
+        "24"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Garage",
+        "Bedroom",
+        "Living room",
+        "Living room"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        69,
+        39,
+        35,
+        7,
+        83
+      ]
+    },
+    "start_state": {
+      "position": [
+        4.883459091186523,
+        0.05638301372528076,
+        16.986902236938477
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2017
+  },
+  {
+    "task_id": "v2_a032660e6b0f5081",
+    "split": "train",
+    "level": 5,
+    "scene": "00832-qyAac8rV8Zk",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Hall lalu ambil chair dengan perlahan, kemudian move ke Hall dan letakkan on table secara aman, lalu move ke mixed room cek target, lalu move ke Bathroom cek target, l end__source_batch_0042/success/trial_1/task.json",
+    "source_sha256": "a3f55e22d30dadb62695383ec85bcdd9cc2279f46c2e35994e7e84bd5be8bf9a",
+    "config": {
+      "Task instruction": "Pergi ke Hall lalu ambil chair dengan perlahan, kemudian move ke Hall dan letakkan on table secara aman, lalu move ke mixed room cek target, lalu move ke Bathroom cek target, l end",
+      "Scene": "00832-qyAac8rV8Zk",
+      "Robot": "stretch",
+      "Object": [
+        "chair",
+        "table",
+        "tv",
+        "sink cabinet",
+        "toilet"
+      ],
+      "Region": [
+        "9",
+        "9",
+        "14",
+        "4",
+        "4"
+      ],
+      "Region Name": [
+        "Hall",
+        "Hall",
+        "Tie",
+        "Bathroom",
+        "Bathroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        15,
+        3,
+        20,
+        107,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.17519864439964294,
+        0.01920294761657715,
+        3.0449161529541016
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2013
+  },
+  {
+    "task_id": "old_0756fb514e397a1d",
+    "split": "train",
+    "level": 5,
+    "scene": "00255-NGyoyh91xXJ",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Bedroom lalu ambil ventilation dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet secara aman, lalu move ke Bathroom cek target, lalu move ke Bedroom ce end/success/trial_1/task.json",
+    "source_sha256": "b74a36e991245d02f7c2ceab9be4391e51cbe25b46782f618ad7a89304b6deac",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil ventilation dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet secara aman, lalu move ke Bathroom cek target, lalu move ke Bedroom ce end",
+      "Scene": "00255-NGyoyh91xXJ",
+      "Robot": "spot",
+      "Object": [
+        "ventilation",
+        "toilet",
+        "bath mat",
+        "armchair",
+        "drawer"
+      ],
+      "Region": [
+        "11",
+        "8",
+        "12",
+        "9",
+        "9"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Bathroom",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        28,
+        11,
+        20,
+        21,
+        8
+      ]
+    },
+    "start_state": {
+      "position": [
+        9.77290153503418,
+        0.09208207577466965,
+        0.39247095584869385
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 38
+  },
+  {
+    "task_id": "v2_494e936bc7bb4e5b",
+    "split": "train",
+    "level": 5,
+    "scene": "00251-wsAYBFtQaL7",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Living room lalu ambil couch dengan perlahan, kemudian move ke Bedroom dan letakkan on side table secara aman, lalu move ke Living room cek target, lalu move ke Bathro end__source_batch_0042/success/trial_1/task.json",
+    "source_sha256": "6b49563713471e8c48ec73b082bb24530ab2105a41d97b89971f70c1be74f780",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil couch dengan perlahan, kemudian move ke Bedroom dan letakkan on side table secara aman, lalu move ke Living room cek target, lalu move ke Bathro end",
+      "Scene": "00251-wsAYBFtQaL7",
+      "Robot": "spot",
+      "Object": [
+        "couch",
+        "side table",
+        "easy chair",
+        "door",
+        "kitchen top"
+      ],
+      "Region": [
+        "5",
+        "9",
+        "6",
+        "15",
+        "3"
+      ],
+      "Region Name": [
+        "Living room",
+        "Bedroom",
+        "Living room",
+        "Bathroom",
+        "Kitchen"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        47,
+        35,
+        21,
+        2,
+        16
+      ]
+    },
+    "start_state": {
+      "position": [
+        -0.13869816064834595,
+        0.18272250890731812,
+        2.4519946575164795
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1607
+  },
+  {
+    "task_id": "old_6b26ed3ede1d9e00",
+    "split": "train",
+    "level": 5,
+    "scene": "00378-DqJKU7YU7dA",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Living room lalu ambil flower stand dengan perlahan, kemudian move ke Living room dan letakkan on figurine secara aman, lalu move ke Bathroom cek target, lalu move ke end/success/trial_1/task.json",
+    "source_sha256": "eb1013c78ba6c2bca02c7ee7e316ae742587de8e919b6e74e920ee41e7ee01a8",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil flower stand dengan perlahan, kemudian move ke Living room dan letakkan on figurine secara aman, lalu move ke Bathroom cek target, lalu move ke end",
+      "Scene": "00378-DqJKU7YU7dA",
+      "Robot": "stretch",
+      "Object": [
+        "flower stand",
+        "figurine",
+        "showerhead",
+        "fire alarm",
+        "trashcan"
+      ],
+      "Region": [
+        "3",
+        "11",
+        "2",
+        "12",
+        "8"
+      ],
+      "Region Name": [
+        "Living room",
+        "Living room",
+        "Bathroom",
+        "Bedroom",
+        "Bathroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        152,
+        55,
+        86,
+        98,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        -3.220643997192383,
+        0.079173743724823,
+        27.351139068603516
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 514
+  },
+  {
+    "task_id": "v2_22dc3e05be3ce2b7",
+    "split": "train",
+    "level": 5,
+    "scene": "00723-hWDDQnSDMXb",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Living room lalu ambil candle dengan perlahan, kemudian move ke Bathroom dan letakkan on bathroom towel secara aman, lalu move ke Bedroom cek target, lalu move ke Bath end__source_batch_0023/success/trial_1/task.json",
+    "source_sha256": "0205747045543d1a3b38e01854557b71d01baed16dd27730caa0a9f0766fc340",
+    "config": {
+      "Task instruction": "Pergi ke Living room lalu ambil candle dengan perlahan, kemudian move ke Bathroom dan letakkan on bathroom towel secara aman, lalu move ke Bedroom cek target, lalu move ke Bath end",
+      "Scene": "00723-hWDDQnSDMXb",
+      "Robot": "spot",
+      "Object": [
+        "candle",
+        "bathroom towel",
+        "clock",
+        "sink cabinet",
+        "led tv"
+      ],
+      "Region": [
+        "12",
+        "23",
+        "19",
+        "7",
+        "9"
+      ],
+      "Region Name": [
+        "Living room",
+        "Bathroom",
+        "Bedroom",
+        "Bathroom",
+        "Bedroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        160,
+        16,
+        31,
+        72,
+        30
+      ]
+    },
+    "start_state": {
+      "position": [
+        14.097477912902832,
+        1.6414520740509033,
+        15.170467376708984
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1429
+  },
+  {
+    "task_id": "v2_5e0b148b021d46fa",
+    "split": "test",
+    "level": 5,
+    "scene": "00382-S7uMvxjBVZq",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Bedroom lalu ambil computer mouse dengan perlahan, kemudian move ke Kitchen dan letakkan on fridge secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom c end__source_batch_0049/success/trial_1/task.json",
+    "source_sha256": "b2b30b0dc03051f9e8e8f124eee7be5cf6d0d7c886dd983ac7fbb3233518010e",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil computer mouse dengan perlahan, kemudian move ke Kitchen dan letakkan on fridge secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom c end",
+      "Scene": "00382-S7uMvxjBVZq",
+      "Robot": "stretch",
+      "Object": [
+        "computer mouse",
+        "fridge",
+        "paper",
+        "alarm",
+        "fan"
+      ],
+      "Region": [
+        "10",
+        "3",
+        "7",
+        "9",
+        "6"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Kitchen",
+        "Bedroom",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        2,
+        67,
+        39,
+        22,
+        14
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.8909151554107666,
+        3.102431058883667,
+        1.7569880485534668
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1720
+  },
+  {
+    "task_id": "v2_1e5514e3e7d7c8c2",
+    "split": "val",
+    "level": 5,
+    "scene": "00560-gjhYih4upQ9",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Laundry room lalu ambil lamp dengan perlahan, kemudian move ke Bedroom dan letakkan on fan secara aman, lalu move ke Hall cek target, lalu move ke Bedroom cek target end__source_batch_0004/success/trial_1/task.json",
+    "source_sha256": "9385ecce03f5fbfa8837e39e949334660aec7facb61fc93d6f9a248a06176ced",
+    "config": {
+      "Task instruction": "Pergi ke Laundry room lalu ambil lamp dengan perlahan, kemudian move ke Bedroom dan letakkan on fan secara aman, lalu move ke Hall cek target, lalu move ke Bedroom cek target end",
+      "Scene": "00560-gjhYih4upQ9",
+      "Robot": "spot",
+      "Object": [
+        "lamp",
+        "fan",
+        "flower vase",
+        "cabinet",
+        "oven and stove"
+      ],
+      "Region": [
+        "8",
+        "11",
+        "4",
+        "3",
+        "5"
+      ],
+      "Region Name": [
+        "Laundry room",
+        "Bedroom",
+        "Hall",
+        "Bedroom",
+        "Kitchen"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        53,
+        15,
+        23,
+        42,
+        45
+      ]
+    },
+    "start_state": {
+      "position": [
+        6.9701924324035645,
+        0.028740406036376953,
+        -2.794734477996826
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1404
+  },
+  {
+    "task_id": "v2_21ba1ce9ba849fdb",
+    "split": "train",
+    "level": 5,
+    "scene": "00688-SgkmkWjjmDJ",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Office lalu ambil lamp dengan perlahan, kemudian move ke Bathroom dan letakkan on sink secara aman, lalu move ke Kitchen cek target, lalu move ke Bedroom cek target, l end__source_batch_0009/success/trial_1/task.json",
+    "source_sha256": "a53f0ec5a5de74f8a6687423ed2afea27d473c4b162e10b4ee1254a4698183cc",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil lamp dengan perlahan, kemudian move ke Bathroom dan letakkan on sink secara aman, lalu move ke Kitchen cek target, lalu move ke Bedroom cek target, l end",
+      "Scene": "00688-SgkmkWjjmDJ",
+      "Robot": "spot",
+      "Object": [
+        "lamp",
+        "sink",
+        "rug",
+        "plant",
+        "hanger"
+      ],
+      "Region": [
+        "4",
+        "8",
+        "3",
+        "9",
+        "15"
+      ],
+      "Region Name": [
+        "Office",
+        "Bathroom",
+        "Kitchen",
+        "Bedroom",
+        "Bathroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        60,
+        24,
+        61,
+        73,
+        11
+      ]
+    },
+    "start_state": {
+      "position": [
+        12.865792274475098,
+        -2.556666374206543,
+        -0.1410648226737976
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1425
+  },
+  {
+    "task_id": "old_0fe3492e110ec462",
+    "split": "train",
+    "level": 5,
+    "scene": "00466-xAHnY3QzFUN",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Bathroom lalu ambil cosmetics dengan perlahan, kemudian move ke Bathroom dan letakkan on tap secara aman, lalu move ke Bathroom cek target, lalu move ke Bathroom cek t end/success/trial_1/task.json",
+    "source_sha256": "0fffcfb83fc15c3fe7a1ba066190d58d614fddba0f180824e80e354955631516",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil cosmetics dengan perlahan, kemudian move ke Bathroom dan letakkan on tap secara aman, lalu move ke Bathroom cek target, lalu move ke Bathroom cek t end",
+      "Scene": "00466-xAHnY3QzFUN",
+      "Robot": "spot",
+      "Object": [
+        "cosmetics",
+        "tap",
+        "wash cabinet",
+        "towel",
+        "table lamp"
+      ],
+      "Region": [
+        "10",
+        "10",
+        "10",
+        "10",
+        "15"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bathroom",
+        "Bathroom",
+        "Bathroom",
+        "Bedroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        75,
+        68,
+        68,
+        2,
+        56
+      ]
+    },
+    "start_state": {
+      "position": [
+        0.19287332892417908,
+        0.05698297917842865,
+        0.009277135133743286
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 77
+  },
+  {
+    "task_id": "v2_0e94a2b59773c94d",
+    "split": "val",
+    "level": 5,
+    "scene": "00099-226REUyJh2K",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Bathroom lalu ambil toilet dengan perlahan, kemudian move ke Bedroom dan letakkan on door secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom cek target end__source_batch_0058/success/trial_1/task.json",
+    "source_sha256": "a6ebf2722c2521ac58c72545a159d828972bba027e4b071ac6d82254d7cf5fb5",
+    "config": {
+      "Task instruction": "Pergi ke Bathroom lalu ambil toilet dengan perlahan, kemudian move ke Bedroom dan letakkan on door secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom cek target end",
+      "Scene": "00099-226REUyJh2K",
+      "Robot": "stretch",
+      "Object": [
+        "toilet",
+        "door",
+        "rug",
+        "door",
+        "radiator"
+      ],
+      "Region": [
+        "5",
+        "1",
+        "7",
+        "6",
+        "9"
+      ],
+      "Region Name": [
+        "Bathroom",
+        "Bedroom",
+        "Bedroom",
+        "Bedroom",
+        "Bathroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        54,
+        36,
+        45,
+        51,
+        34
+      ]
+    },
+    "start_state": {
+      "position": [
+        -7.0935258865356445,
+        0.30571550130844116,
+        8.163439750671387
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1328
+  },
+  {
+    "task_id": "old_d0ec27aae1e306ca",
+    "split": "train",
+    "level": 5,
+    "scene": "00538-3CBBjsNkhqW",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Bedroom lalu ambil door dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet paper dispenser secara aman, lalu move ke mixed room cek target, lalu move ke end/success/trial_1/task.json",
+    "source_sha256": "49828438d2e53321ce4a56004dfa62a7bc69def0fb1b1d4aa3344d8c464ebe06",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil door dengan perlahan, kemudian move ke Bathroom dan letakkan on toilet paper dispenser secara aman, lalu move ke mixed room cek target, lalu move ke end",
+      "Scene": "00538-3CBBjsNkhqW",
+      "Robot": "spot",
+      "Object": [
+        "door",
+        "toilet paper dispenser",
+        "ventilation",
+        "display cabinet",
+        "bathroom towel"
+      ],
+      "Region": [
+        "10",
+        "22",
+        "21",
+        "3",
+        "2"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Tie: Office & Living room",
+        "Tie: Office & Living room",
+        "Bathroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        115,
+        48,
+        3,
+        140,
+        105
+      ]
+    },
+    "start_state": {
+      "position": [
+        -7.188406467437744,
+        0.09261441230773926,
+        9.258133888244629
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 971
+  },
+  {
+    "task_id": "old_f036980e2d6a0fdc",
+    "split": "train",
+    "level": 5,
+    "scene": "00251-wsAYBFtQaL7",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Bedroom lalu ambil tv dengan perlahan, kemudian move ke Living room dan letakkan on chest of drawers secara aman, lalu move ke Bedroom cek target, lalu move ke Bathroo end/success/trial_1/task.json",
+    "source_sha256": "948f09e4f451358fd406025b2793489aa8b8cf6f338e77b4fa46797d71168734",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil tv dengan perlahan, kemudian move ke Living room dan letakkan on chest of drawers secara aman, lalu move ke Bedroom cek target, lalu move ke Bathroo end",
+      "Scene": "00251-wsAYBFtQaL7",
+      "Robot": "stretch",
+      "Object": [
+        "tv",
+        "chest of drawers",
+        "bottle",
+        "basin",
+        "appliance"
+      ],
+      "Region": [
+        "12",
+        "6",
+        "12",
+        "14",
+        "13"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Living room",
+        "Bedroom",
+        "Bathroom",
+        "Office"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        40,
+        30,
+        40,
+        25,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        -0.13869816064834595,
+        0.18272250890731812,
+        2.4519946575164795
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1129
+  },
+  {
+    "task_id": "v2_e2179e56e8862d2b",
+    "split": "train",
+    "level": 5,
+    "scene": "00813-svBbv1Pavdk",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Kitchen lalu ambil lamp dengan perlahan, kemudian move ke Bedroom dan letakkan on lamp secara aman, lalu move ke mixed room cek target, lalu move ke Bedroom cek target end__source_batch_0010/success/trial_1/task.json",
+    "source_sha256": "76c0c02b623fe4ba338b780d098ece5f39595904caa4b5205c25072026f0f7e4",
+    "config": {
+      "Task instruction": "Pergi ke Kitchen lalu ambil lamp dengan perlahan, kemudian move ke Bedroom dan letakkan on lamp secara aman, lalu move ke mixed room cek target, lalu move ke Bedroom cek target end",
+      "Scene": "00813-svBbv1Pavdk",
+      "Robot": "spot",
+      "Object": [
+        "lamp",
+        "lamp",
+        "picture",
+        "decor",
+        "tv"
+      ],
+      "Region": [
+        "10",
+        "5",
+        "1",
+        "5",
+        "9"
+      ],
+      "Region Name": [
+        "Kitchen",
+        "Bedroom",
+        "Tie",
+        "Bedroom",
+        "Living room"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        42,
+        2,
+        15,
+        26,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        10.043970108032227,
+        0.24181920289993286,
+        2.2341537475585938
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 2351
+  },
+  {
+    "task_id": "old_f7724783435c3cfd",
+    "split": "test",
+    "level": 5,
+    "scene": "00326-u9rPN5cHWBg",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Bedroom lalu ambil air vent dengan perlahan, kemudian move ke Living room dan letakkan on book secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom cek t end/success/trial_1/task.json",
+    "source_sha256": "235c76dcb2be0beb8327f63b6c43a4620342519acfac87ecf729de523826928c",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil air vent dengan perlahan, kemudian move ke Living room dan letakkan on book secara aman, lalu move ke Bedroom cek target, lalu move ke Bedroom cek t end",
+      "Scene": "00326-u9rPN5cHWBg",
+      "Robot": "stretch",
+      "Object": [
+        "air vent",
+        "book",
+        "purse",
+        "table lamp",
+        "kitchen island"
+      ],
+      "Region": [
+        "12",
+        "0",
+        "2",
+        "19",
+        "1"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Living room",
+        "Bedroom",
+        "Bedroom",
+        "Kitchen"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        66,
+        61,
+        23,
+        72,
+        38
+      ]
+    },
+    "start_state": {
+      "position": [
+        18.154953002929688,
+        0.16440987586975098,
+        2.7635891437530518
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1166
+  },
+  {
+    "task_id": "old_252c7f4770386498",
+    "split": "train",
+    "level": 5,
+    "scene": "00569-YJDUB7hWg9h",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Office lalu ambil printer dengan perlahan, kemudian move ke Bathroom dan letakkan on bucket secara aman, lalu move ke Kitchen cek target, lalu move ke Bedroom cek targ end/success/trial_1/task.json",
+    "source_sha256": "3f182e5763f9207da2f74d18ca798dc91a4bf5fad6a0080aa7dee520152c47fd",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil printer dengan perlahan, kemudian move ke Bathroom dan letakkan on bucket secara aman, lalu move ke Kitchen cek target, lalu move ke Bedroom cek targ end",
+      "Scene": "00569-YJDUB7hWg9h",
+      "Robot": "stretch",
+      "Object": [
+        "printer",
+        "bucket",
+        "bottle of soap",
+        "door",
+        "picture"
+      ],
+      "Region": [
+        "9",
+        "10",
+        "2",
+        "8",
+        "6"
+      ],
+      "Region Name": [
+        "Office",
+        "Bathroom",
+        "Kitchen",
+        "Bedroom",
+        "Bedroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        56,
+        11,
+        15,
+        14,
+        25
+      ]
+    },
+    "start_state": {
+      "position": [
+        -3.4131994247436523,
+        0.010577410459518433,
+        -4.104783058166504
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 167
+  },
+  {
+    "task_id": "v2_4657c1c5aa5fcf48",
+    "split": "train",
+    "level": 5,
+    "scene": "00539-zUG6FL9TYeR",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke mixed room lalu ambil sink dengan perlahan, kemudian move ke Bathroom dan letakkan on trashcan secara aman, lalu move ke Bathroom cek target, lalu move ke Bathroom cek end__source_batch_0049/success/trial_1/task.json",
+    "source_sha256": "efd48ff6038533048209d205fc0e7317886850e75b65b378370c9ac46309b343",
+    "config": {
+      "Task instruction": "Pergi ke mixed room lalu ambil sink dengan perlahan, kemudian move ke Bathroom dan letakkan on trashcan secara aman, lalu move ke Bathroom cek target, lalu move ke Bathroom cek end",
+      "Scene": "00539-zUG6FL9TYeR",
+      "Robot": "stretch",
+      "Object": [
+        "sink",
+        "trashcan",
+        "faucet",
+        "shower mat",
+        "lamp"
+      ],
+      "Region": [
+        "4",
+        "10",
+        "5",
+        "10",
+        "5"
+      ],
+      "Region Name": [
+        "Tie",
+        "Bathroom",
+        "Bathroom",
+        "Bathroom",
+        "Bathroom"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        80,
+        82,
+        97,
+        38,
+        67
+      ]
+    },
+    "start_state": {
+      "position": [
+        3.6592507362365723,
+        2.717231035232544,
+        6.003589630126953
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1598
+  },
+  {
+    "task_id": "old_c4f7e9554e90bb9a",
+    "split": "train",
+    "level": 5,
+    "scene": "00810-CrMo8WxCyVb",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_config1000_merged_success118_20260629/combined_task/5/Pergi ke Bedroom lalu ambil sculpture dengan perlahan, kemudian move ke Bathroom dan letakkan on tap secara aman, lalu move ke Office cek target, lalu move ke Laundry room cek end/success/trial_1/task.json",
+    "source_sha256": "01be5f477faa1b09c2a5539457cd3b5a12add14869719603456f5b90c061dd4d",
+    "config": {
+      "Task instruction": "Pergi ke Bedroom lalu ambil sculpture dengan perlahan, kemudian move ke Bathroom dan letakkan on tap secara aman, lalu move ke Office cek target, lalu move ke Laundry room cek end",
+      "Scene": "00810-CrMo8WxCyVb",
+      "Robot": "stretch",
+      "Object": [
+        "sculpture",
+        "tap",
+        "flower vase",
+        "cabinet",
+        "door"
+      ],
+      "Region": [
+        "7",
+        "9",
+        "14",
+        "5",
+        "14"
+      ],
+      "Region Name": [
+        "Bedroom",
+        "Bathroom",
+        "Office",
+        "Laundry room",
+        "Office"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        76,
+        2,
+        20,
+        27,
+        78
+      ]
+    },
+    "start_state": {
+      "position": [
+        1.3279999494552612,
+        -2.899935483932495,
+        4.441991329193115
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 909
+  },
+  {
+    "task_id": "v2_19e278a9af3d9fe0",
+    "split": "train",
+    "level": 5,
+    "scene": "00254-YMNvYDhK8mB",
+    "source": "/home/aimldl/LH-VLN/nav_gen/runs/audit_regenerate_cs_aligned_v5_levels2_5_habitat_validate_2300_qwen7b_20260701_v2/combined_task/5/Pergi ke Office lalu ambil painting dengan perlahan, kemudian move ke Office dan letakkan on flowerpot secara aman, lalu move ke Office cek target, lalu move ke Office cek targ end__source_batch_0008/success/trial_1/task.json",
+    "source_sha256": "34d7ee0f073118b49b45b75d097099f37fcf83212526e918a38c3928b99011e0",
+    "config": {
+      "Task instruction": "Pergi ke Office lalu ambil painting dengan perlahan, kemudian move ke Office dan letakkan on flowerpot secara aman, lalu move ke Office cek target, lalu move ke Office cek targ end",
+      "Scene": "00254-YMNvYDhK8mB",
+      "Robot": "spot",
+      "Object": [
+        "painting",
+        "flowerpot",
+        "desk organizer",
+        "box",
+        "chair"
+      ],
+      "Region": [
+        "5",
+        "1",
+        "6",
+        "5",
+        "5"
+      ],
+      "Region Name": [
+        "Office",
+        "Office",
+        "Office",
+        "Office",
+        "Office"
+      ],
+      "Generated level": 5,
+      "gt_step": [
+        76,
+        29,
+        47,
+        21,
+        2
+      ]
+    },
+    "start_state": {
+      "position": [
+        20.876258850097656,
+        0.13135623931884766,
+        -0.39248234033584595
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "original_release_index": 1387
+  }
+]
