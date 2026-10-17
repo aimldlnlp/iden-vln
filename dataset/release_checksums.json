@@ -1,7 +1,7 @@
 {
   "DATA_CARD.md": {
-    "sha256": "a903592074d8a8f8a9d872a864efb835aea66d074770158ed9088ebd691fc2b9",
-    "size_bytes": 5502
+    "sha256": "ba2c3dcc2381f00a31ff93de9e50da9e699145972073729f792e6be2162921c4",
+    "size_bytes": 5682
   },
   "iden_vln_step_tasks.jsonl": {
     "sha256": "8e90ef4709312c25248c853217c7a0d721e57fb25831b335ba3901cff0b456ca",
@@ -12,12 +12,12 @@
     "size_bytes": 3748428
   },
   "LICENSE.md": {
-    "sha256": "5bb2e3609ca8a2983d3edee3e2062f8a97f38d612b3266d8b409429a5b4195b2",
-    "size_bytes": 2440
+    "sha256": "d52578d2f9363e2cda1c81ff2d5fb387ef19959fbe086708601a82a6eef9252b",
+    "size_bytes": 1883
   },
   "license_metadata.json": {
-    "sha256": "8e37da15b0ae64c5ce8d198df7c5a4c696406e750249350424ef5eaa19667e63",
-    "size_bytes": 440
+    "sha256": "2005693ccea0e59759d5807033ca3eb6c738693b2acc9404cb7e5f8804c2fed6",
+    "size_bytes": 779
   },
   "release_manifest.json": {
     "sha256": "1fb01f2fbd64b9bea33a76b01397b864d4db05426e4f809fee2e68de4fb857c3",
@@ -30,5 +30,9 @@
   "splits_scene_heldout.json": {
     "sha256": "918689c2772e430492a262c5793109d7788c8695e60968e4df76920c21254b6d",
     "size_bytes": 74647
+  },
+  "TERMS_OF_USE.md": {
+    "sha256": "28a840377769d58fe357c23020c4703bf029e4616080cda0b4594109d2df052a",
+    "size_bytes": 2639
   }
 }

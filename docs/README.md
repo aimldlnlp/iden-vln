@@ -5,6 +5,7 @@ Choose the path that matches your goal. The compact dataset can be inspected wit
 | Goal | Start here | What to expect |
 |---|---|---|
 | Read or download the dataset | [Release data card](../dataset/DATA_CARD.md) | JSONL schema, validation status, splits and limitations |
+| Obtain academic dataset access | [Private acceptance procedure](DATA_ACCESS.md) | Provider agreement, project terms and signed acceptance before delivery |
 | Understand the dataset | [Dataset overview](../DATASET_CARD.md) | Motivation, intended uses and generation context |
 | Verify downloaded records | [CPU integrity check](../tools/verify_release.py) | Checksums, identifiers, parent mappings and split integrity |
 | Understand the paper implementation | [Paper-to-code map](PAPER_CODE_MAP.md) | Research components mapped to included source files |
@@ -13,7 +14,7 @@ Choose the path that matches your goal. The compact dataset can be inspected wit
 | Generate new instructions | [Generation guide](generation.md) | Qwen-compatible endpoint, Habitat/HM3D and RAM setup |
 | Inspect the video | [Navigation demo](NAVIGATION_DEMO.md) | Controller provenance, task identity, encoding and scope |
 | Trace source history | [Provenance](PROVENANCE.md) | Adapted components and preserved source variants |
-| Cite or check reuse conditions | [Citation](../CITATION.md), [license scope](LICENSE_SCOPE.md), and [notices](../NOTICE.md) | Scoped MIT code grant, dataset deferral and third-party conditions |
+| Cite or check reuse conditions | [Citation](../CITATION.md), [license scope](LICENSE_SCOPE.md), and [notices](../NOTICE.md) | Scoped MIT code grant, limited academic dataset permission and third-party conditions |
 
 ## Getting help
 

@@ -38,3 +38,7 @@ The wording and split metadata have not been separated into a demonstrably indep
 ## Next action for a broader release
 
 Resolve upstream code permission and the status of source-derived annotations/media. If clearance establishes separately licensable original data, apply the chosen dataset license in a new version, update metadata/checksums, and retain the exclusions. The current change does not make the repository public, establish full legal clearance, or alter scientific results.
+
+## Academic access procedure (20261017-v2)
+
+Limited permission for owner-controlled dataset contributions is now documented in [project terms](../dataset/TERMS_OF_USE.md). The [private document-based procedure](DATA_ACCESS.md) and [blank acceptance form](DATA_ACCESS_AGREEMENT.md) require affirmative acceptance before delivery and retain provider conditions. This supersedes an indefinite wait for a whole-dataset license: academic access has a documented route, while blanket Creative Commons licensing, upstream code/media clearance, and commercial permission remain unresolved. No acceptance has been executed and no new access is granted by adding these documents.

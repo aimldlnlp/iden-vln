@@ -36,7 +36,7 @@ A scoped MIT grant now covers the original owner-controlled IDEN-VLN code contri
 
 ## Research companion package (16 October 2026)
 
-Additional project experiment sources, compact dataset records, selected result summaries, and the manuscript pipeline schematic accompany the generation adaptation. See `docs/PROVENANCE.md` and `docs/source_inventory.json`. Their inclusion does not establish independent authorship of every component or grant a blanket license. Dataset CC BY licensing is deferred pending review of HM3D-derived rights; see `dataset/LICENSE.md`. Raw scene assets and model weights are excluded.
+Additional project experiment sources, compact dataset records, selected result summaries, and the manuscript pipeline schematic accompany the generation adaptation. See `docs/PROVENANCE.md` and `docs/source_inventory.json`. Their inclusion does not establish independent authorship of every component or grant a blanket license. No dataset CC BY grant is applied. Limited owner-controlled academic permission and provider conditions are documented in `dataset/LICENSE.md` and `dataset/TERMS_OF_USE.md`, with a private acceptance procedure in `docs/DATA_ACCESS.md`. Raw scene assets and model weights are excluded.
 
 ## Source data terms
 

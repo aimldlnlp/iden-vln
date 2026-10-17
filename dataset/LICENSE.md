@@ -1,19 +1,11 @@
-# Dataset reuse notice — no blanket CC BY grant
+# Dataset permission and source conditions
 
-Status updated 17 October 2026. The compact package includes 2,500 task records, 3,291 step-task segments, and fixed split assignments. This notice applies to the JSONL records and split files, including their source-derived fields.
+Updated 17 October 2026, version 20261017-v2. Applies to the 2,500 task records, 3,291 step-task segments, and fixed split assignments.
 
-## Current status
+The project owner grants limited reuse of his original contributions for non-commercial academic research under [TERMS_OF_USE.md](TERMS_OF_USE.md), subject to the applicable source-provider agreement and the [documented acceptance process](../docs/DATA_ACCESS.md). There is **no whole-dataset CC BY or CC BY-NC grant**, no commercial-use permission, and no claim that all source-derived fields are independently licensable.
 
-The project owner permits sharing his own work, but this update does **not** apply CC BY 4.0 to these files. The instructions, scene/object/room fields, poses, mappings, and dataset selection refer to or derive from HM3D environments. Separability of any independently licensable annotations has not been established. No commercial-use permission for the combined dataset is asserted.
+The [Matterport Academic Use Agreement](https://matterport.com/legal/matterport-end-user-license-agreement-academic-use-model-data) governs applicable source data and derived information. The [HM3D-Semantics page](https://aihabitat.org/datasets/hm3d-semantics/) describes academic non-commercial availability. New recipients must affirmatively accept the full provider agreement and project terms before receiving the compact package through this process. Acceptance records are private; a blank form, repository membership, or this notice is not evidence of acceptance.
 
-The [Matterport Academic Use Agreement](https://matterport.com/legal/matterport-end-user-license-agreement-academic-use-model-data), particularly sections 2.2 and 2.4, limits dataset use to non-commercial academic purposes, addresses derived information, and requires an agreement copy or link with publications/distribution containing such information. It also specifies an acceptance mechanism when a substantial portion of source data is distributed. This update does not determine whether that threshold is met and does not establish a new acceptance mechanism or rights clearance.
+Retain provenance and source attribution. Obtain raw meshes, RGB-D trajectories, NavMeshes and model weights separately from their providers; they are not included in this compact package. The project's code-only MIT grant does not cover dataset or provider rights.
 
-The [HM3D-Semantics provider page](https://aihabitat.org/datasets/hm3d-semantics/) describes academic non-commercial availability. Obtain source assets through the official providers and follow applicable agreements. Repository access alone is not a substitute for the necessary permissions.
-
-## Attribution and scope
-
-Retain IDEN-VLN provenance and cite the repository/manuscript and relevant source datasets. Raw meshes, RGB-D trajectories, NavMeshes and model weights are not distributed here. The code-only MIT grant in `../LICENSE` does not cover the dataset, scene-derived media, or source-provider rights.
-
-`release_manifest.json` is the unchanged historical export record and retains its original license-TBD entry. `license_metadata.json` records the current status; `release_checksums.json` covers the current package metadata. Neither file changes task contents, splits, evaluation rules, or scientific results.
-
-The earlier CC BY 4.0 proposal is deferred pending verification of rights to separately license original annotations and compilation, or suitable source-provider permission. No alternative Creative Commons license is silently substituted.
+`release_manifest.json` remains the unchanged historical export with its license-TBD entry. [license_metadata.json](license_metadata.json) records current project permission and access procedure; `release_checksums.json` covers current package metadata. Records, splits, evaluation rules, and results are unchanged. Broader public or commercial distribution and separately licensing source-derived content remain outside this permission.

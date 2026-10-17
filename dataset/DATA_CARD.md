@@ -106,4 +106,4 @@ Use the manuscript framing in the parent `README.md`: dataset + benchmark + vali
 
 ## Current license status
 
-The source export manifest is a historical record. Current reuse status is recorded in [LICENSE.md](LICENSE.md) and [license_metadata.json](license_metadata.json). The owner-controlled code MIT grant does not cover these records or override provider terms.
+The source export manifest is a historical record. Current reuse status is recorded in [LICENSE.md](LICENSE.md) and [license_metadata.json](license_metadata.json). Limited owner-controlled academic permission is in [TERMS_OF_USE.md](TERMS_OF_USE.md); the [access procedure](../docs/DATA_ACCESS.md) requires recorded acceptance before delivery. The owner-controlled code MIT grant does not cover these records or override provider terms.

@@ -128,4 +128,4 @@ Use GitHub's **Cite this repository** action, powered by [CITATION.cff](CITATION
 
 ## Licensing
 
-[MIT](LICENSES/MIT.txt) covers the owner-controlled original code contributions listed in [LICENSE](LICENSE). It does not relicense third-party code, source-derived records/media, experiment data, or model weights. Read the [per-component scope](docs/LICENSE_SCOPE.md) and [dataset notice](dataset/LICENSE.md).
+[MIT](LICENSES/MIT.txt) covers the owner-controlled original code contributions listed in [LICENSE](LICENSE). It does not relicense third-party code, source-derived records/media, experiment data, or model weights. Read the [per-component scope](docs/LICENSE_SCOPE.md) and [dataset notice](dataset/LICENSE.md). For the compact dataset, limited owner-controlled permission supports non-commercial academic research under [project terms](dataset/TERMS_OF_USE.md) and a [private, recorded acceptance process](docs/DATA_ACCESS.md); provider conditions remain in force. No blanket Creative Commons license or public access service is claimed.

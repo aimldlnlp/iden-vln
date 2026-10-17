@@ -50,3 +50,6 @@ trail_list.txt
 Thumbs.db
 .vscode/
 .idea/
+
+# Private dataset acceptance records: never commit recipient information
+/access-records/

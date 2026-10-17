@@ -10,7 +10,7 @@ This grant covers those original contributions only. It does not relicense copie
 
 ## Dataset and third-party material
 
-No CC BY 4.0 grant is applied to the compact dataset in this update. Its records contain HM3D-derived information, and the provider's academic-use agreement imposes conditions on derived information. See `dataset/LICENSE.md` before reuse. The permission to license the project's own work does not establish permission to relicense source-provider material.
+No CC BY 4.0 grant is applied to the compact dataset in this update. Its records contain HM3D-derived information, and the provider's academic-use agreement imposes conditions on derived information. See `dataset/LICENSE.md`, `dataset/TERMS_OF_USE.md`, and the private acceptance procedure in `docs/DATA_ACCESS.md` before reuse. Limited permission for owner-controlled dataset contributions does not replace provider conditions. The permission to license the project's own work does not establish permission to relicense source-provider material.
 
 The inherited generation pipeline, RAM subtree, scene metadata, wordlists, figures, video, and result artifacts are outside the MIT grant unless an applicable separate notice explicitly says otherwise. RAM's existing license and third-party notices are retained. Upstream NavGen permission and some artwork/wordlist origins remain unresolved.
 

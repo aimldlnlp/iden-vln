@@ -1,10 +1,15 @@
 {
-  "version": "20261017-v1",
-  "status": "grant-deferred-source-derived-rights-review",
+  "version": "20261017-v2",
+  "status": "limited-owner-permission-academic-access-procedure-documented",
   "cc_by_4_0_applied": false,
   "notice": "LICENSE.md",
   "owner_authorization": "original rights controlled by the project owner only",
   "provider_terms": "https://matterport.com/legal/matterport-end-user-license-agreement-academic-use-model-data",
-  "source_derived_information_review": "pending",
-  "unrestricted_commercial_use_asserted": false
+  "source_derived_information_review": "unresolved; provider conditions retained",
+  "unrestricted_commercial_use_asserted": false,
+  "project_terms": "TERMS_OF_USE.md",
+  "access_procedure": "../docs/DATA_ACCESS.md",
+  "acceptance_template": "../docs/DATA_ACCESS_AGREEMENT.md",
+  "acceptance_mechanism": "document-based; requires actual execution before access",
+  "new_recipient_access_granted_by_this_update": false
 }
