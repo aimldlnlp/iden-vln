@@ -32,8 +32,12 @@ The `recognize_anything/` subtree preserves the upstream RAM/RAM++ license and n
 
 ## License Status
 
-No new permissive top-level license is granted here because the upstream LH-VLN/NavGen source license is not clearly established in the available project context. Users should verify permissions before redistributing modified versions.
+A scoped MIT grant now covers the original owner-controlled IDEN-VLN code contributions identified in `LICENSE` and `docs/licensing_manifest.json`. It does not cover inherited NavGen expressions or third-party components. Upstream LH-VLN/NavGen permission remains unresolved.
 
 ## Research companion package (16 October 2026)
 
-Additional project experiment sources, compact dataset records, selected result summaries, and the manuscript pipeline schematic accompany the generation adaptation. See `docs/PROVENANCE.md` and `docs/source_inventory.json`. Their inclusion does not establish independent authorship of every component or grant a blanket license. Dataset licensing remains unresolved; raw scene assets and model weights are excluded.
+Additional project experiment sources, compact dataset records, selected result summaries, and the manuscript pipeline schematic accompany the generation adaptation. See `docs/PROVENANCE.md` and `docs/source_inventory.json`. Their inclusion does not establish independent authorship of every component or grant a blanket license. Dataset CC BY licensing is deferred pending review of HM3D-derived rights; see `dataset/LICENSE.md`. Raw scene assets and model weights are excluded.
+
+## Source data terms
+
+Materials containing HM3D data or derived information remain subject to the [Matterport Academic Use Agreement](https://matterport.com/legal/matterport-end-user-license-agreement-academic-use-model-data). This source notice is not replaced by the project code license. See `docs/LICENSE_SCOPE.md` for the current review and remaining questions.

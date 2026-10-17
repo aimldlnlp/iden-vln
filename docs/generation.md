@@ -93,7 +93,7 @@ The repository also depends on Habitat-Sim/HM3D, RAM/RAM++, and Qwen2.5. See `NO
 
 ## License Note
 
-The upstream LH-VLN/NavGen repository does not appear to provide a clear top-level license in the available project context. This repository therefore does not add a new permissive top-level license. Verify permissions with the upstream authors before public redistribution.
+The upstream LH-VLN/NavGen repository does not appear to provide a clear top-level license in the available project context. The new MIT grant covers only the original project code paths listed in `../LICENSE`; inherited generator code is excluded. Verify permissions with the upstream authors before public redistribution.
 
 
 

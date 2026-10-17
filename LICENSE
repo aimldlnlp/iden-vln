@@ -1,0 +1,17 @@
+# IDEN-VLN licensing scope
+
+Effective 17 October 2026. This repository contains material with different rights holders and conditions. There is no single blanket license for the repository.
+
+## Original project code
+
+Zinadine Zidan Alsyahana licenses the original IDEN-VLN code contributions that he controls in `research/**/*.py` and `tools/verify_release.py` under the MIT License in `LICENSES/MIT.txt`. The per-file inventory is `docs/licensing_manifest.json`.
+
+This grant covers those original contributions only. It does not relicense copied/adapted third-party expressions, embedded material, imported dependencies, pretrained or trained weights, training data, experiment outputs, or other rights that the project does not control. An inventory entry does not certify that every line in a mixed-provenance file is independently authored. Existing third-party terms continue to apply to their material.
+
+## Dataset and third-party material
+
+No CC BY 4.0 grant is applied to the compact dataset in this update. Its records contain HM3D-derived information, and the provider's academic-use agreement imposes conditions on derived information. See `dataset/LICENSE.md` before reuse. The permission to license the project's own work does not establish permission to relicense source-provider material.
+
+The inherited generation pipeline, RAM subtree, scene metadata, wordlists, figures, video, and result artifacts are outside the MIT grant unless an applicable separate notice explicitly says otherwise. RAM's existing license and third-party notices are retained. Upstream NavGen permission and some artwork/wordlist origins remain unresolved.
+
+Read `docs/LICENSE_SCOPE.md` and `NOTICE.md` for the scope, source links, and outstanding items. Repository visibility and access are separate from licensing; this change does not change visibility.

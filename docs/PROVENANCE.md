@@ -33,3 +33,7 @@ No variants were merged and no historical result was recomputed. Per-run frozen 
 ## Attribution and redistribution boundary
 
 The upstream snapshot has no top-level license file found by this audit. Existing project attribution and RAM license/notices are preserved. This publication does not resolve the upstream licensing question, assign a permissive license, or imply rights to redistribute HM3D assets or pretrained weights. Obtain external assets from their official providers. The pipeline figure is the manuscript's illustrative schematic; its component artwork provenance has not been independently audited.
+
+## License update — 17 October 2026
+
+The 16 October observations above are historical. `../LICENSE` now grants MIT only for original owner-controlled code contributions in the listed paths. Third-party/upstream exclusions remain. No CC BY dataset grant was applied after checking the Matterport derived-information terms. See `LICENSE_SCOPE.md` and `../dataset/LICENSE.md`; asset and wordlist origins remain unresolved.

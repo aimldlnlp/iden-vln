@@ -13,7 +13,7 @@ Choose the path that matches your goal. The compact dataset can be inspected wit
 | Generate new instructions | [Generation guide](generation.md) | Qwen-compatible endpoint, Habitat/HM3D and RAM setup |
 | Inspect the video | [Navigation demo](NAVIGATION_DEMO.md) | Controller provenance, task identity, encoding and scope |
 | Trace source history | [Provenance](PROVENANCE.md) | Adapted components and preserved source variants |
-| Cite or check reuse conditions | [Citation](../CITATION.md) and [notices](../NOTICE.md) | Repository/upstream citations and unresolved licensing |
+| Cite or check reuse conditions | [Citation](../CITATION.md), [license scope](LICENSE_SCOPE.md), and [notices](../NOTICE.md) | Scoped MIT code grant, dataset deferral and third-party conditions |
 
 ## Getting help
 

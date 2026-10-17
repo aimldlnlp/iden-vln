@@ -13,7 +13,7 @@ This release package contains:
 | Random split | included |
 | Scene-held-out split | included |
 | Selected benchmark summaries | see `../results/` |
-| License | TBD |
+| License | Deferred: source-derived rights review; see `LICENSE.md` |
 
 ## Intended Use
 
@@ -93,7 +93,7 @@ Each line in `iden_vln_step_tasks.jsonl` contains:
 
 ## Limitations
 
-- License is currently `TBD`.
+- No CC BY dataset grant is applied. See `LICENSE.md` and `license_metadata.json` for HM3D-derived rights and reuse conditions.
 - Code-mixing labels are automatic heuristics, not human linguistic annotation.
 - Scene-held-out split is not zero-shot object, room, or language generalization because object/room/lexical overlap remains high.
 - Failure-mode counts are qualitative file/log audit evidence, not mutually exclusive event-level statistics.
@@ -103,3 +103,7 @@ Each line in `iden_vln_step_tasks.jsonl` contains:
 ## Citation / Manuscript Note
 
 Use the manuscript framing in the parent `README.md`: dataset + benchmark + validation pipeline, with agent diagnostics as secondary/appendix evidence.
+
+## Current license status
+
+The source export manifest is a historical record. Current reuse status is recorded in [LICENSE.md](LICENSE.md) and [license_metadata.json](license_metadata.json). The owner-controlled code MIT grant does not cover these records or override provider terms.

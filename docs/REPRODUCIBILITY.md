@@ -37,3 +37,7 @@ Packaging checks cover dataset integrity, split/parent relationships, source has
 ## Inherited optional vision helper
 
 The root generator is the text-oriented adaptation. Its optional `vision_llm` helper retains an unfinished message placeholder and must not be presented as a validated VLM path. None of the package integrity checks exercises this optional helper. The text-only generation configuration is separate from learned navigation policies.
+
+## Current reuse conditions
+
+See `../LICENSE` for the scoped MIT code grant and `../dataset/LICENSE.md` for the dataset status. Provider terms also cover derived information; excluding raw meshes does not establish unrestricted rights in scene-derived records or media.

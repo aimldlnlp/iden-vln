@@ -1,7 +1,7 @@
 {
   "DATA_CARD.md": {
-    "sha256": "8e99f874b70068ad56fecafa2a2eeb6dff93b186951dd6074cd76356bb9362b3",
-    "size_bytes": 5171
+    "sha256": "a903592074d8a8f8a9d872a864efb835aea66d074770158ed9088ebd691fc2b9",
+    "size_bytes": 5502
   },
   "iden_vln_step_tasks.jsonl": {
     "sha256": "8e90ef4709312c25248c853217c7a0d721e57fb25831b335ba3901cff0b456ca",
@@ -10,6 +10,14 @@
   "iden_vln_tasks.jsonl": {
     "sha256": "30484f5727b566b53ca103ea354ec326d3b3306b9bd79f8342e8dd5041028bcd",
     "size_bytes": 3748428
+  },
+  "LICENSE.md": {
+    "sha256": "5bb2e3609ca8a2983d3edee3e2062f8a97f38d612b3266d8b409429a5b4195b2",
+    "size_bytes": 2440
+  },
+  "license_metadata.json": {
+    "sha256": "8e37da15b0ae64c5ce8d198df7c5a4c696406e750249350424ef5eaa19667e63",
+    "size_bytes": 440
   },
   "release_manifest.json": {
     "sha256": "1fb01f2fbd64b9bea33a76b01397b864d4db05426e4f809fee2e68de4fb857c3",

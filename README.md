@@ -6,15 +6,15 @@ IDEN-VLN contains **2,500 tasks, 3,291 step-task segments, and 155 scenes**, wit
 
 This repository accompanies the current research manuscript. It contains the compact dataset, selected experiment sources and summaries, and the attributed LH-VLN/NavGen generation adaptation. Publication venue and DOI are not asserted here.
 
-[Dataset](#dataset) · [Quickstart](#quickstart) · [Documentation](docs/README.md) · [Results](#navigation-results-and-interpretation) · [Citation](CITATION.md)
+[Dataset](#dataset) Â· [Quickstart](#quickstart) Â· [Documentation](docs/README.md) Â· [Results](#navigation-results-and-interpretation) Â· [Citation](CITATION.md)
 
 ## Navigation demo
 
 https://github.com/user-attachments/assets/7790a556-8685-494a-bb3e-638c4ad7c81d
 
-**Level 3 · 44.4 seconds · 1080p · LM Roman 10.** A selected three-stage simulator demonstration with the original Indonesian–English instruction. Stage names: armchair, TV, bed. This is a **teacher/oracle replay**, not a learned-policy generalization result. It shows navigation only; pickup and placement are not simulated. Completion follows the historical distance scorer and does not establish human-validated target visibility.
+**Level 3 Â· 44.4 seconds Â· 1080p Â· LM Roman 10.** A selected three-stage simulator demonstration with the original Indonesianâ€“English instruction. Stage names: armchair, TV, bed. This is a **teacher/oracle replay**, not a learned-policy generalization result. It shows navigation only; pickup and placement are not simulated. Completion follows the historical distance scorer and does not establish human-validated target visibility.
 
-[Download MP4](assets/iden-vln-level3.mp4) · [Video source and checks](docs/NAVIGATION_DEMO.md)
+[Download MP4](assets/iden-vln-level3.mp4) Â· [Video source and checks](docs/NAVIGATION_DEMO.md)
 
 ## Dataset
 
@@ -25,7 +25,7 @@ Files are available directly in [dataset/](dataset/):
 - [Random split](dataset/splits_random.json) and [scene-held-out split](dataset/splits_scene_heldout.json).
 - [Data card](dataset/DATA_CARD.md), [source export manifest](dataset/release_manifest.json), and [package checksums](dataset/release_checksums.json).
 
-The compact release excludes raw RGB-D trajectories, HM3D meshes, semantic assets, NavMeshes, and model weights. External assets remain subject to their providers' access conditions. Dataset and project-wide licensing remain unresolved; repository availability is not a new permissive license. See [notices](NOTICE.md).
+The compact release excludes raw RGB-D trajectories, HM3D meshes, semantic assets, NavMeshes, and model weights. External assets remain subject to their providers' access conditions. Original project code contributions have a scoped MIT grant. Dataset CC BY licensing is deferred because HM3D-derived rights require review; unrestricted commercial dataset use is not asserted. See [license scope](LICENSE), [dataset reuse notice](dataset/LICENSE.md), and [notices](NOTICE.md).
 
 ## Quickstart
 
@@ -125,3 +125,7 @@ See [generation instructions](docs/generation.md), [citation](CITATION.md), and 
 For questions and reproducibility reports, use [GitHub Issues](https://github.com/aimldlnlp/iden-vln/issues). Include the commit, task ID, environment, and minimal command. Do not attach credentials or restricted scene assets.
 
 Use GitHub's **Cite this repository** action, powered by [CITATION.cff](CITATION.cff). The [citation guide](CITATION.md) includes both IDEN-VLN and the upstream LH-VLN/NavGen work. Citation metadata describes the repository, not an accepted paper.
+
+## Licensing
+
+[MIT](LICENSES/MIT.txt) covers the owner-controlled original code contributions listed in [LICENSE](LICENSE). It does not relicense third-party code, source-derived records/media, experiment data, or model weights. Read the [per-component scope](docs/LICENSE_SCOPE.md) and [dataset notice](dataset/LICENSE.md).

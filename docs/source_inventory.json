@@ -43,7 +43,7 @@
       "source": "bahan_ieee_access/release_package/DATA_CARD.md",
       "relationship": "project implementation or research artifact; independent authorship not established by absence from upstream",
       "source_sha256": "91378585fa085a96f1f331b8e51db574c6ac09b079512f2f47cd4cb1b044fe1f",
-      "packaged_sha256": "8e99f874b70068ad56fecafa2a2eeb6dff93b186951dd6074cd76356bb9362b3"
+      "packaged_sha256": "a903592074d8a8f8a9d872a864efb835aea66d074770158ed9088ebd691fc2b9"
     },
     {
       "path": "research/navigation/audit_balanced100_teacher_contract.py",
