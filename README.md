@@ -6,15 +6,15 @@ IDEN-VLN contains **2,500 tasks, 3,291 step-task segments, and 155 scenes**, wit
 
 This repository accompanies the current research manuscript. It contains the compact dataset, selected experiment sources and summaries, and the attributed LH-VLN/NavGen generation adaptation. Publication venue and DOI are not asserted here.
 
-[Dataset](#dataset) Â· [Quickstart](#quickstart) Â· [Documentation](docs/README.md) Â· [Results](#navigation-results-and-interpretation) Â· [Citation](CITATION.md)
+[Dataset](#dataset) | [Quickstart](#quickstart) | [Documentation](docs/README.md) | [Results](#navigation-results-and-interpretation) | [Citation](CITATION.md)
 
 ## Navigation demo
 
 https://github.com/user-attachments/assets/7790a556-8685-494a-bb3e-638c4ad7c81d
 
-**Level 3 Â· 44.4 seconds Â· 1080p Â· LM Roman 10.** A selected three-stage simulator demonstration with the original Indonesianâ€“English instruction. Stage names: armchair, TV, bed. This is a **teacher/oracle replay**, not a learned-policy generalization result. It shows navigation only; pickup and placement are not simulated. Completion follows the historical distance scorer and does not establish human-validated target visibility.
+**Level 3 navigation demonstration with an Indonesian-English instruction.**
 
-[Download MP4](assets/iden-vln-level3.mp4) Â· [Video source and checks](docs/NAVIGATION_DEMO.md)
+[Download MP4](assets/iden-vln-level3.mp4) | [Video source and checks](docs/NAVIGATION_DEMO.md)
 
 ## Dataset
 
